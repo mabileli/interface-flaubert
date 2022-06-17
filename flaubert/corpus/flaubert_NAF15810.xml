@@ -1,0 +1,3247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Le Château des cœurs. Manuscrit définitif autographe</title>
+            <author key="Flaubert, Gustave (1821-1880)" ref="http://www.idref.fr/026866552"
+                  ><forename>Gustave</forename>
+               <surname>Flaubert</surname></author>
+            <author key="Bouilhet, Louis (1821-1869)" ref="https://www.idref.fr/031850456"
+                  ><forename>Louis</forename>
+               <surname>Bouilhet</surname></author>
+            <author key="Osmoy, Charles (d') (1827-1894)" ref="https://www.idref.fr/230396461"
+                  ><forename>Charles</forename>
+               <surname>d'Osmoy</surname></author>
+            <editor>Élisa Mabille</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>Édition génétique du Château des cœurs</edition>
+            <respStmt>
+               <name xml:id="EM" ref="elisa.mabille@etu.univ-rouen.fr">Mabille, Élisa</name>
+               <resp>Transcription, édition électronique</resp>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <publisher/>
+            <date when="2022"/>
+            <idno type="URL"/>
+            <availability>
+               <licence/>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>Bibliothèque nationale de France</repository>
+                  <idno>NAF 15810</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract>
+            <p>Manuscrit définitif du Château des cœurs</p>
+         </abstract>
+         <creation><date when="1863"/></creation>
+         <langUsage>
+            <language ident="fre">français</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change who="#EM"/>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="55" facs="naf_15810_055.jpg"/>
+         <fw>55 <del>73</del>.</fw>
+         <div type="act" n="5">
+            <head>V<del>I</del>. L’ile de la Toilette.</head>
+            <stage>Les collines au fond, figurant des carrés de culture différente sont
+               couvertes<lb/>*par* de longues bandes d’etoffes. à droite, au bord d’un ruisseau de
+               lait d’amandes<lb/>poussent, comme des roseaux, des batons de cosmetiques.
+                  [<del>illis</del>.] un peu plus <add>en</add> avant<lb/><del>d’un
+                  <add>gros</add>[illis.] sont</del> une fontaine d’eau de cologne <add>sort d’un
+                  gros rocher de fard rouge</add> Au milieu<lb/>sur <del>des</del>
+               <add>le</add> gnome, des paillettes brillent <add><del>sur lui</del></add> ; les
+               buissons <add>ça et là</add> se trouvent reprensentés<lb/>par des brosses de
+               chiendent &amp; les cailloux par des savons <add>de tuile [illis.]</add>. a
+               gauche<lb/>un arbre, <del>pareil</del>
+               <add>semblable</add> a un tamarin, porte<del>nt</del> des marabouts &amp; un autre
+               pareil à un palmier. [illis.] des eventails <add>[<del>illis.]</del></add>. Il y a un
+               champ<lb/>de rasoirs. <del>&amp;</del>
+               <add>plus loin</add> l’arbre à miroirs, [<del>illis</del>.]. l’arbre à<lb/>perruques,
+               l’arbre à houppe, <del><add>&amp;</add></del> l’arbre à peignes – <del>Des gds
+                  champignons</del><lb/>[<del>illis</del>.] <add>&amp; des costumes, <del>[illis.]
+                     &amp; de t</del></add>
+               <add>{bariolés</add>} pendent à de gds champignons</stage>
+            <stage> Des mouches voltige/ant <del>&amp;</del>
+               <add>dans l’air</add> viennent se coller<lb/>d’elles-mêmes sur le visage des femmes,
+               la mouche assassine, la<lb/>capricieuse, la provocante. etc.</stage>
+         </div>
+         <div type="scene" n="1">
+            <head>I.</head>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>, (seule)<lb/>dans la même [<del>position</del>] <add>attitude</add> qu’elle
+                  avait à la fin<lb/>du tableau precedent – la tete baissée, &amp; le<lb/>coude
+                  gauche appuyé contre le rocher de fards<lb/>au bord de la fontaine – après un
+                  instant de<lb/>silence, elle lève les yeux &amp; regarde autour<lb/>d’elle [,]
+                  avec ebahissement</stage>
+               <p><del>tiens</del> ! comme c’est joli – &amp; comme ça sent bon ! mais… on dirait
+                  l’odeur de<lb/>l’eau de cologne ? D’où vient-elle ? – de cette fontaine ! –
+                     <del>oui !</del> – Ah !<lb/>si je m’y lavais les mains</p>
+               <stage>(elle y plonge ses bras, jusqu’au coude)</stage>
+               <p>On n’a <del>pas</del>
+                  <add>pas peur</add> d’en perdre ! Je veux bien m’en mettre dans les cheveux</p>
+               <stage>(elle s’en jette sur la tete qques gouttes qui deviennet<lb/>aussitôt des
+                  diamants, sans qu’elle s’en aperçoive.<lb/>Puis elle se lave le visage avec les
+                  mains, &amp;<lb/>pendant qu’elle est ainsi penchée sur la fontaine<lb/>une branche
+                  de l’arbre à peignes, derrière elle<pb n="56" facs="naf_15810_056.jpg"/>
+                  <fw>56 <del>74</del>.</fw>
+                  <del>(</del>s’abaisse tout doucement p. demêler ses cheveux<lb/>au
+                  chignon.<lb/>Elle se retourne surprise, en tendant la joue droite) </stage>
+               <p>
+                  <del>qu’est-ce qui</del>
+                  <add>qui donc</add> me prend <del>les cheveux</del> ? <add>là par derrière</add>
+                  continuez vous <add>ne</add> me faites pas mal </p>
+               <stage> (L’arbre à houppes abaisse un de ses rameaux &amp; la caresse de
+                  sa<lb/>poudre de riz) </stage>
+               <p> Oh comme c’est doux ! comme c’est doux ! <del>[illis.] ?</del>
+               </p>
+               <stage> (elle tend la joue gauche – même jeu de l’arbre à houppe) </stage>
+               <p>
+                  <del>«</del> Ah – enore ! <del>»</del> Mais ça me chatouille ! assez ! j’ai envie
+                  de rire ! Ah ! Ah !<lb/>Ah ! </p>
+               <stage> (l’arbre s’arrête) </stage>
+               <p> C’est fini ? – Je vous remercie bien, <del>monsieur</del>. </p>
+               <stage> (elle se relève) </stage>
+               <p> Comment ? personne ! [<del>illis</del>.] </p>
+               <stage> (elle considère tous les objets autour d’elle, en marchant<lb/>lentement,
+                     [<del>illis</del>.]) </stage>
+               <p>[<del>illis</del>.] <add>[<del>illis</del>.]</add>
+                  <add>{la drôle de campagne !</add>} – des peignes qui tiennent aux arbres – en
+                  voilà un<lb/>où poussent des perruques, &amp; tous ces vêtements par terre comme
+                  des<lb/>feuilles mortes ! – Ah la belle herbe, avec ces grosses gouttes de
+                     rosée<lb/>[<del>illis</del>.]. Mais non ! ce sont des paillettes d’argent
+                     – <del>elles s’attachent</del><lb/>[<del>illis</del>.]</p>
+               <stage> (s’apercevant dans une des glaces de l’arbre à miroirs) </stage>
+               <p>
+                  <lb/>et cela – c’est moi – [<del>illis</del>.] <add>en</add> diamants ! J’ai l’air
+                  d’un soleil ! </p>
+               <stage> (sa robe <add>arrachée</add> disparait dans l’air) </stage>
+               <p> le vent ! ah ! <del>le vent, Ah</del> – </p>
+               <stage> (elle pousse un cri<lb/>de terreur pudique <add>en s’apercevant en chemise
+                     &amp; en [illis.]</add> et croise ses bras sur sa poitrine.) </stage>
+               <p> que devenir ? j’ai<lb/>honte ! </p>
+               <stage> (<del>Mais</del> aussitot une des bandes d’etoffe, posée[s] sur les collines
+                  du fond, arrive<lb/>en ondoyant comme une rivière &amp; se drapant autour d’elle,
+                  lui fait une <add>sorte de</add> tunique.) </stage>
+               <p> Eh bien ! <del>Eh bien !</del>
+                  <add>Eh bien..</add> me voilà toute habillée, maintenant. </p>
+               <stage> (un arbre à bracelets d’or l’accroche par le bras) <del>en passant</del>
+               </stage>
+               <p>qu’est-ce que me retient. p.quoi ? laissez moi <del>donc</del>
+               </p>
+               <stage> (elle tire à elle – le bracelet<lb/>vient) </stage>
+               <p> Ah ! cela fait bien sur ma peau. </p>
+               <stage> (D’une espèce de sorbier<lb/>tombe un collier de corail autour de son cou) </stage>
+               <p> qu’est-ce ? un<lb/>collier. Ah ! comme je suis belle ! quel bonheur. Je m’aime !
+                  Je voudrais<lb/>m’embrasser.<pb n="57" facs="naf_15810_057.jpg"/><fw>57. <del>[75]</del></fw> Mais je rêve sans
+                     doute ?<add>…</add>
+                  <del>Cependant</del>… <add>Cependant –</add> non ! ][ ce n’est pas
+                  possible.<lb/>Je vais me reveiller tout à l’heure. où suis-je donc ? dans quel
+                  pays ?</p>
+            </sp>
+            <sp>
+               <speaker> choeur </speaker>
+               <stage> dans la coulisse </stage>
+               <lg>
+                  <l>C’est le pays de la toilette</l>
+                  <l>[C’est l’empire des affiquets]</l>
+                  <l>des paquets !</l>
+                  <l>des caquets !</l>
+                  <stage> – – –<lb/>– – – </stage>
+                  <l>Chez nous la Beauté se complete</l>
+                  <l>La laideur prend des airs coquets</l>
+               </lg>
+            </sp>
+            <sp>
+               <speaker> Jeanne </speaker>
+               <p> Je ne comprends pas… </p>
+            </sp>
+            <sp>
+               <speaker> Choeur </speaker>
+               <lg>
+                  <l>C’est le pays de la toilette</l>
+                  <l>[C’est le triomphe sans un pli]</l>
+                  <stage> – – – </stage>
+                  <l>du poli</l>
+                  <l>du joli</l>
+                  <stage> – – – </stage>
+                  <l>nos pleurs sont à la violette</l>
+                  <l><add>&amp;</add> nos soupirs sont au patchouli</l>
+                  <l>rasoirs il faut en decoudre</l>
+                  <l>allons peignes nouveaux nés</l>
+                  <l>cascade aux flos safranés</l>
+                  <l>tombe ici comme la foudre !</l>
+                  <l>poudre les airs, arbre à poudre</l>
+                  <l>savonette, savonnez</l>
+                  <stage> – – –<lb/>– – – </stage>
+               </lg>
+            </sp>
+            <stage> un gd bruit de tamtams, de flutes &amp; de chapeau chinois </stage>
+            <sp>
+               <speaker> Jeanne </speaker>
+               <stage> (remonte la scène) </stage>
+               <p> *quelle quantité de* <del>au</del> monde ! <del>qui s’avance</del> ?
+                     <del>qu’est-ce</del>
+               </p>
+            </sp>
+            <sp>
+               <speaker>Chœur</speaker>
+               <lg>
+                  <l>silence ! silence ! silence</l>
+                  <l>c’est le monarque qui s’avance</l>
+                  <l>pareil aux astres eclatants</l>
+                  <l>c’est Pommadin, roi de la mode</l>
+                  <l>le seul qui sache avec methode</l>
+                  <l>diriger nos gouts inconstants</l>
+               </lg>
+            </sp>
+            <sp>
+               <speaker> Jeanne </speaker>
+               <p>Mais ils viennent par ici ? J’ai peur. où me cacher <del>!</del>/? Ah !</p>
+            </sp>
+            <stage>(elle s’enfonce sous l’arbre à miroirs)</stage>
+            <stage place="margin-right">Toute la cour de Pommadin en arrivant, chante<lb/>Mortels
+               que sa faveur inonde<lb/>de l’un à l’autre bout du monde<lb/>marchez où sa main vous
+               conduit<lb/>tous ses ordres sont chose grave<lb/>on est perdu quand on les
+               brave<lb/>on est sauvé, dès qu’on les suit</stage>
+            <pb n="58" facs="naf_15810_058.jpg"/>
+            <fw>58. <del>7[6]</del>.</fw>
+         </div>
+         <div type="scene" n="2">
+            <head>II.</head>
+            <stage>Le roi Pomadin [81]. <del>&amp;</del> la Reine <del>c</del>/Couturine, avec toute
+               la cour<lb/>graisse d’ours homme &amp; femmes</stage>
+            <lb/>
+            <note place="margin-left">(2)</note>
+            <stage>La couronne du roi est faite avec deux enormes [illis.] d’ecaille ronds<lb/>tous
+               ses cheveux sont près dans des papillottes d’or. – Son habit de coupe
+               morderne<lb/>est de satin rose &amp; boutons de nacre &amp; sont gilet bleu
+                  <del>est</del> surchargé de<lb/>broderies figurant des etiquetes de pots de
+               pommade. Il porte par dessus l’habit<lb/>le peignoir-royal. Son gd cordon en sautoir
+               qui est un cuir à repasser<lb/>maintient sur la hanche l’ordre du cosmetique.
+                  <del>Il</del> a p. [illis.] un fer<lb/>à griser, splendide. Culotte de [illis.] ,
+               – bas blancs souliers à boucles et<lb/>talons rouge – des medaillons photographiques
+               sur chaque soulier<lb/>Couturine (à la dernière mode du jour)<lb/>graisse-d’ours, en
+               veste, toute la barbe <add>[herissé]</add>, l’air farouche, un tablier –<lb/>tous les
+               personnages de la cour representent les divers metiers relatifs à la toilette</stage>
+            <lb/>
+            <note place="margin-left">(1)</note>
+            <stage>Le roi arrive au milieu d’une estrade portée à bras, &amp; assis dans<lb/>une
+                  <add>sorte de</add> gd fauteuil ayant des compartiments sur les côtés – deux
+               plumes d’autruche<lb/>au ht des montants, <add>&amp;</add> un miroir dans le dossier.
+               à droite d<del>e</del>/u <del>Pom</del> roi<lb/>sur un siege plus bas la Reine – à sa
+               gauche sur un autre siege<lb/>le 1<hi rend="superscript">er</hi> ministre.<lb/>Les porteurs abaissent le
+               tronc-estrade, tout doucement<lb/>jusqu’à terre.</stage>
+            <sp>
+               <speaker>Le roi Pommadin</speaker>
+               <p>
+                  <del>Là – Là</del> – c’est bien. arrêtez-vous &amp; puisque nous <del>voilà
+                     tous</del>
+                  <add><del>sommes</del></add>
+                  <add>{voilà installés</add>} <add>{{tous</add>}}<lb/>[<del>illis</del>.] dans
+                  l’endroit trois <add><del>vingt</del></add> fois coquet des seances royales
+                  – ayant<lb/>à notre droite, notre chère epouse la semillante Couturine </p>
+            </sp>
+            <sp>
+               <speaker> Couturine </speaker>
+               <stage>, (avec un regard langoureux, lui prend<lb/>la main &amp; la baise)</stage>
+               <p> Toujours tendre, Pommadin ! </p>
+            </sp>
+            <sp>
+               <speaker> Le roi Pomadin </speaker>
+               <p> [<del>illis</del>.] à notre gauche, notre premier ministre, <del>[illis.],</del>
+                     l’indis-<lb break="no"/>-pensable graisse-d’ours ! </p>
+            </sp>
+            <sp>
+               <speaker> graisse-d’ours </speaker>
+               <stage> (baisant le bas de son peignoir) </stage>
+               <p> Vous etes trop bon, majesté ! </p>
+            </sp>
+            <sp>
+               <speaker> Pommadin </speaker>
+               <p>
+                  <del>devant</del>
+                  <add>autour de</add> nous, les hauts dignitaires de notre
+                  bonnet,<pb n="59" facs="naf_15810_059.jpg"/><fw><del>7[6]</del> 59</fw> l’archi-tailleur, l’archi-bottier,
+                     <del>le gd referendaire des remises</del>, le prince du<lb/>cold-cream, le duc
+                  du caoutchouc &amp; autres</p>
+            </sp>
+            <sp>
+               <speaker>les gds dignitaires</speaker>
+               <stage>(s’inclinant)</stage>
+               <p>Pour vous servir, ô Souverain !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+
+               <p>Avec les dames de notre</p>
+               <stage>(il salue)</stage>
+               <p>lesquelles en font l’ornement</p>
+            </sp>
+            <sp>
+               <speaker>les Dames</speaker>
+               <p>Ah ! delicieux !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>et derrière nous, le peuple imbecille</p>
+            </sp>
+            <sp>
+               <speaker>la Foule</speaker>
+               <p>Vive le Roi !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Il nous <hi rend="u">faut</hi>, suivant l’usage, <add>[<del>illis</del>.]</add>, etablir
+                  les modes de la saison.</p>
+            </sp>
+            <sp>
+               <speaker>Tous</speaker>
+               <stage>(avec vivacité &amp; se demenant)</stage>
+               <p>Voyons ? quelles couleurs ? combien de mètres</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>un instant ! Il est d’abord <del>convenable</del>
+                  <add>indispensable</add> de raffoler les principes</p>
+            </sp>
+            <sp>
+               <speaker>Graisse-d’Ours</speaker>
+               <p>raffolez !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Or <del>il faut convenir</del>, <add>c’est une verité reconnue</add> mes colombes,
+                     <del>que le [nat]</del>
+                  <add>{que vous etes naturellement</add>}</p>
+            </sp>
+            <sp>
+               <speaker><del>Couturine</del></speaker>
+               <stage><del>(l’interrogeant)</del></stage>
+               <p><del>Mais [illis.], mon ami !<lb/>D’ailleurs, le peuple [illis.], la
+                  nature</del></p>
+            </sp>
+            <sp>
+               <speaker><del>Pommadin</del></speaker>
+               <stage><del>([illis.])</del></stage>
+               <p><del>[illis.]<lb/>fermées par des [illis.] vous êtes, dis je<lb/>[illis.]</del>
+                  hideuses !</p>
+            </sp>
+            <sp>
+               <speaker>les Dames</speaker>
+               <stage>(scandalisées)</stage>
+               <p>Ah – Ah ! – l’abomination.</p>
+            </sp>
+            <pb n="60" facs="naf_15810_060.jpg"/>
+            <fw>60 <del>77</del>.</fw>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Oui. fort <del>[belles]</del>
+                  <add>laides</add> ! – silence ! Vous ne mettez pas en doute, j’imagine<lb/>la
+                  superiorité du factice sur le reel ? C’est l’Art seul <del>qui vous</del>
+                  <add>ô Déesses qui vous</add> fournit<lb/>tous vos charmes, <del>ô Deesses !</del>
+                  ne craignez rien, je suis discret – mais<lb/>vous conviendrez que l’on est
+                  amoureux de la <del>bottine</del>
+                  <add>robe</add> &amp; non de la femme<lb/>de la bottine &amp; non du pied – &amp;
+                  que si vous <del>l’aviez</del>
+                  <add>ne possediez</add> pas soie, la<lb/>[<del>illis</del>.] <add>dentelle</add>
+                  &amp; le velours, le patchouli &amp; le chevreau, des pierres qui
+                  brillent<lb/>&amp; des couleurs p. vous peindre, les sauvages même ne voudraient
+                  pas<lb/>de vous, puisqu’ils ont des epouses tatouées !</p>
+               <stage>(il se rasseoit)</stage>
+            </sp>
+            <sp>
+               <speaker>les Dames</speaker>
+               <p>C’est un peu dur ! <del>C’est</del> un peu dur !</p>
+            </sp>
+            <sp>
+               <speaker>Graisse-d’Ours</speaker>
+               <stage>(se lève)</stage>
+               <p>D’ailleurs le vêtement, etant le signe manifeste de la chasteté, fait<lb/>partie
+                  de la vertu, &amp; est une vertu lui-même – | ou la vertu |</p>
+               <stage>(il se rasseoit)</stage>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(se leve)</stage>
+               <p>Donc, plus le costume sera costumant, c’est à dire antinaturel<lb/>incommode &amp;
+                  laid, plus il sera beau !</p>
+               <stage>(il se rasseoit)</stage>
+            </sp>
+            <sp>
+               <speaker><del>Tous</del></speaker>
+               <p><del>Oui ! [oui]</del></p>
+            </sp>
+            <sp>
+               <speaker><del>Pommadin</del>/Graisse d’ours</speaker>
+               <stage>(se lève)</stage>
+               <p>et distingué surtout !</p>
+               <stage>(il se rasseoit)</stage>
+            </sp>
+            <sp>
+               <speaker>Tous</speaker>
+               <p>Ah distingué ! le distingué. c’est le principal</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(se leve)</stage>
+               <p>Eh bien ! travaillez, maintenant.</p>
+               <stage>(il se rasseoit)</stage>
+            </sp>
+            <sp>
+               <speaker>Tous.</speaker>
+               <p>voyons ! cherchons –</p>
+            </sp>
+            <stage>(un moment de silence – puis on entend, tout à coup, un<lb/>gd fracas de miroirs
+               cassés</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(<del>à un des gds officiers</del>)</stage>
+               <p>Qu’est-ce ? <add><del>qu’est-ce</del></add>
+                  <del>allez voir</del></p>
+               <stage><add>il fait à un</add> (l’officier <del>sort</del>
+                  <add>signe de sortir puis</add> après avoir regardé à droite :)</stage>
+               <p>Ah ! l’arbre aux miroirs cassé. Ils etaient trop mûrs <add>sans doute</add> &amp;
+                  qque<lb/>maraudeur en l’ebranlant…</p>
+            </sp>
+            <pb n="61" facs="naf_15810_061.jpg"/>
+            <fw><del>7[8]</del> 61.</fw>
+            <sp>
+               <speaker>L’officier</speaker>
+               <stage>(rentrant)</stage>
+               <p>Nous avons trouvé dessous un monstre</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Un monstre ?</p>
+            </sp>
+            <sp>
+               <speaker>L’officier</speaker>
+               <p>Oui, ô Souverain, un être vert &amp; demodé</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Qu’on l’amène</p>
+            </sp>
+            <sp>
+               <speaker>Tous</speaker>
+               <p>Quelle bravoure !</p>
+            </sp>
+         </div>
+         <div type="scene" n="3">
+            <head>III.</head>
+            <stage>Les Precedents. Jeanne</stage>
+            <stage>Elle entre, avec des gants – verts, – empire qui lui montent<lb/>jusqu’aux
+               coudes, <add>en</add> faisant beaucoup de plis sur les bras<lb/>une <del>ch</del>
+               coiffure à la giraffe – un chale jaune<lb/>par dessus sa tunique, &amp; un ridicule à
+               la main<lb/>à son aspect, Couturine pousse un cri aigu &amp; tombe à la
+               renverse,<lb/>Graisse-d’Ours se leve indigné, Pommadin avec un petit
+               mouvement<lb/>d’effroi se recule sur son trône, les Dames arrachent vivement
+               les<lb/>feuilles de l’arbre à eventail &amp; se cachent le visage dessous –
+               Brouhaha<lb/>general.</stage>
+            <sp>
+               <speaker>les Hommes</speaker>
+               <stage>(s’ecrient)</stage>
+               <p>– Arrière !</p>
+               <p>– va t’en !</p>
+               <p><del>– [Fuis]</del> !</p>
+               <p>– Cache-toi !</p>
+            </sp>
+            <sp>
+               <speaker>les Dames :</speaker>
+               <p>– C’est une horreur !</p>
+               <p>– une [<del>infame</del>] <add>turpitude</add> !</p>
+               <p>– une antiquité !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(p. commander le silence, etend son sceptre)</stage>
+               <p>Du calme, têtes exaltées par la frisure ! – Approche, jeune fille, car tu
+                  as<lb/>l’air d’en être une – à tes attributs naturels, bien que tu n’en
+                  possedes<lb/>point les grâces. Explique-nous, justifie <del>no</del> ton
+                  accoutrement !</p>
+            </sp>
+            <pb n="62" facs="naf_15810_062.jpg"/>
+            <fw><del>79</del> 62.</fw>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Je l’ai pris là – par terre – <del>au hazard</del>
+                  <add>au hasard</add>, – croyant qu’il le fallait – [ pour vous<lb/>ressembler</p>
+            </sp>
+            <sp>
+               <speaker>Graisse-d’ours</speaker>
+               <p>Nous ressembler !</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>et en me relevant, tous les miroirs</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Assez ! ce n’est pas d’eux qu’il s’agit. <stage><add>rapidement :</add></stage>
+                  Mais p. avoir <del>transgressé</del>
+                  <add>[<del>illis</del>.]</add>
+                  <add>desobéi</add> aux lois de<lb/>notre empire, [ [<del>illis</del>.] *pour
+                  avoir* <add>meprisé</add> le culte de la chaussure, les delicatesses de la
+                  lingerie &amp;<lb/><del>l’hygiène</del>
+                  <add>l’elegance</add> du cheveu ! – pour t’être affublé d’une d’une aussi
+                  infâme<lb/>de froque, – qui fait remonter l’imagination jusqu’au temps
+                  de<lb/>Corinne &amp; du cirage à l’oeuf. <stage><del>(il [illis.] de fatigue) Je
+                        ne [illis.]</del></stage><lb/>[<del>illis</del>.]</p>
+            </sp>
+            <sp>
+               <speaker><del>[illis.]</del></speaker>
+               <p><del>[illis.] [suffit] !</del></p>
+            </sp>
+            <sp>
+               <speaker><del>Pommadin</del></speaker>
+               <p><del>[illis.]</del>. tu meriterais <del>d</del>/les supplices [illis.]</p>
+            </sp>
+            <sp>
+               <speaker>Tous</speaker>
+               <p>oui oui ! [<del>illis</del>.] <add>les plus terribles</add></p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p><del>les plus terribles</del>. D’être condamnée à des bottines trop etroites<lb/>à
+                  des peignes trop durs, à des corsets indelasables !</p>
+            </sp>
+            <sp>
+               <speaker>tous</speaker>
+               <p>bravo !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>à porter un cabas !</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>grace !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>– et un turban ! – avec panache !</p>
+            </sp>
+            <pb n="63" facs="naf_15810_063.jpg"/>
+            <fw>63 [<del>80</del>].</fw>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p><del>Comment [illis.] <add>est-ce</add> ma faute ! [expliquez] moi</del> !
+                     <add>Mais</add> Je ne connaissais pas la mode ! Je n’ai que la<lb/>suivre.
+                     <del>Pouvais je [illis.] croire que ce fut</del>
+                  <add>est-ce <del>dans</del></add> un crime ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Il n’y en a pas de plus grand, <add>[illis.]</add> être femelle ! Car la mode,
+                  sais-tu bien, c’est <del>à la fois</del><lb/><del>la loi [&amp;]</del>
+                  <add>la loi</add> la fantaisie, <add>[<del>illis</del>.]</add>, la tradition &amp;
+                  le progrès, il n’est rien qu’elle ne gouverne<lb/>[<del>illis</del>.] *ne
+                  produise<lb/>&amp; ne <del>renverse</del>
+                  <add>{renverse</add>}* colosse folâtre etabli sur le moude, du drape
+                     le<lb/><del>berceau</del>
+                  <add>couche</add> des nouveaux nés, tandis qu’elle
+                     ornemente<lb/><del>l’architecture</del><lb/>des tombeaux<lb/>levant sa tête
+                     <add>au ciel</add> vers les philosophies &amp; penetrant ainsi, du bout de son
+                  pied mignon<lb/>jusque dans l’eternité. Retire tes gants verts !</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(humblement)</stage>
+               <p>Je ne demande pas mieux [ <del>que d’obeir</del> ] – moi. – je ferai ce qui vous
+                  plaira.</p>
+            </sp>
+            <sp>
+               <speaker><del>les Grands</del></speaker>
+               <p><del>[ Ah ! de la douceur – du [illis.] <add>[moilleux] !</add> – très
+                     bien !</del></p>
+            </sp>
+            <sp>
+               <speaker>Couturine</speaker>
+               <p>*Ah* Pitié pour elle, grand roi !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Soit ! je te pardonne, en consideration de ton ignorance <stage>(aux gds
+                     officiers :)</stage><lb/>et vous autres, occupez-vous <del>tout de suite</del>,
+                  de la façonner congruement, de la vêtir dans le dernier genre</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(sautant de joie)</stage>
+               <p>Oh merci ! je serai donc <del>tout à fait</del> jolie – bien habillée ! <add>quel
+                     bonheur !</add>
+                  <del>Il [m’aimera]</del>.</p>
+            </sp>
+            <pb n="64" facs="naf_15810_064.jpg"/>
+            <fw><del>84</del>. 64.</fw>
+            <stage>Ballet de la toilette.<lb/>on l’habille dansant. Elle est à peine vêtue rien qu’à
+               demi que<lb/>le roi s’ecrie –« c’est vieux. autre chose. » – la reine – « ce n’est
+               plus<lb/>ça ! autre chose ». – si bien que la toilette ne finit jamais<lb/>il y a
+               chaque fois une legère opposition aussitôt [illis.] par une<lb/>majorité effrayante
+               qui repete en choeur « c’est vieux ou<lb/>c’est charmant.</stage>
+            <stage>Jeannette qui trouve tout ce qu’on lui met tres bien, resiste aux<lb/>habilleuse
+               qui veulent la changer. – puis elle finit par devenir<lb/>capricieuse comme les autre
+               &amp; emportée dans le vertige<lb/>general. – on lui donne à la fin le 1<hi rend="superscript">er</hi>
+               costume qui a tant fait<lb/>se recrier &amp; toutes les dames y compris la reine
+                  <del>se tr</del> qui<lb/>ont suivi progressivement les mêmes changements se
+               trouvent<lb/>habillées comme elle.</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>restons-y au moins une demi heure ! c’est très beau !</p>
+            </sp>
+
+            <stage>*satisfaction generale exprimee<lb/>par des soupirs mais tout a coup</stage>
+            <sp>
+               <speaker><del>Couturine</del></speaker>
+               <p><del>Vous croyez</del></p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(considère Jeanne &amp; defaisant [<del>illis</del>.] <add>avec rapidité</add>
+                  sa toilette)</stage>
+               <p>non – decidement ! ceci me<lb/>deplait. &amp; cela aussi –<lb/>autre [illis.].
+                  allons vite<lb/>[illis.] <add>trouver dans un</add> [<del>illis</del>.]</p>
+            </sp>
+            <sp>
+               <speaker><add>Couturine</add></speaker>
+               <p><add>elle se <del>beau cost</del></add> d’un gout simple &amp; exquis</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p><del>Ah ! encore plus beau !</del><lb/><del>charmant</del>.</p>
+            </sp>
+            <sp>
+               <speaker><del>Pommadin</del>*</speaker>
+               <p/>
+            </sp>
+            <sp>
+               <p>Maintenant <del>Jeanne [illis.]</del>, seigneurs &amp; seigneuresses
+                     <add>{parfumeurs &amp; brodeuses</add><lb/>chemisiers &amp; couturieres
+                        <add>[<del>illis</del>.] &amp; [<del>illis</del>.]</add>, retirez
+                     <add>vous</add> dans vos cabinets. – <del>vous</del><lb/><del>aurez le
+                     soin</del>
+                  <add>nous souhaitons</add> d’etre seuls. – <del>non</del> ! demeurez
+                        <add><del>avec nous</del></add> couturine –</p>
+            </sp>
+         </div>
+         <div type="scene" n="4">
+            <head><del>III</del>. IV.</head>
+            <stage>Jeanne, Pommadin, Couturine.</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Eh bien, jeune fille <add><del>Jeanne</del></add> cette beauté des vêtements,
+                  cette<lb/>grace, ce luxe que tu desirais si fort tu le possede<lb/>à present</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>ce n’est donc pas un rêve</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>*Non !* Ces genis superieurs à qui rien n’est caché<lb/>te protegent</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(lentement)</stage>
+               <p><del>nos</del>
+                  <add>des</add> genies… me protègent.<lb/>comment</p>
+            </sp>
+            <pb n="65" facs="naf_15810_065.jpg"/>
+            <fw><del>8[5]</del>. 65.</fw>
+         </div>
+         <div type="scene" n="4">
+            <head><del>I</del>V.I</head>
+            <stage>Jeanne, Pommadin, Couturine</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Eh bien, jeune fille, ce luxe de la toilette que tu desirais si fort, le
+                  voilà !</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>C’est donc vrai ! Je ne rêve pas.</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Non, les genies superieurs – [<del>à qui rien n’est caché</del>], te protegent</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>*<del>Comment</del> ?* <del>Moi</del> ? moi.</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>n’en doute plus ! aucune, grâce à nous, ne sera aussi seduisante <del>&amp;</del>
+                  <add>{<del>[illis.]table</del></add>}</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Oh, merci. merci ! Il va donc m’aimer</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>[<del>illis</del>.] <add>[<del>illis</del>]</add>
+                  <add>{Peut-être ?</add>} Pour atteindre à la moderne dignité de femme – tâche
+                  de<lb/>comprendre – pour devenir tout à fait cet être charmant, inextricable
+                  &amp;<lb/>funeste commencé par Dieu &amp; achevé par les poetes &amp; les
+                  coiffeurs,<lb/>si bien quu’il a fallu [<del>illis</del>.] soixante siècles <add>au
+                     monde</add> avant de <del>faire</del>
+                  <add>produire</add> la<lb/>Parisienne, il te manque encore, ô petite fille, bien
+                  des choses.</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>lesquelles ? <del>si [illis.]</del> !</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p><del>Ah [illis.] le gd [illis.]</del>. <add>eh !</add> Tu ne sais <add>pas</add>
+                  <del>[pas faire] [illis.]</del><lb/>[<del>illis</del>.] <add>[ni] saluer
+                        [<del>ni</del>] sourire</add>
+                  <del>dignes des gens [illis.]</del> pincer la bouche<lb/>*cligner des yeux* ni
+                  debiter des melancolies en prenant sur un sopha, des [poses] de<lb/>fleur battue
+                  par la brise. Comment ferais-tu – voyons – en<lb/>l’entendant soupirer ? &amp;
+                  quelle serait ta reponse, s’il te demandait<lb/>« m’aimes-tu ? »</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Eh bien, je repondrais « oui » !</p>
+            </sp>
+            <sp>
+               <speaker>Couturine</speaker>
+               <stage>(imperieusement)</stage>
+               <p>Ça ne se dit pas, jeune fille ! c’est un mot indecent, naturel
+                  &amp;<lb/>populaire !</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Mais comment <add><del>donc</del></add>
+                  <del>faut-il</del> parler ? <add>enseigne moi…</add>
+                  <del>expliquez moi. [illis.] mon protecteur</del><lb/><del>mon
+                  [maître] !</del></p>
+            </sp>
+            <pb n="66" facs="naf_15810_066.jpg"/>
+            <fw>66. <del>68. [illis.]</del></fw>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Holà les deux types du Bon-goût ! arrivez !</p>
+            </sp>
+         </div>
+         <div type="scene" n="5">
+            <head>V.</head>
+            <stage>les Precedents &amp; Deux Mannequins, Mr &amp; Dame que l’on apporte.</stage>
+            <stage>la Dame est vêtue à la dernière mode<lb/>le Mr a une raie derrière la tête, qui
+               se<lb/>Continue, par les poils de son paletot symetri-<lb/>-quement divisé, jusqu’au
+               bas des reins. Elle<lb/>se reproduit sur chaque jame du pantalon<lb/>[long] non dans
+               l’oeil, chic anglais. etc.</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>*Considère* <del>Considère</del>
+                  <add><del>voi</del></add>ces des honnêtes mannequins qui ressemblent à des
+                  mortels ! <del>tâche de reproduire</del>
+                  <add>[<del>illis</del>.]</add>
+                  <add>{tache de repduire</add>}<lb/>leurs mouvements. Si tu [<del>illis</del>.]
+                     <add>veux</add> avoir [illis.] manières. Rappelle-toi dans leur[s] discours,
+                  &amp; en<lb/>qquelieu que tu te trouves, à la campagne, en visite, en soirée, dans
+                  un dîner, <add>ou</add> au<lb/>spectacle <del>ou à l’eglise</del>, tu pourras
+                  jacasser, hardiment, sur la nature, la littérature,<lb/>la peinture, les enfants
+                  aux têtes blondes, l’ideal, le turf &amp; autres choses !<lb/>la <del>Cou</del>
+                  clef, Couturine.</p>
+               <stage>(il remonte les deux automates à la poitrine).</stage>
+               <p>Commençons – en appuyant ici, <del>par le [illis.]</del>, <del>nous obtenons ce
+                     que l’on doit [dire] </del><add>on obtient ce qu’il faut
+                     dire</add><lb/>[<del>illis</del>.], <add>entre Mr &amp; Dame</add> devant un
+                  beau paysage.</p>
+               <stage>(en prenant le monsieur sous les aisselles, il le penche<lb/>de droite &amp;
+                  de gauche comme on fait à une pendule dont<lb/>le balancier est arreté.
+                  – Couturine fait de même à la dame.</stage>
+               <p>partez !</p>
+            </sp>
+            <sp>
+               <speaker>le monsieur</speaker>
+               <stage>(avec de petits gestes rapides de la main droite &amp;
+                  l’air<lb/>guilleret)</stage>
+               <p>Bonjour, chère</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>(même jeu)</stage>
+               <p>Bonjour, Bonjour, mon bon !</p>
+            </sp>
+            <stage>(Ils se rapprochent ainsi des deux côtés de la scène, en roulant<lb/>sur leurs
+               roulettes – &amp; quand ils sont arrivés face à face,<lb/>ils se secouent les mains
+               pendant qques minutes, avec<lb/>violence, en ricanant.</stage>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(regardant autour de lui avec des mouvements de tête<lb/>saccadés)</stage>
+               <p>tiens ! tiens ! tiens ! où sommes-nous donc ? <del>ici</del> ?</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>(minaudant – &amp; en phrases detachées)</stage>
+               <p>Ah ! la delicieuse campagne ! [ [<del>illis</del>.] ] un site pittoresque – &amp;
+                  des<lb/>petites fleurs – si poëtiques, &amp; inutiles – poetiques parce qu’elles
+                  sont inutiles –<lb/>inutiles parce qu’elles sont poetiques</p>
+            </sp>
+            <pb n="67" facs="naf_15810_067.jpg"/>
+            <fw><del>8[illis.]</del>. 67.</fw>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(d’un ton bourru)</stage>
+               <p>Moi je la trouve bête <del>à [illis.]</del>
+                  <add>comme chou</add>, votre campagne – Du sentiment, allons<lb/>donc ! – de
+                  l’elegie Ha ha ha ! la poesie, Ha ha ha ! Je suis revenu de<lb/>tout ça. Ha ha
+                  ha.</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>(avec beaucoup de gestes)</stage>
+               <p>Mais cependant – permettez – si l’on taillait ces arbres – si l’on reculait ces
+                  massifs<lb/>– en faisant avancer le vieux chêne – avec qques ruines – des pays aux
+                  biens habillés –<lb/>&amp; un chemin de fer p. être à proximité – on aurait là,
+                  avouez le, un<lb/>beau sujet artistique – de quoi faire une jolie mine de
+                  plomb.</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(gaillardement)</stage>
+               <p>en fait de mine – je prefère – la vôtre.</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <p>où donc prenez vous ce ton-la ? – chez vos <add>petites</add> dames
+                     [<del>illis</del>.]<lb/>Je voudrais bien – sans qu’on le sache – y aller un peu
+                  – pour voir<lb/>leur mobilier –</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <p>à vos ordres !</p>
+               <stage>(à part)</stage>
+               <p>une imagination, – elle [illis.].</p>
+               <stage>(ht :)</stage>
+               <p>Mais<lb/><hi rend="u">permettez</hi> – un conseil –</p>
+            </sp>
+            <sp>
+               <speaker><del>la Dame</del></speaker>
+               <p><del>[illis.] ?</del></p>
+            </sp>
+            <sp>
+               <speaker><del>le Monsieur</del></speaker>
+               <p>Pour vos placements. Je m’en chargerais</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <p>et des reports aussi ?</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <p>ça va –/! j’ai mon carnet</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <p>nous disons donc</p>
+            </sp>
+            <sp>
+               <speaker>Couturine</speaker>
+               <stage>(arrêtant le ressort)</stage>
+               <p>Assez ! assez ! ils ne s’arrêteraient plus</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p><del>Mais</del> j’aurais bien du mal à retenir…</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Ah bah ! avec de la bonne volonté !… ecoute les plutôt sur les<lb/>nouvelles du
+                  jour</p>
+            </sp>
+            <stage>(il touche <del>les</del>
+               <add>le ressort des</add> mannequins<lb/>à une autre place)</stage>
+            <pb n="68" facs="naf_15810_068.jpg"/>
+            <fw><del>85</del>. 68.</fw>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>(lentement &amp; d’un air affligé)</stage>
+               <p>Eh bien, – à ce qu’il parait. on a encore massacré là bas – douze mille de<lb/>ces
+                  pauvres diables –</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(chantonnant)</stage>
+               <p>broûm ! broûm ! broûm ! qu’est-ce que ça nous fait ? Je ne doute plus
+                  là<lb/>dedans ! la vie est courte, turlurette, amusons-nous !</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>(d’un ton gai)</stage>
+               <p>Vous avez le genre Regence – tout à fait talon-rouge</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(gravement, la main dans un gilet)</stage>
+               <p>Oui – avec des idées liberales. un melange de l’ancienne <del>monarchie</del>
+                  <add>aristocratie</add><lb/>française, &amp; de l’industrialisme americain
+                  – qu’est-ce que ça ?</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>, (vite &amp; d’un ton suppliant en lui offrant une<lb/>liasse de petits
+                  papiers)</stage>
+               <p>des billets de loterie, p. mes pauvres !</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(avec un gd salut)</stage>
+               <p>trop heureux, Madame !</p>
+               <stage>(à part :)</stage>
+               <p>pincé !</p>
+               <stage>(legerement)</stage>
+               <p>&amp; le nouveau livre<lb/>de chose, l’avez-vous lu ?</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <stage>([admiratisement])</stage>
+               <p>Oh ! très beau ! vrai ! c’est un grand homme !</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(naturellement)</stage>
+               <p><del>Ah ! ah ! d’ailleurs d’une immoralité ! Il n’a plus que dans le
+                     ventre</del><lb/><del>le gaillon [illis.] la</del> ! *Eh non, un crotin* Du
+                  moins on le dit.</p>
+            </sp>
+            <sp>
+               <speaker>la Dame</speaker>
+               <p>On le dit. Ah alors ça se <del>pourrait bien</del>
+                  <add>peut</add>. Je vous crois</p>
+            </sp>
+            <sp>
+               <speaker>le Monsieur</speaker>
+               <stage>(avec un regard amoureux &amp; soupirant)</stage>
+               <p>Si vous pouviez croire tout ce que je vous</p>
+            </sp>
+            <stage>(il s’arrête <del>tout court</del>. <add>brusquement)</add></stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Ah ! j’ai oublié deux demi tours</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Mais ils ne s’aiment pas du tout, ceux là ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(en remontant les mannequins)</stage>
+               <p>c’est ainsi que cela commence. [ L’un dissimule, l’autre attend, tous les<lb/>deux
+                  posent. ] &amp; [ <del>qques visites encore.</del> ] Quand il lui aura dit en
+                  face<lb/>assez d’impertinences p. la faire [<del>poser</del>]
+                  <add>[pousser]</add>, ce sera, <del>je [te faire]</del>,<pb n="69" facs="naf_15810_069.jpg"/><fw><del>8</del>
+                     69.</fw> une union si intime &amp; tellement reconnue que l’on ne manquera pas
+                  dans<lb/>les meilleures maisons de les inviter ensemble [, <del>afin de leur être
+                     agreables.</del> ]</p>
+               <stage>(les deux mannequins pendant qu’il les remontait se sont echangés<lb/>des
+                  gestes tendres qui deviennent de plus en plus expressifs)</stage>
+               <p>Non ! non ! à la valse ! à la valse !</p>
+               <stage>(ils se mettent à valser &amp; pendant qu’ils valsent Jeanne <add>[à]
+                     fait</add><lb/><del>reproduit</del>
+                  <add>repete</add> du mieux qu’elle peut tous/<add>tes</add> leur
+                     <del>mouvements</del>
+                  <add>façons</add>)</stage>
+               <p>C’est cela ! lui menton levé &amp; coude en l’air – elle, droite comme un I
+                  &amp;<lb/>nez baissé, tous deux piquant leurs angles dans l’espace, – une vraie
+                  figure<lb/>de geometrie en belle humeur – <del>exemple dedié à la jeunesse &amp;
+                     aux ecoles</del><lb/><del>militaires</del>. – Assez ! – qu’on les remmence ! –
+                  &amp; vous Couturine, <del>mon</del><lb/><del>etoile</del>, veillez bien à ce
+                  qu’on les remette dans leurs boîtes, [ dans<lb/><del>leurs petits nids
+                     confortables. </del>]</p>
+            </sp>
+            <stage>(on les emporte)</stage>
+         </div>
+         <div type="scene" n="6">
+            <head>VI</head>
+            <stage>Pommadin. Jeanne.</stage>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p><del>C’est fait</del> ! <add>Voilà</add> – tu en sais suffisamment p. te produire
+                  dans le monde.</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p><del>[illis.] ? mais comment le trouver ?</del></p>
+               <p>Eh ! ce n’est pas le monde <add>qui m’inquiete</add>, mais lui, où est-il ? je
+                  veux le voir</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <stage>(lentement)</stage>
+               <p><del>Ah ! ah ! [illis.]</del></p>
+               <p>– Il <del>m’est</del>
+                  <add>me serait</add> impossible de <add>[<del>illis</del>.]</add> satisfaire ton
+                  desir</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(ravie)</stage>
+               <p>oh ! [illis.]</p>
+            </sp>
+            <sp>
+               <speaker><del>Pommadin</del></speaker>
+               <stage><del>(après un long silence)</del></stage>
+               <p><del>veux-tu que je t’y [illis.]</del></p>
+            </sp>
+            <sp>
+               <speaker><del>Jeanne</del></speaker>
+               <stage><del>(à [illis.])</del></stage>
+               <p><del>oui ! oui ! oui tout de suite ! [illis.] grâce ! [illis.] ! Je
+                     [illis.]<lb/>[illis.] ce qu’il [illis.] mais pourquoi ne<lb/>[illis.] ? Mais
+                     [illis.] donc !</del></p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>[<del>illis</del>.] <add>à</add> une condition, cependant</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p><del>laquelle</del> ? <add>dis la</add> quelqu’elle soit, <del>n’importe</del>.
+                     <add>d’avance…</add> reponds donc !</p>
+            </sp>
+            <pb n="70" facs="naf_15810_070.jpg"/>
+            <fw>[<del>8</del>] 70.</fw>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>c’est que jamais, [ [<del>illis</del>.] ] tu ne <add>te</add> feras
+                  reconnaitre<lb/>ni à lui, ni à son<lb/>compagnon</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Pourquoi <del>cela</del> ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>parce qu’il t’a <del>deja</del>
+                  <add>deja</add> repoussé quand tu etais une paysanne, l’oublies-tu ?<lb/>ensuite [
+                     <del>parce que je [illis.] par ta discretion</del> ]<lb/>– &amp; surtout
+                  – ecoute bien – tu ne doute spas de mon pouvoir, n’est-ce pas ? . moi <del>qui
+                     t’ai tiré de ta chaumière pour te couvrir<lb/>de somptuosités ! – &amp;</del>
+                  qui t’ai donné plus de robes que tu ne possedais<lb/>d’epingler &amp; plus de
+                  perles <del>fines</del>
+                  <add>fines</add> qu’il n’y avait de grains de son<lb/>dans l’ange de tes
+                  pourceaux. – Eh bien, je te jure par cette même<lb/>puissance, que si tu viens à
+                  lui dire ton nom, à l’instant même<lb/><del>tout de suite</del>, &amp; comme d’un
+                  coup de foudre, tu mourras</p>
+            </sp>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(<add>[illis.]</add> baisse la tête – tandis que Pommadin l’observe<lb/>avec
+                  anxieté, puis lentement)</stage>
+               <p>n’importe <del>sous quel nom</del>
+                  <add><del>dans quel rang</del></add>
+                  <add>{sous quel nom</add>} &amp; sous quelle figure – pourvu qu’il
+                  m’aime<lb/>c’est tout ce que je veux ! – Partons !/– <del>nous ?</del>
+                  <add>nous ?</add></p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>soit !</p>
+            </sp>
+            <stage>(il etend les <add>deux</add> bras en claquant des doigts – &amp; du côté
+               droit<lb/>arrive, <add>portée</add> par une escouade entière d’auvergnats
+               une<lb/>prodigieuse quantité de malles, de cartons, de caisses<lb/>&amp; d’etuis,
+               pendant que du coté gauche devouche un<lb/>regiment de femmes de chambre.)</stage>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <p>Qu’est-ce que <del>tout</del> cela ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>Oh peu de choses ! vos petits paquets de voyage, <del>seulement</del>.<lb/>rien de
+                  plus !</p>
+            </sp>
+            <pb n="71" facs="naf_15810_071.jpg"/>
+            <fw>[<del>illis</del>.]. 71.</fw>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(en remontant la scene vers les paquets)</stage>
+               <p>et <del>toutes</del> ces demoiselles ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>vos femmes de chambre ! l’indispensable, en toute, p. vous donner un coup<lb/>de
+                  peigne, ou faire un point.</p>
+            </sp>
+            <stage>(tandis qu’elle avait le dos tourné le costume de Pommadin<lb/>a disparu p.
+                  <del>faire place à</del> celui d’un groom de bonne<lb/>maison – bottes à revers,
+               culotte de peau, cocarde.</stage>
+            <sp>
+               <speaker>Jeanne</speaker>
+               <stage>(etonnée)</stage>
+               <p>Eh <del>bien</del> ? Pommadin, où est-il ?</p>
+            </sp>
+            <sp>
+               <speaker>Pommadin</speaker>
+               <p>C’est moi ! – courrier, groom, interprète &amp; maitre d’hotel, le<lb/>tout à la
+                  fois par economie ! – Me la marquise, à vos ordres !</p>
+            </sp>
+            <stage>choeur de commissionnaires &amp; de femmes<lb/>de chambre</stage>
+            <pb n="72" facs="naf_15810_072.jpg"/>
+            <fw><del>89</del>. 72.</fw>
+         </div>
+         <div type="act" n="6">
+            <head>VI<del>I</del> le Pays de l’Innocence</head>
+            <stage>Le soleil se lève sur un gd paysage. montagnes dentelées à l’horizon<lb/>à
+               droite, au fond, une tente. un peu plus en avant un rocher. arbres<lb/>très hauts.
+               nature âpre &amp; majestueuse.</stage>
+            <div type="scene" n="1">
+               <head>I.</head>
+               <stage>les Pasteurs.</stage>
+               <sp>
+                  <speaker>Choeur</speaker>
+                  <p>Habitant loin des villes, – sur le plateau des montagnes, &amp; dans l’azur
+                     d’un<lb/>air immaculé, rien n’altère nos corps robustes, rien ne trouble
+                     notre<lb/>coeur.</p>
+                  <p>Aussi loin qu’il y a des herbes, nous poussons devant nous nos
+                     troupeaux<lb/>– &amp; quand nous revenons en arrière, le gazon a refleuri.</p>
+                  <p>Nos pensées comme les [mirages] arrivent &amp; s’en vont, perdues
+                     dans<lb/>l’immensité tout à coup – &amp; sans plus laisser de traces &amp; de
+                     souvenir</p>
+                  <p>Nous avons les pieds durs comme des cailloux, les cheveux<lb/>libres &amp;
+                     longs comme des lianes – &amp; couchés à plat ventre sur<lb/>la terre, nous
+                     sentons qque chose d’eternel palpiter contre<lb/>nos poitrines.</p>
+                  <p>Pendant la nuit nous contemplons les etoiles. – puis quand<lb/>nos yeux
+                     s’abaissent, nous les retrouvons à coté de nous, dans<lb/>nos bras, sur le
+                     visage de nos femmes</p>
+                  <p>Les <del>ch</del> gds boeufs [rumissent] dans la rosée – &amp; la voix
+                     du<lb/>chien coupe par saccades le bruit coutinu du torrent.</p>
+                  <p>à la première blancheur du matin le vent froid nous<lb/>reveille. La joie de
+                     re-sentir la vie eclate en nous, comme<lb/>la lumière du soleil audelà des
+                     monts. Alors les fleurs s’entrou-//vent. L’infinité des choses remue dans une
+                     liberté sans<lb/>limites.</p>
+                  <p>C’est lui ! <del>l</del>/C’est lui ! il monte ! il nous
+                     rechauffe !<lb/>Debout!</p>
+               </sp>
+               <pb n="73" facs="naf_15810_073.jpg"/>
+               <fw>73 <del>90</del>.</fw>
+               <sp>
+                  <speaker>les Femmes</speaker>
+                  <p>Cousant avec des fils d’ecorce le cuir des tentes &amp; remplissant de
+                     lait<lb/>ecumeux les callebasses, nous soignons nos epoux les pasteurs<lb/>à
+                     longue barbe.</p>
+                  <p>nous marchons avec eux, côte à cote, pas à pas, derrière les<lb/>moutons qui
+                     broutent.</p>
+                  <p>Souvent deux papillons voltigent ensemble autour d’une fleur.<lb/>Mon coeur à
+                     moi &amp; celui du compagnon ne quittent pas non plus la<lb/>prarie – &amp; ils
+                     tourbillonnent d’accord, autour de la tente, dans le<lb/>cercle fatale d’une
+                     destinée commune. </p>
+                  <p>Pendant la nuit le vagissement clair des chèvres se mêle aux<lb/>doux sanglots
+                     du nouveau né – &amp; d’une seule main, en<lb/>sommeillant, nous le balançons
+                     dans son [berçeau] fait d’un<lb/>tronc d’arbre – jusqu’au jour</p>
+                  <p>Alors les oiseaux chantent &amp; la terre fume comme un<lb/>manteau
+                     mouillé.</p>
+                  <p>C’est lui ! c’est lui ! il monte ! il nous rechauffe ! Debout !</p>
+               </sp>
+               <stage>les pasteurs se levent, les femmes prennent<lb/>des corbeilles, les hommes
+                  leurs gds houlettes<lb/>agitation generale –</stage>
+               <pb n="74" facs="naf_15810_074.jpg"/>
+               <fw><del>91</del>. 74.</fw>
+            </div>
+            <div type="scene" n="2">
+               <head>II.</head>
+               <stage>Les Pasteurs. Paul Dominique (on entend leurs voix dans la coulisse)</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Eh ! tu m’ennuis, bavard !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p><add>j’ai p.tant raison</add> <del>vous avez [raison]</del>, monsieur,
+                        <del>c’est [illis.] bonjour</del>, <add>salut</add> indigènes,<lb/>bonjour.
+                        <add>salut</add></p>
+               </sp>
+               <stage>(tous s’avancent vers Paul &amp; l’entourent)</stage>
+               <sp>
+                  <speaker>Un enfant</speaker>
+                  <stage>(lui offrant un panier)</stage>
+                  <p>Voilà des [<del>feuilles</del>] <add>figues</add> cueillies p. toi</p>
+               </sp>
+               <sp>
+                  <speaker>Une jeune fille</speaker>
+                  <p>et un collier rouge, fait avec des baies d’eglantier.</p>
+               </sp>
+               <sp>
+                  <speaker>Une femme</speaker>
+                  <p>Prends, [<del>illis</del>.], cette toison blanche que j’ai lavée
+                     moi-même<lb/>dans la fontaine.</p>
+               </sp>
+               <sp>
+                  <speaker>un jeune homme [</speaker>
+                  <p>Veux-tu venir avec nous, chasser les antilopes, [ ou tâcher d’abattre<lb/>des
+                     aigles à coups de fronde ? ]</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Non – merci. mes amis. merci ! Occupez-vous de vous-même &amp; ne<lb/>vous
+                     gênez plus !</p>
+                  <stage><add>(doucement)</add></stage>
+                  <p>allez – allez.</p>
+               </sp>
+               <stage>Il ne reste qu’un petit groupe de pasteurs <del>assis</del>
+                  <add>[accroupis]</add><lb/>au fond du theatre, à doite. les autres
+                  s’eloignent<lb/>peu à peu. Paul les suit des yeux</stage>
+            </div>
+            <div type="scene" n="3">
+               <head>III.</head>
+               <stage>Paul, Dominique</stage>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Monsieur !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Eh bien ?</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>si nous faisions comme eux ? <add>dites donc</add> si nous nous en allions
+                     aussi [?]<lb/>– &amp; <del>plus [loin]</del> <del>!</del>/? tout à fait !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Pourquoi ?</p>
+               </sp>
+               <pb n="75" facs="naf_15810_075.jpg"/>
+               <fw>75. <del>92</del></fw>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Ah ! c’est que le paysage de ces braves gens, j’ai l’honneur de vous le
+                     repeter,<lb/>peut être fort beau, mais <del>je trouve qu’</del>il manque
+                     completement de roast beaf<lb/>&amp; de bourgogne surtout, &amp; de café, [
+                        <del>y compris le cognac</del> ] ! – Oh ! une pauvre<lb/>demie-tasse !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Goinfre !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Sans compter qu’ils ne sont pas, <del>veritablement</del>, <add>non plus</add>
+                     très forts ! Au moins les Turcs<lb/>aiment la pipe, les nègres
+                        <del>aiment</del>
+                     <add>aiment</add> la chique, les chinois l’opium, les<lb/>[Bedouins] l’absinthe
+                     &amp; les Samoyèdes la chandelle ! Avec tous ces gens là on<lb/>peut causer. On
+                     a quelque chance de rencontrer une sympathie. Mais ici…<lb/>…ah !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>C’est une belle <del>vie</del>, <add>existence</add> cependant !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Oui, mais trop de laitage ! <del>decidement</del>, <del>trop de
+                     laitage</del> !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Les fatigues d’un travail exorbitant, les defaites de l’ambition, [ <del>les
+                        degouts<lb/>du monde</del> ] &amp; l’etourdissement que vous prouve la gde
+                     machine civilisée<lb/>ils ne connaissent rien de tout cela.</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Parbleu ! ils ne connaissent rien du tout !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>On voudrait même y vivre perpetuellement, si l’on pouvait dans cette
+                     solitude<lb/>avoir le coeur desiré, la bien aimée inconnu.</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(croisant les bras)</stage>
+                  <p>Mais, saprelotte, il faut que l’on vous ait jeté un sort, mon
+                     pauvre<lb/>maitre, p. vous plaire dans un pareil <add>[illis.]</add> endroit
+                     vous qui en avez [ou]<lb/>de si beaux ! [<del>illis</del>.] ! – Quand est-ce
+                     que cela finira ?<lb/>Voyons – [ <del>si [vous] [illis.], partout</del> ? ]
+                     – &amp; puis ce/le je ne sais<lb/>quoi que vous cherchez, le but de votre
+                     voyage enfin, ce n’est<lb/>pas la manière de l’atteindre.</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(ebahi)</stage>
+                  <p>Ah ! – il a raison !… j’oubliais</p>
+                  <stage>(la baque de Paul se met à briller)</stage>
+                  <p>cette lumière !… elle aussi me rappelle mon devoir ! Elle me<lb/>montre là bas
+                     dans un <del>eloignement</del>
+                     <add>lointain</add> mysterieux le chanteau<lb/>des gnomes – oui ! partons !
+                     – trouve moi des cordes p. descendre<lb/>les precipices !<pb n="76" facs="naf_15810_076.jpg"/><fw>76.
+                           <del>9[3]</del>.</fw> amène en bas deux chevaux ! depêche toi ! nous
+                     allons courir par toute la terre !<lb/>viens ! <del>Je ne veux plus
+                        m’arrêter</del> ! <add>Je ne m’arrête plus</add></p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(qui est remonté au haut de la scène)</stage>
+                  <p>Mais je vous attends !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(avec un soupir)</stage>
+                  <p>Allons ! – il y avait cependant ici, un charme…</p>
+                  <stage>(sur le côté gauche, entre les coulisses, apparaissent deux têtes de
+                     chameau[x]<lb/>et en même temps plusieurs chameliers, en petite tunique bleue,
+                     bras &amp;<lb/>jambes nus, turban.)</stage>
+                  <p>d’autres voyageurs – qui etes-vous ?</p>
+               </sp>
+               <stage>(les chameliers sans repondre se mettent bien vite à descendre &amp; à
+                  rouler<lb/>sur la scène quantité de ballots. au bruit que l’un d’eux fait,
+                  en<lb/>tombant, Dominique se retourne)</stage>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Ah ! de la compagnie ! Dieu soit loué !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>n’importe ! suis-moi !</p>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>IV.</head>
+               <stage>Les Precedents, le Roi des gnomes dans le costume de groom du<lb/>tableau
+                  precedent.</stage>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <stage>(aux chameliers)</stage>
+                  <p>[<del>illis</del>.] <add>Disposez</add> vite tout ce qu’il faut.</p>
+                  <stage>(apercevant Paul)</stage>
+                  <p>J’etais sûr de te trouver,<lb/>toi ! L’innocence a ses <del>tentations</del>
+                     <add>seductions</add> comme le [vice] <add>à part</add>. Je t’y ai pris,
+                     mon<lb/>mignon.</p>
+               </sp>
+               <stage>(Paul est dejà remonté au fond, vers le groupe de pasteurs – &amp;
+                  les<lb/>chameliers ont <del>disposé</del>
+                  <add>[illis.]</add>
+                  <add>{etalé par terre</add>} sur le devant de la scène, à droite <add>entre les
+                     coussins &amp;</add>, un<lb/>tapis <add>[illis.]</add> sur lequel ils
+                     [<del>illis.</del>] <add>[<del>illis.</del>]</add> toutes sortes de provisions
+                  de<lb/>bouche, bouteilles, plats, cafetières, gobelets etc)</stage>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>une collation ! Monsieur, arrêtez ! – pardon, Excellence, ou plutôt
+                     collègue<lb/>car je vois à votre uniforme que nous sommes un peu frères
+                     – Comment<lb/>se fait-il ? – un paté ! &amp; des petits ronds de beurre, comme
+                     en<lb/>France ! ça me rappelle ma pauvre mère, mon pays ! –
+                        <del>permettez</del> !<lb/>*<del>Je defaille</del>/Je defaille* <stage>(il
+                        se laisse tomber sur les coussins)</stage>
+                     <del>Je defaille</del> !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(appelant)</stage>
+                  <p>Dominique !</p>
+               </sp>
+               <pb n="77" facs="naf_15810_077.jpg"/>
+               <fw>77. <del>94</del>.</fw>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Je renoue mon soulier, un instant !</p>
+                  <stage>(apercevant une bouteille à cachet rouge)</stage>
+                  <p><lb/>Ô bonnet <add>rouge</add> de la liberté ! <del>vin [illis.] ! [illis.] mon
+                        divin</del> ! Que je te presse<lb/>sur mon coeur ! – non ! sur mes
+                     lèvres !</p>
+                  <stage>(au groom)</stage>
+                  <p>Peut-on…</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>Oui – oui tout à votre aise <del>[mon] [illis.]</del> !</p>
+               </sp>
+               <stage>(Dominique <add>après avoir arraché le bouton avec ses dents</add> se
+                  precipite sur les plats. <del>&amp; les flacons &amp;<lb/>s’empifre avec
+                     impetuosité</del>)</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Arrive donc, animal !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(<add>d’un ton</add> scandalisé – la bouche pleine)</stage>
+                  <p>Ah ! Monsieur !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>toi qui avais si hâte de partir ?</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(pendant que le groom-roi des gnomes, le sert.)</stage>
+                  <p><del>Mais l</del>/Le paysage a changé ! – encore un petit morceau, s’il vous
+                     plait<lb/>– &amp; puis je suis de votre avis, à present ! (au groom qui tient
+                     deux<lb/>bouteilles) non ! – toujours du même ! – c’est une population
+                     excellente.<lb/>– <del>[Mais] ! [parfait] ! les moeurs [illis.]</del>, – oui un
+                     peu<lb/>de sauce – &amp; de la moutarde, des sardines, du linge blanc, jusqu’à
+                     des<lb/>cueillers p. le sel, tous les bienfaits de la civilisation
+                     <del>–</del>/; mais regardez !<lb/>mettez-vous y !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Lève-toi, imbecille ! ces douceurs-là pas plus que les autres ne
+                     me<lb/>retiendront ! <del>Il est temps</del> ! en route !
+                     <del>vivement</del> !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(se levant lentement)</stage>
+                  <p>Resignons-nous ! </p>
+                  <stage>(il met la main devant ses yeux, p. apercevoir qque chose vers<lb/>la
+                     gauche)</stage>
+                  <p>tiens… tiens [!]… qu’est-ce qui vient <del>donc</del>, là bas ?… une
+                     voiture ?<lb/>– <del>mais oui</del> ! <add>ah</add> elle s’arrête !</p>
+                  <stage>(les pasteurs sont mont[é]s <add>[<del>illis.</del>]</add> sur le rocher à
+                     droite – &amp; il se font entr’eux<lb/>des signes, en se designant qque chose à
+                     l’horizon)</stage>
+                  <p>diable m’emporte ! – une femme en descend !</p>
+               </sp>
+               <stage>(du coté droit accourt <del>la</del>
+                  <add>une</add> foule de pasteurs, enfants en<lb/>teté) qui se precipite vers la
+                  gauche)</stage>
+               <sp>
+                  <speaker>la Foule</speaker>
+                  <p>[voyons], [voyons], [voyons]</p>
+               </sp>
+               <pb n="78" facs="naf_15810_078.jpg"/>
+               <fw>78. <del>95</del>.</fw>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Monsieur, <del>monsieur</del> ! une belle dame ! une Parisienne</p>
+               </sp>
+               <stage>Paul revient sur ses pas – &amp; au milieu de la foule qui
+                  s’empresse<lb/>autour d’elle, <del>avec</del>
+                  <add>[<del>illis.</del>]</add>
+                  <add>{avec</add>} de gdes marques d’etonnement &amp; de joie –<lb/>Jeanne
+                  apparaît, dans un elegant costume de voyage, – très<lb/>maquillée.</stage>
+            </div>
+            <div type="scene" n="5">
+               <head>V.</head>
+               <stage>Les Precedents, Jeanne</stage>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>ecartez-vous <del>donc</del>, drôles !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>quelle beauté !…</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>Allons, place, place !</p>
+               </sp>
+               <stage>(la foule fait <del>un</del> cercle)</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><del>Mais [illis.] je la connais</del></p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p><del>C’est singulier</del>… Je trouve qu’elle a un faux air… (riant tout a
+                     coup)<lb/>suis-je donc bête ! comme si c’était possible !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Je l’ai dejà vue… <del>quelque part</del>
+                     <add>où donc ?</add> ! ah, dans mes rêves… sans<lb/>doute ?</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(vivement)</stage>
+                  <p>Il ne <del>m’a pas reconnu – tant mieux</del> ! <add>me reconnait pas !
+                        bien.</add> D’autant plus <del>qu’il</del>
+                     <add>que</add><lb/><add>[illis.]</add> dans un pareil milieu</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>tu as meilleure chance de lui plaire, [<del>par le contraste</del>],
+                     certainement !<lb/>Mais n’oublie pas mes leçons. celles de là bas, comme les
+                           <add><del>&amp; celles que je [t’ai] donné</del></add> [<del>en
+                        route</del>]<lb/>autres – avance </p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(saluant timidement)</stage>
+                  <p>Madame…</p>
+                  <stage>(à part)</stage>
+                  <p>pr qu’un être <del>aussi</del>
+                     <add>[tellement]</add> merveilleux se<lb/>rencontre ici avec moi [illis.]
+                        <add>c’est</add> que le ciel [illis.] <add>sans doute l’a</add>
+                     voulu<lb/><lb/>serait-ce [<del>illis.</del>] <del>par hazard</del> ? <add>par
+                        hasard [<del>illis.</del>]…</add></p>
+               </sp>
+               <sp>
+                  <speaker><del>le groom</del></speaker>
+                  <p><del>Commence donc !</del></p>
+               </sp>
+               <pb n="79" facs="naf_15810_079.jpg"/>
+               <fw><del>96</del>. 79</fw>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(imitant les gestes du mannequin)</stage>
+                  <p>J’ai laissé en bas mon <del>[illis.] – &amp;</del> [<del>s</del>]/tous
+                        <add>landeau avec</add> tous mes gens. – <del>sans</del>
+                     <add>[illis.]</add> ceremonie, n’est ce pas ?<lb/><del>à la campagne, n’est-il
+                        pas vrai, on se passe de ceremonie ! Donc je vous souhaite<lb/>le bonjour,
+                        cher monsieur</del>, <add>à la campagne</add>
+                     <del>b</del>/Bonjour ! bonjour ! mon bon !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>Quelle familiarité ! c’est un indice, un signe ? <del>peut-être</del> ?
+                        <add>peut etre</add> [ <del>il faut que je [suive]</del> ]…<lb/></p>
+                  <stage>(haut)</stage>
+                  <p>oserai-je demander devant qui… </p>
+               </sp>
+               <sp>
+                  <speaker>le roi des gnomes-groom</speaker>
+                  <stage>(avec aplomb)</stage>
+                  <p>Nous sommes la veuve d’un major anglais, decedé dans les indes</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(avec un soupir pretentieux)</stage>
+                  <p>Helas !</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>et nous allons à la recherche de sa cendre, pr lui faire lever un monument</p>
+               </sp>
+               <sp>
+                  <speaker>[ <del>Paul</del></speaker>
+                  <p><del>Puisque vous pleurez un mort, madame</del></p>
+               </sp>
+               <sp>
+                  <speaker><del>Jeanne</del></speaker>
+                  <stage><del>(legerement)</del></stage>
+                  <p><del>[Il le faut]</del></p>
+               </sp>
+               <sp>
+                  <speaker><del>Dominique</del></speaker>
+                  <stage><del>(à part)</del></stage>
+                  <p><del>[illis.] ! ]</del></p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Comme j’ai connu moi-même ces douleurs, <add>madame</add> daignez recevoir – si
+                     inutile<lb/>qu’elle puisse être, l’assurance de ma sympathie</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Mais, certainement, je l’accepte ! Comment donc ? plus on est de fous<lb/>plus
+                     on rit.</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>cette gaité bizarre est p. m’eprouver <del>sans doute</del> ?
+                           <add><del>certainement</del></add> <add>{sans doute ?</add>}
+                        <del>[est-elle] cache<lb/>au contraire des choses <add>[illis.]</add> de
+                        sentiment</del>.</p>
+                  <stage>(ht)</stage>
+                  <p><del>Ah</del> ! <add>[<del>mais</del>]</add>
+                     <del>c’est p moi un</del><lb/>*quel* bonheur exquis que de rencontrer la vôtre
+                     dans l’absence de<lb/>toute affection, dans ce [illis.] affreux où je me
+                     trouve</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>De la tristesse, <add>hâ ! hâ ! hâ !</add> de l’elegie ? allons donc ! Je ne
+                     donne plus là dedans<lb/>moi – hâ hâ hâ</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <stage>(bas)</stage>
+                  <p>très bien !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part :)</stage>
+                  <p>se moque t-elle ? – &amp; cependant [ <del>la tendresse de</del>
+                     ] son<lb/>regard dement la froideur de ses paroles</p>
+                  <stage>(ht)</stage>
+                  <p>Oh non ! ne vous<lb/>calomniez pas ! Vous savez comme moi que rien au
+                     monde<pb n="80" facs="naf_15810_080.jpg"/><fw>80. <del>97</del>. <del>96</del>.</fw> ne vaut ces chimères là
+                     dont se moquent <add><del>raillent</del></add> les sots. – car plus
+                     eblouissante que la<lb/>richesse &amp; plus suave que toutes les joies,
+                           <add><del>planant</del></add> au dessus de la vie &amp;
+                     l’embellissant<lb/>d’un reflet d’or, il y a toujours, n’est-ce pas, quelque
+                     chose, <del>qui vous</del> une<lb/>esperance, presqu’une certitude qui vous
+                     attend, qui vous attire p. vous<lb/>emporter dans le ciel !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(naïvement, emue)</stage>
+                  <p>Je crois vous comprendre ? continuez !</p>
+               </sp>
+               <sp>
+                  <speaker><del>Paul</del> le groom</speaker>
+                  <stage>(bas)</stage>
+                  <p>Jeannette !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><del>[illis.] que</del>
+                     <add>[<del>illis.</del>]</add>
+                     <add>{Mais</add>} l’intervalle entre mon coeur &amp; cete felicité a,
+                     maintenant,<lb/>disparu.</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>et à mois aussi ! à moi aussi !</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>prends garde !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Ma vie entière, mes chagrins tout, s’effae, [ <del>[je ne sais plus
+                        rien]<lb/>[illis.] !</del> ] Ah ! regardez-moi, – encore. [
+                        <del>toujours</del>. ] En restant <del>là</del><lb/>sous vos yeux il me
+                     semble que j’avance &amp; que je me perds<lb/>dans les profondeurs de
+                     delices.</p>
+               </sp>
+               <sp>
+                  <speaker>le groom</speaker>
+                  <p>Souviens-toi, <del>donc</del>, malheureuse !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>et je voudrais vivre toujours ainsi, sans songer à rien autre chose [–]<lb/>sur
+                     la terre !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Cependant, mon ami, vos interets, vos capitaux</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Il s’agit bien d’argent &amp; des interets de la vie, quand nous avons
+                     là<lb/>devant nous &amp; comme posé par Dieu même p. être le berceau
+                     de<lb/>notre amour, tout <del>cet</del>
+                     <add>ce splendide</add> horizon <del>splendide</del> avec la majesté
+                     des<lb/>arbres, l’harmonie des [<del>illis</del>.]
+                        <add>[<del>grâces</del>]</add>
+                     <add>{eaux</add>}, le gd parfum des fleurs, la<lb/>nature immense <del>[illis.]
+                        intense</del> qui nous entoure.</p>
+               </sp>
+               <pb n="81" facs="naf_15810_081.jpg"/>
+               <fw><del>9</del>81.</fw>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Certainement ! c’est très beau, très joli ! – Mais
+                     <add>cependant</add> permettez, – si l’on reculait<lb/>ce rocher &amp; que l’on
+                     fit avancer ce gros arbre, en abaissant cette<lb/>colline, avec une route au
+                     milieu pour egager le paysage – qui a<lb/>du cachet, je vous l’accorde – on
+                     aurait <del>là</del> un point de vue –<lb/>veritablement digne d’etude pr un
+                     artiste</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>eh ! laissez là vos beaux-arts !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(<add>etonnée :</add> au roi des gnomes)</stage>
+                  <p>Comment ? il n’aime pas les arts ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>ah ! songeons plutot au bonheur d<del>’y</del>/e passer <add>{ici</add>}
+                        <del>ensemble</del>
+                     <add><del>d’y [vivre] ensemble</del></add> tous nos jours</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Dans un petit chalet, <del>n’est ce pas ?</del></p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>un chalet, soit !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>et avec un piano ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>Ah ! elle est trop bête !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>un bon piano ! tenez j’en ai un, <del>la</del> !</p>
+               </sp>
+               <stage>(on pousse vivement un piano qui se trouve<lb/>parmis ses bagages</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>misericorde, jusqu’ici !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p><del>Ah</del> ! <del>il faut que vous m’ecoutiez</del> ! <add>un air varié ?
+                        voulez vous ?</add>
+                     <del>vous allez voir comme c’est<lb/>poetique – &amp; puis</del> je me sens
+                     exaltée, en partie par<lb/>la vue de ce spectacle grandiose </p>
+               </sp>
+               <stage>(à peine a-t-elle preludé que la voix<lb/>des Pasteurs s’elève)</stage>
+               <pb n="82" facs="naf_15810_082.jpg"/>
+               <fw>82 <del>99</del></fw>
+               <sp>
+                  <speaker>les Pasteurs</speaker>
+                  <stage>(chant)</stage>
+                  <p>« Il est temps de descendre dans les plaines ! | Poussez, ô frères, vos
+                     troupeaux.</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Qu’est-ce donc ? [<del>illis.</del>]</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>ecoutez ! ecoutez !</p>
+               </sp>
+               <sp>
+                  <speaker>les Pasteurs</speaker>
+                  <stage>(chant)</stage>
+                  <p>*Poussez* « Les chemins sont trop etroits p. eux. – Ils se pressent aux flancs,
+                     leurs cornes<lb/>s’entrechoquent – &amp; le battement de leurs cent mille pieds
+                     fourchus<lb/>ressemble au pas d’une armée qui s’avance pendant la nuit.<lb/>Ils
+                     vont ensuite se repandre tout à l’aise – &amp; l’on verra les<lb/>buffles, de
+                     place en place, dans les herbes, comme des roches noires dans<lb/>un ocean
+                     vert.<lb/>Les avez-vous comptés ? – prends garde, ô pasteur, d’en perdre
+                     un<lb/>seul ! – monte sur la roche, allonge ta vue ; c’est jusque là bas
+                     qu’il<lb/>les faut conduire !<lb/>[ Là bas, p. qu’ils boivent à l’heure de
+                     midi ! – Ils secouent leurs oreilles<lb/>sous les moucherons qui bourdonnent –
+                     &amp; enfouis dans la vase<lb/>au bord de la fontaine, les taureaux avec leur
+                     salive d’argent<lb/>ont l’air pensifs comme un conseil de vieillards, à barbe
+                     blanche » ]</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Mais c’est epouvantable la musique de ces sauvages-là !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Ah, <add>moi</add> j’y trouve, moi comme un large coup de vent, &amp;
+                     qui<lb/>m’apporte l’emanation d’une vie robuste, patriarchale
+                     &amp;<lb/>libre !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>C’est trop de boeuf ! trop de boucherie ! [<del>illis.</del>] <add>Fi</add>
+                     donc ! J’ai<lb/>tout un abattoir dans la tête !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>decidement, elle est stupide !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Admirez ceci plutôt, tenez !</p>
+               </sp>
+               <stage>(elle chante</stage>
+               <pb n="83" facs="naf_15810_083.jpg"/>
+               <fw><del>100</del>. 83.</fw>
+               <stage>Romance</stage>
+               <note>1er couplet poetico sentimental.</note>
+               <p>ce que j’aime c’est la cloche du soir.<lb/>la petite fleur sous l’herbe – le bon
+                  pauvre au galbe<lb/>evangelique – le bruit de la ferme &amp; ses gais
+                     [<del>illis.</del>]<lb/>les faneuses. (un peu de paysage, [illis.])<lb/>Mais ce
+                  que j’adore, c’est ma <del>bonne</del>
+                  <add>mère</add>, ma bonne mère</p>
+               <note>2e couplet plus folatre.</note>
+               <p>J’aime la valse legère – les liserons à ma fenêtre,<lb/>les rubans, les bonbons,
+                  le Bois, l’opera, mon canaris, mon<lb/>petit poney. – les bains de mer. le
+                  printemps<lb/>Mais ce que j’adore, c’est ma mère, ma bonne mère</p>
+               <note>3e couplet, ideal entier.</note>
+               <p>J’aime l’escarpolette. des cygnes sur le lac – la nacelle –<lb/>les bosquets –
+                  qque chose de calme, de fleuri, &amp; de plat<lb/>comme mon coeur. Assis dans le
+                  kiosque au bord de la<lb/>route, je le vois venir, le long des caisses
+                  d’oranger<lb/>celui que j’idolâtre, le jeune militaire ! »</p>
+               <stage>Pendant que Jeanne chantait, et à mesure que la Romance devenait
+                  plus<lb/>intense de vulgarité, peu à peu le paysage s’est amoindri<del>.</del>/,
+                  Les montagnes se sont<lb/>abaissés, les arbres se sont taillés d’eux-mêmes &amp;
+                  sur les pentes des rochers ont<lb/>paru de petits chemins avec du sable jaune – le
+                  tout de façon à reproduire<lb/>un jardin à la française des environs de
+                  Paris.<lb/>Paul, auprès du piano, reste la tête basse)</stage>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Comment vous ne trouvez pas cela gentil ? [ <del>Mais les jeunes personnes
+                        le<lb/>chantent [illis.] <add>aux grossiers</add>, dans les diners de
+                        ceremonie, avant le mariage</del>.</p>
+                  <stage>(Paul toujours muet la considère d’un air<lb/>lamentable) ]</stage>
+                  <p><del>Vous n’avez peut être</del>
+                     <add><del>Preferez vous [illis.]</del></add> une chansonnette comique ? – avec
+                     beaucoup<lb/>de paroles, entre les couplets ? Je sais faire les
+                     imitations !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(douloureusement)</stage>
+                  <p>Oh non ! non ! </p>
+                  <stage>(en se detournant il/aperçoit le paysage nouveau &amp; s’ecrit)</stage>
+                  <p>horrible !</p>
+               </sp>
+               <pb n="84" facs="naf_15810_084.jpg"/>
+               <fw>84. <del>10[illis.]</del>.</fw>
+               <sp>
+                  <speaker>les Pasteurs</speaker>
+                  <stage>(chant)</stage>
+                  <p>« Adieu – adieu – adieu</p>
+                  <stage>(trois appels de cor)</stage>
+                  <p>Nous partons p. ne plus revenir. [ La terre est epuisée. Allons chercher
+                     ailleurs<lb/>notre vie. ] // Mais le voyage est long ! &amp; voilà l’hiver !
+                     Devant nous les pluies, la<lb/>tristesse &amp; l’inconnu.<lb/>Femmes, tirez par
+                     le bras votre enfant qui marche en pleurant –<lb/>[ <del>Mugissez ô boeufs !
+                        agneaux, bêlez !</del> ]<lb/>adieu ! adieu ! adieu !</p>
+                  <stage>(cor)</stage>
+                  <p>Ils periront en voyage, les agneaux trop jeunes &amp; aussi les beliers
+                     trop<lb/>vieux ! – Derrière nous, des ossements blanchiront. Le gd troupeau
+                     diminuera<lb/>&amp; de toute la race, plus un <del>seul</del> seul – rien que
+                     des traces de sandales<lb/>effacées bientot par le vent ! –<lb/>repoussez sur
+                     nous herbes des prairies<lb/>Adieu ! adieu ! adieu !</p>
+                  <stage>(cor) »</stage>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Ah ! enfin ! disparus ! <del>quel bonheur</del>. <add><del>Dieu soit
+                        loué</del> ! car avec leur peaux de bete &amp;</add>
+                     <add>{quel</add>} leur parfum d’etable ils vous<lb/>soulevent leur coeur </p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><del>ils etaient beaux</del>, cependant !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Avec leurs peaux de bête <add>&amp;</add> leur parfum d’etable &amp; <del>leurs
+                        james nues</del>
+                     <add>ils vous soulevent le<lb/>coeur</add><lb/><del>allons donc</del> ! &amp;
+                     les femmes, <add>donc</add> pas même ce piquant, cette gentillesse<lb/>que l’on
+                     trouve à present dans les campagnes</p>
+               </sp>
+               <sp>
+                  <speaker>Paul.</speaker>
+                  <p>Mais comment donc, au nom du ciel, voulez-vous qu’ils soient !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Agreables ! – c’est bien simple</p>
+               </sp>
+               <stage>(Aussitot, arrivent en trottinant deux bandes de<lb/>paysans-rococo. bergers
+                  &amp; bergères, avec des rubans<lb/>à leur chapeau, des culottes jaunes, des
+                     <del>corsages</del>
+                  <add>vestes</add><lb/><del>jaunes</del>
+                  <add>roses</add>, des paniers de fleurs au bras, &amp; des<lb/>houlettes<lb/>ils
+                  chantent</stage>
+               <pb n="85" facs="naf_15810_085.jpg"/>
+               <fw><del>102</del>. 85.</fw>
+            </div>
+            <div type="scene" n="6">
+               <head>VI.</head>
+               <stage>Paul, Dominique, le roi des gnomes en groom –<lb/>Jeanne. les
+                  Bergers-rococo.</stage>
+               <sp>
+                  <speaker>Choeur des bergers.</speaker>
+                  <p>Honneur à notre chatelaine<lb/>qui vient de nous tirer de peine<lb/>en
+                     bannissant tous ces [<del>illis</del>.] <add>[lourdaus]</add><lb/>tous ces
+                     vilains tous rustauds<lb/>………<lb/>leurs mines… leur… <del>ah</del>
+                     <add>quel</add> l’horreur<lb/>Mais du fard, du… quel bonheur</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Oui ! oui ! voilà mon rêve ! charmant, exquis, enchanteur ! C’est<lb/>Watteau,
+                     Pompadour, bois de rose, talon rouge &amp; Regence !</p>
+               </sp>
+               <sp>
+                  <speaker>le Bailli</speaker>
+                  <stage>, (habit noir à la française, perruque à marteau)</stage>
+                  <p>Moi le bailli de ce village<lb/>J<del>e</del>/’ai [<del>vien</del>] l’honneur
+                     de vous presenter cet essaim de fillettes<lb/>ces jouvencaux coquets, ces
+                     moutons frisés, tous decents, jolis<lb/>incapables d’invoncenances, sages comme
+                     des images &amp; qui<lb/>vont danser p. vous rejouir.</p>
+               </sp>
+               <stage>Ballet.</stage>
+               <stage>Qques uns des bergers deposent <del>[par] terre</del>, ça &amp; là sur la
+                  gazon <add>fleuri</add>
+                  <del>[illis.] en fleurs</del><lb/>des moutons avec des faveurs roses au col
+                     <add>&amp; qu’(ils avaient apportés dans leur [illis.]) après quoi</add>
+                  [illis.] ils se mettent <add>{tous à les garder en cadence</add>} <del>à danser a
+                     (illis.]</del>,<lb/><add>*pendant que dans le [illis.]*</add><del>tandis
+                     qu’au</del> fond les Bergères <del>[illis.] bergers</del> en haie
+                        <add>[<del>illis</del>.] rangées</add> <add>{[<del>illis</del>.]
+                     languissent</add>}<lb/>Rose poursuit Colas <del>qui</del>
+                  <add>lequel</add> se derobe. Mais un petit Amour apparait –<lb/>&amp; lance sa
+                     <add>une</add> flèche à Colas qui <add>immediatement</add> court après
+                  Rose.<lb/>les Bergers poursuivent les Bergères. <del>frappées</del>
+                  <add>atteintes</add> par les flèches de l’amour<lb/>*bientot* elles se laissent
+                     <del>bientot</del> attraper, &amp; [<del>illis.</del>] <add>se
+                     rejouissent</add> au bras des bergers.<lb/>L’amour en larde tous les moutons
+                  qui bêlent. <add>de douleur</add> Puis furieux de<lb/>voir Paul <del>[illis.]
+                     immobile</del>
+                  <add>insensible</add>, il lui en decoche <del>plusieurs</del>
+                  <add>qques unes</add> qui<lb/>tombent à ses pieds. Les Bergers &amp; les Bergères
+                  le veulent<lb/>entrainer dans leur danse. Il se debat contre eux, &amp;
+                  parvient<lb/>à s’echapper.</stage>
+               <pb n="86" facs="naf_15810_086.jpg"/>
+               <fw><del>10[illis.]</del> 86.</fw>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>s’en allant</stage>
+                  <p>Laissez-moi !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Reviens ! reviens ! aimons-nous !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Pas de cette façon-là, toujours</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>ecoute-moi</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><add>non –</add> Jamais ! <del>jamais</del> ! <stage>(il disparait par le côté
+                        gauche &amp; crie dans la<lb/>coulisse.)</stage>
+                     [<del>d</del>]/Dominique !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(qui s’est remis depuis le milieu de la scène V <add>precedente</add> à
+                     boire<lb/>&amp; à manger, sur le tapis, &amp; qui n’a cessé de s’empifrer<lb/>à
+                     l’ecart, <del>sim</del> tranquillement, se lève en sursaut)</stage>
+                  <p>On y va – <del>si je finissais</del> [<del>illis</del>.]/et le paté)
+                        <del>d</del>/qui n’est pas fini !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(au loin)</stage>
+                  <p>Dominique !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(debout – au milieu de la scène – sur le devant)</stage>
+                  <p><del>Oui</del>, monsieur ! – Ah c’est dommage ! – <del>que faire</del> ? L’un
+                     me retient, l’autre<lb/>m’appelle – le devoir par ici, le plaisir par là ! –
+                     Ah ! mon Dieu !</p>
+                  <stage>(d’une des bouteilles de vin sort un enorme tire-bouchon qui le
+                     happe<lb/>dans le dos &amp; le tire du coté droit tandis que la poignée courbe
+                     de la<lb/>canne de Paul – que [<del>illis</del>.]/Paul <add>en s’en
+                        allant</add> portait sur son epaule, en s’en allant –<lb/>s’allong, lui fait
+                     comme un carcan &amp; le tire à gauche)</stage>
+                  <p><del>par où aller</del> ? <add>lequel suivre</add></p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(encore plus loin)</stage>
+                  <p>Dominique.</p>
+               </sp>
+               <stage>(un coup sec de la canne l’entraine)</stage>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(cedant au mouvement)</stage>
+                  <p>oui – soyons vertueux !</p>
+               </sp>
+            </div>
+            <div type="scene" n="7">
+               <head>VII.</head>
+               <stage>Les Precedents, moins Paul &amp; Dominique</stage>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>, (atterée, les bras pendants &amp; serrant ses mains considère<lb/>le roi
+                     des gnomes auprès d’elle)</stage>
+                  <p>Eh bien ?… Eh bien ?</p>
+               </sp>
+               <pb n="87" facs="naf_15810_087.jpg"/>
+               <fw><del>104</del> 87</fw>
+               <sp>
+                  <speaker>Le bailli</speaker>
+                  <stage>(s’avance d’un air discret</stage>
+                  <p><del>Qu’y a t-il ?</del>
+                     <add>Qu’avez-vous ?</add></p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(eclate en sanglots en s’appuyant sur l’epaule du Roi <add>groom</add>
+                     qui<lb/>la soutient)</stage>
+                  <p>Ah ! Je suis horriblement malheureuse !</p>
+               </sp>
+               <sp>
+                  <speaker>Les Bergers</speaker>
+                  <stage>, (lui disent en deux vers <add>{chantés</add>})</stage>
+                  <p>Pour dissiper votre tristesse<lb/>nous allons recommencer nos folichonneries
+                  </p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(les regarde qq temps sans comprendre, puis tout a
+                     coup<lb/>s’ecrie)</stage>
+                  <p>Miserables ! c’est vous qui en êtes la cause ! avec vos fadeurs
+                     imbecilles !<lb/>[ <del>vous n’etes qu’illusion, mensonge, badineries &amp;
+                        sottises.</del> ] moi-même j’ai<lb/>gardé les dindons, peigné le chanvre
+                     &amp; fait la litière aux vaches, je<lb/>connais la campagne ! Elle a plus de
+                     sueurs que de parfums &amp; moins<lb/>de roses que de fumier ! Allez-vous en !
+                        <del>arrière pompoms</del>, <add>illusions</add> bergers,<lb/>bourquets
+                     &amp; musettes ! Je hais tout cela ! non ! non ! plus de tout<lb/>cela !</p>
+                  <stage>(de fureur, elle dechire ses vêtements) </stage>
+                  <p>où est-il ? Je veux<lb/><del>le revoir</del> ! lui dire que je le trompais !
+                     Paul, <del>Paul</del>
+                     <add>[illis.]</add></p>
+                  <stage>(elle court de coté &amp; d’autre, les vêtements en lambeaux,
+                     echevelée<lb/>eperdue, haletante, renversant tout devant elle, les
+                     bergers<lb/>s’enfuient)</stage>
+                  <p>attends-moi ! – reponds <del>donc</del> ! Je vais venir ! – me vois-tu ? –
+                     ecoute !<lb/>Paul</p>
+                  <stage>(elle revient sur le devant de la scène, près du Roi)</stage>
+                  <p>Ah enfui ! – Je l’ai perdu p. toujours !</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Par ta faute ! tu t’y es mal prise !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(vivement)</stage>
+                  <p>oui, n’est-ce pas ? J’aurais dû me nommer</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p><del>Mais</del>
+                     <add>Mais</add> tu en serais morte, l’oublies-tu ?</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Ah ! – <del>Mais</del>
+                     <add>Mais</add> que fallait-il donc faire ? car il m’a pris
+                        en<lb/><del>[degout] [illis.] horreur</del> ! – &amp; c’est moi-même
+                           <add><del>moi</del></add>, <del>par ma sottise</del>, qui
+                     l’ai<lb/>chassé ! Plutôt que de me contraindre dans tout ce factice
+                     qui<lb/>m’etouffait le coeur, j’aurais [<del>a</del>]/dû lui parler
+                     simplement<pb n="88" facs="naf_15810_088.jpg"/><fw>88. <del>105</del></fw> et ne pas l’etourdir par <del>un
+                        etalage d’elegance [illis.]</del> ! <add>le [caquet] de mes elegances
+                        ineptes</add> – <del>ici</del>/Si j’avais été<lb/>une autre, je lui aurais
+                     plu, peut être ? Il lui faudrait donc qqu’un avec<lb/>moins de fard.
+                        [<del>illis</del>.] <add>sur</add> à la joue, moins de [<del>illis</del>.]
+                        <add>sottises</add> aux lèvres <del>&amp;</del>
+                     <add><del>moins</del></add>
+                     <add>{&amp;</add>}} de<lb/>singeries dans les [<del>illis</del>.]
+                           <add>[<del>illis.</del>]</add>
+                     <add>mani[è]res</add>
+                     <add>{<del>façons</del></add>} – une femme <del>de conduite ordinaire,
+                        d’honneur</del><add>{<del>ordinaire</del></add>}<lb/><del>domestique
+                        – &amp;</del> qui le <del>prendrait</del>
+                     <add>gagnerait</add> par la modestie de sa tendresse <del>&amp;
+                        la<lb/>régularité de ses prevenances</del> ] – une bonne epouse – une
+                     simple<lb/>bourgeoise.</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>tu veux en être une ?</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>est-ce qu’il m’aimerait, alors ?</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Je le pense !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p><del>Mais</del> comment le devenir ?</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Oh ! cela est facile !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Fais le donc !</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>tu l’exiges ?</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Oui ! oui ! oui ! – <del>Mais</del> où le trouver ?</p>
+               </sp>
+               <sp>
+                  <speaker>le roi</speaker>
+                  <stage>(<del>lui</del>
+                     <add><del>l’entrainant [par]</del></add>
+                     <add>{lui</add>} prenant la main avec autorité)</stage>
+                  <p>viens – par là – Suis-moi !</p>
+               </sp>
+               <pb n="89" facs="naf_15810_089.jpg"/>
+               <fw>89.<del>106</del></fw>
+            </div>
+         </div>
+         <div type="act" n="7">
+            <head>VII<del>I</del>.<lb/>Le Royaume du Pot-au-Feu</head>
+            <stage>Le theatre represente la place de ville, en hemicycle. Toutes les rues y
+               aboutissent de<lb/>façon que l’on peut apercevoir d’un seul coup d’œil la ville
+               entière. Les maisons<lb/>toutes pareilles &amp; d’une architecture pitoyable, à
+               facade nue, sont peintes <del>de</del>
+               <add>en</add> couleurs<lb/>chocolat avec des rechampis blancs. Au milieu de la place,
+               porté par un trepied &amp;<lb/>sur des charbons embrasés bouillonne un gigantesque
+               pot au feu.<lb/>Autour du Pot au feu <del>sont</del>
+               <add>il y a</add> rangés <add>les [illis.]</add> des fauteuils de bureau en acajou,
+               dans lesquels [croix en interligne] se<lb/>tiennent assis les Epiciers, tous en
+               serpillère &amp; en casquette de loutre. Derrière eux<lb/>des deux côtés dela scène,
+               debout les differentes corporations <add>delaville</add> portant des bannières,
+                  <del>sur</del>
+               <add>où</add><lb/><del>lesquelles sont ecrites</del>
+               <add>l’on voit ecrit</add>. <hi rend="u">Bureaucratie</hi>, <hi rend="u">Science</hi>,
+                  <hi rend="u">litterature</hi> etc. Les savants ont des<lb/>toques &amp; des abat-jour
+               verts, les Litterateurs un [illis.] &amp; un encrier passé en<lb/>bandoulière sur la
+               hanche, les Bureaucrates des bouts de manche de percale noire<lb/>avec une plume de
+               fer à l’oreille. Tous les citoyens portent la barbe en collier<lb/>et ont (à
+               l’exception des Epiciers) des redingottes à la proprietaire &amp; des chapeaux<lb/>–
+               tromblou sur la tête.<lb/>Le gd-pontife, au milieu de la scène, derrière le Pot-aufeu
+                  <del>e</del> faisant face<lb/>au spectateur, <add>&amp; monté sur un
+                  escabeau</add> depasse la multitude. Des deux côtés sur le devant un groupe
+               de<lb/>– collegiens ornés <add>[illis.]</add> de Rhepis joue de l’accordeon. Aux
+               fenêtres des maisons, ily a des<lb/>femmes à bonnets [illis.] &amp; en robe de laine
+                  <del>br</del> brune, sur les toits à tuiles rouges<lb/>des chats. Au delà un ciel
+               gris.</stage>
+            <div type="scene" n="1">
+               <head>I.</head>
+               <stage>La toile se lève aux sons melancoliques des accordeons joués par
+                  les<lb/>collegiens - &amp; qui se prolongent qque temps encore après qu’elle
+                  est<lb/>entièrement levée.<lb/>Puis il se fait un silence – on entend bouillonner
+                  le Pot au feu, tout<lb/>doucement et enfin le gd Pontife commence</stage>
+               <sp>
+                  <speaker>Le gd Pontife</speaker>
+                  <stage>, (un ecumoir à la main)</stage>
+                  <p>Citoyens, Bourgeois, Croutons !<lb/></p>
+                  <p>En ce jour solennel où nous sommes reunis pr adorer le trois fois<lb/>Saint Pot
+                     au feu, emblème des interets materiels, c’est à dire <add>[illis.] autrement
+                        dit</add> des plus chers ! -<lb/>si bien <del>qu’il a [illis.]</del>,
+                        <add>que</add> grâce à vous, <del>mieux</del>
+                     <add>le voilà maintenant, mieux qu’une [illis.]</add> qu’un Divité !
+                        [<del>illis.</del>] <add>{[<del>illis</del>.]</add>}
+                     <add>{[<del>illis</del>.] !</add>}<pb n="90" facs="naf_15810_090.jpg"/><fw>90 <del>107</del>.</fw> *C’est à
+                        <del>moi</del>* moi – le gd-pontife de ce culte <del>sage, [illis.]</del>
+                     <add><del>honnete</del> qu’il incombe de</add>
+                     <add>{sage</add>}<lb/>[<del>illis.</del>] vous rememorer vos devoirs &amp; de
+                     vous ralier tous<lb/><del>plus etroitement</del>, par un autre commun à la
+                     veneration, à l’amour<lb/>à la frenesie du Pot-au feu !</p>
+                  <p>Vos devoirs, ô Bourgeois, nul d’entre vous (je le [<del>recommande</del>]
+                        <add>declare</add>) n’y a<lb/>transgrossé ! Vous vous êtes tenus,
+                     philosophiquement, dans vos maisons,<lb/>ne pensant qu’à vos affaires, à
+                     vous-mêmes seulement, [ [<del>illis</del>.]<lb/><del>dans la ville, p. ne rien
+                        entendre de [illis.] messieurs ! [illis.]<lb/>conduites falacieuses plus
+                        sages</del> – ] &amp; vous vous êtes bien gardés delever jamais<lb/>les yeux
+                     vers les etoiles, sachant que c’est le moyen de tomber dans<lb/>les puits.
+                     Continuez votre petit bonhomme de chemin, qui vous<lb/>menera au repos, à la
+                     richesse &amp; à la consideration ! Ne manquez<lb/><del>pas</del>
+                     <add>point</add> de haïr ce qui est <del>desinteressé</del>, exorbitant ou
+                     heroïque, – pas<lb/>d’enthousiasme surtout ! – &amp; ne changez rien à quoique
+                     ce soit, ni à<lb/>vos idées, ni à vos redingottes ; car le bonheur particulier
+                     comme le<lb/>public ne se trouve que dans la moderativre de
+                     l’intelligence,<lb/>l’immutabilité des usages - &amp; le glouglou du pot
+                     aufeu !</p>
+                  <stage><add>une salve</add> d’(accordeons)</stage>
+                  <p>À vous d’abord, colonnes de la patrie, exemples du commerce, base de
+                     la<lb/>moralité, protecteurs des Arts, Epiciers !</p>
+                  <stage>(les Epiciers se lèvent)</stage>
+                  <p>Jurez-vous de toujours mettre dela chicorée dans le café ?</p>
+               </sp>
+               <sp>
+                  <speaker>Les Epiciers</speaker>
+                  <stage>(en choeur)</stage>
+                  <p>Oui !</p>
+               </sp>
+               <sp>
+                  <speaker>Le gd-Pontife</speaker>
+                  <p>Et de ne<del> pas</del>
+                     <add><del>jamais</del></add>
+                     <add>pas</add>quitter le comptoir, sauf bien entendu, p. venir sur
+                     votre<lb/>seuil, indiquer aux badauds la route qu’il <add>x</add> faut suivre –
+                     enfin de<lb/>vous infusionner dans le monde par toutes sortes de moyens,
+                        <add>alliance &amp;</add>
+                     <del>de</del><lb/><add>propagandes</add>
+                     <add><del>force</del></add> de manière à faire prevaloir vos principes – &amp;
+                     à demeurer ce que<lb/>vous êtes, [<del>illis</del>.]
+                        <add>[<del>illis</del>.]</add> les dominateurs universels !</p>
+               </sp>
+               <sp>
+                  <speaker>Tous les Epiciers</speaker>
+                  <stage>(debout la main etendue vers le Pot au feu)</stage>
+                  <p>Nous le jurons !</p>
+               </sp>
+               <sp>
+                  <speaker>Le gd Pontife</speaker>
+                  <p>Et vous Bureaucrates,</p>
+               </sp>
+               <sp>
+                  <speaker>Les Bureaucrates</speaker>
+                  <p>Presents !</p>
+               </sp>
+               <pb n="91" facs="naf_15810_091.jpg"/>
+               <fw>91. <del>108</del></fw>
+               <sp>
+                  <speaker>le gd-Pontife</speaker>
+                  <p>Etes-vous bien resolus à travailler toujours le moins possible, en ne
+                     songeant<lb/>toujours qu’à votre avancement ?</p>
+               </sp>
+               <sp>
+                  <speaker>les Bureaucrates</speaker>
+                  <p>Oh, oui !</p>
+               </sp>
+               <sp>
+                  <speaker>Le gd Pontife</speaker>
+                  <p>Jurez-vous [ [<del>illis</del>.] ]<lb/>de toujours brûler [<del>illis.</del>]
+                        <add>effroyablement</add> de bois dans vos poëles, de vous montrer<lb/>–
+                     incivils, de maudire vos chats en vous plaignant de l’existence, &amp; de
+                     depenser<lb/>pour cent ecus d’ecritures dans une affaire de vingt-cinq centimes
+                     dont vous<lb/>ferez attendre la solution pendant quinze ans !</p>
+               </sp>
+               <sp>
+                  <speaker>les Bureaucrates</speaker>
+                  <p>Nous le jurons !</p>
+               </sp>
+               <sp>
+                  <speaker>le gd-Pontife</speaker>
+                  <p>MM les Savants, lumières du pays, à votre tour</p>
+                  <stage>(les Savants se presentent à demi courbés, avec un tremblement
+                        <add>mots</add> -<lb/>- d’un ton familier :) <add>{à [dessin]</add>}</stage>
+                  <p>Vous vous engagez, n’est-ce pas, comme par le passé, à ne<lb/>faire que des
+                     petites recherches innocentes, qui ne troublent rien ? </p>
+               </sp>
+               <sp>
+                  <speaker>Tous les Savants</speaker>
+                  <stage>(levant les mains)</stage>
+                  <p>Oui ! oui ! n’ayez pas peur ! nous le jurons</p>
+               </sp>
+               <sp>
+                  <speaker>le gd Pontife</speaker>
+                  <p><del>Cela suffit</del>
+                     <add><del>[illis.]</del></add>
+                     <add>Cela suffit !</add>. – Venez maintenant, vous, talons <del>agreables</del>
+                     <add>honnêtes</add> qui charmez nos<lb/>soirées de famille. L’art etant fait p.
+                     recreer, vous <add>nous</add> [recreez]. allons !</p>
+               </sp>
+               <sp>
+                  <speaker>les Poëtes-Comiques</speaker>
+                  <stage>, etendent tous la main vers le Pot aufeu, enfaisant</stage>
+                  <p>Cocorico !</p>
+               </sp>
+               <stage>(ricanements idiots dans l’assemblée)</stage>
+               <sp>
+                  <speaker>le gd Pontife</speaker>
+                  <stage>(souriant , – aux Epiciers qui l’entourent)</stage>
+                  <p>Encore un peu d’excentricité dans la forme ! Mais les intentions sont
+                     si<lb/>pures ! <stage>(il frappe avec son ecumoir sur le Pot au feu p. reclamer
+                        l’attention)</stage><lb/>Un dernier mot, Messieurs, à la jeunesse, au
+                     printemps de la vie !</p>
+                  <stage>(sur un signe qu’il leur fait, les collegiens s’avancent avec
+                     leurs<lb/>accordeons sous le bras)<lb/></stage>
+                  <p>Approchez, ephèbes, approchez !<pb n="92" facs="naf_15810_092.jpg"/><fw>92. <del>109</del>.</fw> Jeunes gens,
+                        <add>notre.</add> espoir, <del>du [illis.]</del>,<lb/>Vous allez entrer dans
+                     l’âge des passions ! Prenez garde ! c’est comme si vous penetriez<lb/>dans une
+                     poudrière ; la moindre etincelle tombant sur vos cerveaux peut faire<lb/>sauter
+                     l’edifice ! On a eu soin<del>, je le sais,</del> d’ecarter de vous toutes les
+                     torches <del>incendiaires</del>
+                     <add>je le sais</add><lb/>n’importe ! <del>il faut toujours</del>
+                     <add>[<del>illis</del>.]</add>
+                     <add>{il n’en faut moins</add>} de defier des ardeurs du sang &amp; de
+                        <del>l’enfance</del>
+                     <add>[illis.]</add> [illis.] ne<lb/><del>causent</del>
+                     <add>produisent</add> que des crimes &amp; des folies ! – ou plutôt, utilisez
+                     vos vices ! employez<lb/>profitablement vos mauvais instincts ! que ceux, par
+                     exemple, qui savent gagner<lb/>au jeu rapportent leur argent à la maison &amp;
+                     qu’ils le placent ! Amusez-vous en<lb/>cachette, <del>[illis.]</del>,
+                     economiquement, prenez un bon etat &amp; ne rentrez <del>point</del>
+                     <add>{jamais</add>}<lb/>passé dix heures du soir. Voilà le secret. Jurez-vous
+                     de l’observer ? </p>
+               </sp>
+               <sp>
+                  <speaker>les collegiens</speaker>
+                  <p>Nous le jurons !</p>
+               </sp>
+               <stage>(ils retournent à leur place.)</stage>
+               <sp>
+                  <speaker>le gd Pontife</speaker>
+                  <p>Je suis emu, MM ! tant de raison dans cet âge precoce m’a touché, &amp; la
+                     fête<lb/>n’etait pas terminée je succomberais à mon emotion. Elle est terminée,
+                     car<lb/>il n’est <del>pas</del>
+                     <add><del>nul</del></add>
+                     <add>{pas</add>} besoin de vous demander de sermant, à vous</p>
+                  <stage>(il s’adresse aux femmes qui sont aux fenêtres)</stage>
+                  <p>Gardiennes <del>[</del> &amp; cause <del>]</del> de notre felicité, epouses,
+                     menagères, petites mamans pot<lb/>au feu ! C’est par vos soins qu’il mijotte !
+                        [<del>Ainsi</del>] <add>donc</add>perseverez dans vos
+                     deux<lb/>preoccupations <del>adorées</del>
+                     <add>cheries</add> p raccomoder les chaussettes de vos legitimes
+                        <add>&amp;</add> [<del>illis.</del>] <add>etre</add><lb/>[<del>illis.</del>]
+                        <add>toujours en garde contre les</add> seductions de <del>l’amour</del>
+                     <add>{[illis.]</add>}. Ne songez même qu’à cela,
+                     incessamment,<lb/>exclusivement, <add>Bref : [</add>
+                     <del>– &amp; [illis.]<lb/>[illis.] on vous tiendra quitte de</del> toutes les
+                     autres. Bref, ]<lb/>n’oubliez <del>pas</del>
+                     <add>point</add>que l’attitude <del>la plus naturelle &amp;</del> la plus belle
+                        [<del>illis.</del>]<lb/>p. une femme, sa position ideale, <del>si je
+                        puis</del> si j’ose m’exprimer // ainsi, est de se tenir quelque peu
+                     agenouillée, avec un ecumoir à la<lb/>main, un <del>bas</del> bas de laine
+                     passé dans le bras gauche, tournant le dos à<lb/>Cupidon &amp; la tête perdue
+                     dans la vapeur du Pot au feu.<lb/>Et vous, chats, <del>gracieux</del>
+                     <add>inconstants</add> quadrupèdes, Bohemiens des toits, vous êtes<lb/>sommés
+                     d’avoir à l’avenir des moeurs plus honnêtes. Si vous<lb/>n’employez pas
+                        <del>tout</del>
+                     <add>tout</add>votre temps &amp; la force de votre gueule à prendre<lb/>des
+                     souris, on vous mettra des musolières &amp; l’on vous empalera avec<lb/>la
+                     broche, puisque la nature vous a créer p. <add>nous</add> être utiles. –
+                        [<del>illis.</del>] <add>[mais que si]</add><lb/>vous devenez sedentaires
+                     &amp; zelés <del>p. notre service</del>
+                     <add>à nous servir</add> on vous laissera,<lb/>au fond de
+                     l’assiette,<pb n="93" facs="naf_15810_093.jpg"/><fw>93. <del>110</del></fw> Quelques gouttes froides du pot
+                     au feu !<lb/>Et toi, Soleil, puisses-tu brillant toujours moderement te
+                        <del>changer</del>
+                     <add><del>devenir</del></add>
+                     <add>{transfomer</add>} en un<lb/>vaste paquet de chandelles <del>p. nous
+                        eclairer la nuit</del>
+                     <add>p. nous economiser nos l’eclairages</add> – &amp; que tes rayons,
+                     alors,<lb/>fassent tomber dans le creux de la <add>des</add> mer une pluie de
+                     graisse, afin que<lb/>se chauffant à ta tiedeur, tout le globe entier ne soit
+                     plus qu’un immense<lb/>Pot au feu.</p>
+               </sp>
+               <sp>
+                  <speaker>Tous</speaker>
+                  <stage>(crient)</stage>
+                  <p>Vive le-Pot-au feu !</p>
+               </sp>
+               <stage>(en retirant leurs chapeaux ce qui laisse voir distinctement<lb/>leurs crânes
+                  etroits &amp; très allongés, en forme depain desucre)</stage>
+               <sp>
+                  <speaker>les Femmes</speaker>
+                  <stage>(aux fenêtres)</stage>
+                  <p>Comme nos maris sont [beaux] !</p>
+               </sp>
+               <stage>(Les <add>autres</add> [corporations] qui <add>[illis.]</add> – n’ont pas été
+                     <add>nommés</add> s’empressent autour du Pot au feu<lb/>&amp; le gd-Pontife
+                     <del>faisant un geste mystique</del>
+                  <add>decrivant mystiquement un cercle</add> dans l’air<lb/>les asperge, tous, avec
+                  son ecumoir. après quoi la seance<lb/>etant levée, on retire les sièges, on se
+                  cherche &amp; l’on<lb/>s’aborde<del>nt</del> avec une certaine animation.</stage>
+               <sp>
+                  <speaker>Les Bourgeois</speaker>
+                  <p>Ah ! une belle fête – <del>vraiment une cerémonie imposante ! – Comme
+                           <add>qu’</add> il a bien</del><lb/>[<del>illis.</del>] <add>un
+                        remarquable discours ! –</add> &amp; quelle musique ! <del>[hein]</del> ? –
+                     on a fait des progrès dans les arts ! c’est incon-<lb/>-testable !</p>
+                  <stage>La confusion &amp; la rumeur, peu à peu, s’apaisent – &amp; tous se
+                     mettent<lb/>à <del>reg</del> observer les horloges qui sont au dessus de la
+                     porte, devant chaque<lb/>maison. L’aiguille marque <add>5</add>
+                     <del>6</del> heures <del>moins</del> 55 minutes. Ils
+                        attendent<lb/><del>tous</del> le nez en l’air &amp; quand 6 heures sonnent
+                     ils disent<lb/>tous, en même temps)</stage>
+                  <p>Allons dîner ! <stage>(&amp; entrent dans les maisons)</stage></p>
+               </sp>
+            </div>
+            <div type="scene" n="2">
+               <head>II.</head>
+               <stage>La scène <del>est</del>
+                  <add>reste</add> complètement vide.<lb/>D’abord on entend dans les maisons un
+                  bruit de gros baisers. – <del>puis</del>
+                  <add>ensuite</add>un bruit de<lb/>chaises -, <del>[et]</del> presqu’aussitot un
+                  bruit de cueillères sur les assiettes &amp; qq temps<lb/>après
+                  [<del>dessus</del>]</stage>
+               <sp>
+                  <speaker>Des voix</speaker>
+                  <stage>(sélevent qui disent.) avec [illis.] forte</stage>
+                  <p>Ah ! ça fait bien !</p>
+               </sp>
+               <pb n="94" facs="naf_15810_094.jpg"/>
+               <fw><del>111</del> 94.</fw>
+               <stage><del>après</del> un petit silence <add><del>il [illis.]</del></add>
+                  <add>{puis</add>} cliquetis de couteaux &amp; de fourchettes </stage>
+               <sp>
+                  <speaker>Les mêmes voix</speaker>
+                  <p>Voilà ce qu’on ne trouve pas au restaurant !</p>
+               </sp>
+               <stage>le bruit des fourchettes &amp; des couteaux continue. on entend
+                  deboucher<lb/>des bouteilles de vin puis</stage>
+               <sp>
+                  <speaker>Les mêmes voix</speaker>
+                  <p>Nous sommes entre la poire &amp; le fromage.</p>
+               </sp>
+               <stage>Alors qques petits rires de satisfaction</stage>
+               <sp>
+                  <speaker>Les voix des Hommes</speaker>
+                  <stage>, seulement</stage>
+                  <p>Donne nous un verre de liqueur, hein ?</p>
+               </sp>
+               <sp>
+                  <speaker>Les voix des Femmes</speaker>
+                  <p>Mais tu vas te faire mal ?</p>
+               </sp>
+               <sp>
+                  <speaker>Les voix des Hommes</speaker>
+                  <p>C’est p. mon estomac, une fois n’est pas coutume ! </p>
+               </sp>
+               <stage>ensuite un fort remuement de chaises. &amp; </stage>
+               <sp>
+                  <speaker>Tous les Bourgeois de toute la ville</speaker>
+                  <stage>Apparaissent à <del>chaque</del>
+                     <add>toutes</add> les fenêtres, etendent<lb/>la main &amp; disent</stage>
+                  <p>Il fait chaud !</p>
+               </sp>
+               <sp>
+                  <speaker>Une femme arrive à chaque fenêtre</speaker>
+                  <p>Oui. Mais le fond de l’air est froid</p>
+               </sp>
+               <sp>
+                  <speaker>Tous les Bourgeois</speaker>
+                  <p>C’est vrai.</p>
+                  <stage>Il se detournent un peu &amp; tapent sur le baromètre<lb/>acroché en dehors
+                     de la fenêtre</stage>
+                  <p>Ça va-t-il se maintenir <stage>(après qque reflexion)</stage> oui…<lb/>oui. on
+                     peut prendre le frais</p>
+                  <stage>les croisées se referment &amp; bientot tous les Bourgeois<lb/>rentrent en
+                     scène &amp; s’installent devant leurs portes<lb/>sur des chaises, chaque menage
+                     etant flanqué d’un<lb/>petit garçon habillé en turco, &amp; d’une petite
+                     fille<lb/>habillée en Suisesse</stage>
+                  <p>Ah ! on est bien, ici !</p>
+                  <stage>les femmes prennent leur tricot, les hommes leur journal.</stage>
+               </sp>
+               <pb n="95" facs="naf_15810_095.jpg"/>
+               <fw>95. <del>112.</del></fw>
+            </div>
+            <div type="scene" n="3">
+               <head>III.</head>
+               <stage>Les Bourgeois &amp; Bourgeoises<lb/>Jeanne, le roi des gnomes<lb/>(Ils
+                  arrivent tous les deux par le fond, le roi des gnomes donnant le bras
+                  à<lb/>Jeanne.<lb/>Elle a au cou un boa, sur la tete un chapeau de merinos noirs,
+                  autour<lb/>du corps une robe atriquée, aux mains des gants de fil &amp;
+                        <add>{[<del>illis.</del>]</add>} à son bras<lb/>un fort cabas de paille
+                  rouge é brune, d’où deborde la bride de<lb/>ses [loques]<lb/>Le roi des gnomes
+                     porte<del>nt</del> un chapeau tromblon plus gd encore que<lb/>ceux des
+                  bourgeois &amp; pardessus sa redingotte à la proprietaire un<lb/>pardessus
+                  blanchâtre. Il a des lunettes bleues à quatre verres, beaucoup<lb/>de coton dans
+                  les oreilles, des gants de tricot, des caoutchouc sur ses<lb/>bottes, à la main
+                  droite un sac de nuit &amp; un parapluie dont le<lb/>pommeau est terminé par une
+                  tabatoire - &amp; à son bras gauche<lb/>celui sur lequel s’appuie Jeanne, un rond
+                  p. s’asseoir, en basane verte. <lb/>[illis.] plus loin qu’ils paraissent, un
+                  murmure flatteur s’elève.)</stage>
+               <sp>
+                  <speaker>Les Bourgeois &amp; les Bourgeoises</speaker>
+                  <p>Ah <del>très bien. très bien.</del>
+                     <add>charmant ! parfait</add> – une bonne tenue –
+                     excessivement<lb/>convenables !</p>
+               </sp>
+               <sp>
+                  <speaker>le roi en Monsieur</speaker>
+                  <p>Tu le vois, ma fille ; notre première recompense est l’admiration du<lb/>monde
+                     &amp; l’estime des honnêtes gens.</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Oh oui ! &amp; comme tout est + calme, de [cent], rangé ! Ah ! <del>que</del>
+                     cela<lb/>vaut mieux que le sot etalage d’un luxe inutile</p>
+               </sp>
+               <sp>
+                  <speaker>le roi</speaker>
+                  <stage>(à part)</stage>
+                  <p>Allons, elle y mord !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Je comprends maintenant ce qui l’avait <del>detourné</del>
+                     <add>ecarté</add> de moi. C’est un homme<lb/>serein, fatigué des luttes de la
+                     vie &amp; ne demandant plus que des joies<lb/>paisibles ; aussi comme je vais
+                     l’entourer de toutes les douceurs du<lb/>menage ! comme je le dorelotterais !
+                     comme je l’aimerais comfortablement.<lb/>J’ai aperçu en entrant dans le
+                     faubourg des petits jardins avec des<lb/>[tounelees] de bâtons verts. Nous
+                     viendrons là, tous les deux… le dimanche –<lb/>&amp; nous promenant bras
+                     dessus, bras dessous, nous parlerons sans cesse<lb/>de notre bonheur, à côté
+                     des legumes, les regardant l’espalier.</p>
+               </sp>
+               <pb n="96" facs="naf_15810_096.jpg"/>
+               <fw>96. <del>113</del>.</fw>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Sans doute ! sans doute ! mais il faudrait se loger, en attendant !</p>
+                  <stage>(il regarde une maison à gauche, au second plan sur laquelle est<lb/>une
+                     enseigne)</stage>
+                  <p>« hotel de famille » Voilà notre affaire ! entrons</p>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>IV.</head>
+               <stage>Les Precedents, deux garçons d’hotel<lb/>(Ils se presentent dès que Jeanne
+                  &amp; son compagnon sont <add>arrivés</add> devant<lb/>la porte - &amp;
+                  s’empressent de lui prendre son cabas ainsi que<lb/>le sac de nuit &amp; le
+                  parapluie du roi des gnomes mains dès<lb/>que l’un va p. prendre son rond)</stage>
+               <sp>
+                  <speaker>le roi des gnomes</speaker>
+                  <p>Non ! avec votre permission ! un homme de bureau, comme moi,
+                     vous<lb/>comprenez ? c’est mon… <hi rend="u">vade mecum</hi></p>
+               </sp>
+               <sp>
+                  <speaker>le garçon</speaker>
+                  <stage>(offrant un fauteuil &amp; une chaise)</stage>
+                  <p>Eh bien ! asseyez-vous, car l’heure est sonnée qu’on doit prendre le frais </p>
+               </sp>
+               <sp>
+                  <speaker>le roi des gnomes</speaker>
+                  <stage>(<add>en</add> s’asseyant dans le fauteuil<lb/>avec arrogance)</stage>
+                  <p>Je ne manquais pas de le savoir, garçon ! aussi vous voyez, je l’ai gardé !</p>
+               </sp>
+               <sp>
+                  <speaker>le garçon</speaker>
+                  <stage>(poliment)</stage>
+                  <p>Oh monsieur on reconnait tout de suite les personnes</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>assor</stage>
+                  <p>Et C’est bien [<del>illis.</del>] ici, n’est-ce pas, qu’il va venir ?</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>J’en suis sûr ! attends le</p>
+               </sp>
+               <stage>(elle s’asseoit sur la chaise)</stage>
+               <sp>
+                  <speaker>Toutes les mères</speaker>
+                  <stage>(devant leur porte)</stage>
+                  <p>Allons, mes amours, voici l’heure où les enfants doivent s’amuser ! </p>
+                  <stage>(les petits Turcos &amp; les petites Suissesses <del>se pre</del>
+                     <add>s’elancent</add> du seuil des maisons<lb/>en courant – se prennent par les
+                     mains &amp; dansent en rond autour<lb/>du pot au feu, en chantant</stage>
+                  <lg>
+                     <l>« nos gds peres etaient bêtes</l>
+                     <l>nos pères le sont bien plus</l>
+                     <l>nous le seront bien davantage »</l>
+                  </lg>
+                  <stage>(qques uns de leurs bonnets tombent dans leur danse &amp; l’on voit
+                     leurs<lb/>crânes extra-pointus)</stage>
+               </sp>
+               <pb n="97" facs="97"/>
+               <fw>97. <del>114.</del></fw>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(les contemplant)</stage>
+                  <p>Ils sont jolis, ces enfants ! Heureuses mères !</p>
+               </sp>
+               <sp>
+                  <speaker>Une dame</speaker>
+                  <stage>(à côté d’elle, sur une chaise)</stage>
+                  <p>Vous êtes bien honnête, mademoiselle. <del>Il est de fait</del>
+                     <add>certainement</add> que le mien, <del>surtout</del></p>
+               </sp>
+               <sp>
+                  <speaker>2<hi rend="superscript">e</hi> Dame</speaker>
+                  <stage>(lui coupant la parole)</stage>
+                  <p>Puisque vous aimez ces chers petits anges, en voilà un, tenez, qui
+                     sait<lb/>deja reconnaitre ses lettres</p>
+               </sp>
+               <sp>
+                  <speaker>3<hi rend="superscript">e</hi> Dame</speaker>
+                  <p>Mais le mien, quoique plus jeune promet beaucoup.</p>
+                  <stage>(elle appelle)</stage>
+                  <p>Nourrice !</p>
+               </sp>
+               <sp>
+                  <speaker>4<hi rend="superscript">e</hi> Dame</speaker>
+                  <p>et le mien aussi ! Nourrice !</p>
+               </sp>
+               <sp>
+                  <speaker>5<hi rend="superscript">e</hi> Dame</speaker>
+                  <p>et les deux miens, donc ! Nourrice !</p>
+               </sp>
+
+               <stage>Alors parait une legion de nourrices, dandinant des poupons<lb/>dans leurs
+                  bras. Les mères s’empressent autour d’eux p.<lb/>les montrer.</stage>
+               <sp>
+                  <speaker>la 1<hi rend="superscript">er</hi> Dame</speaker>
+                  <p>Envoyez un becot à la jolie demoiselle - &amp; au bon monsieur</p>
+               </sp>
+               <sp>
+                  <speaker>Une mère de poupard</speaker>
+                  <stage>(lui retirant ses langes)</stage>
+                  <p>Regardez-moi ses membres</p>
+               </sp>
+               <sp>
+                  <speaker>La 2<hi rend="superscript">e</hi> Dame</speaker>
+                  <p>Qui de deux prend trois, combien reste-t-il ?</p>
+               </sp>
+               <sp>
+                  <speaker><del>3</del><hi rend="superscript">e</hi><del> Dame</del></speaker>
+                  <p><del>Ecoutez votre fable, agneau.</del></p>
+               </sp>
+               <sp>
+                  <speaker><del>2</del><hi rend="superscript">e </hi>La mère de poupard</speaker>
+                  <p>Et sa tête !</p>
+                  <stage>(elle lui retire son beguin)</stage>
+                  <p>voyez !</p>
+               </sp>
+               <sp>
+                  <speaker>Toutes les mères de poupard</speaker>
+                  <p>La sienne est bien plus belle. La plus belle.</p>
+               </sp>
+               <stage>Elles retirent toutes les beguins de leurs marmots qui ont des<lb/>crânes
+                  fantastiquement pointus </stage>
+               <sp>
+                  <speaker>Le roi des gnomes</speaker>
+                  <stage>(prisant d)</stage>
+                  <p>Encore moins que leurs pères ! La generation [<del>illis</del>.]
+                           <add><del>prochaine</del></add>s’annonce cranement ! *<stage>Toutes les
+                        mères &amp; Dames parlent à la fois</stage><lb/>recitez une <add>votre</add>
+                     fable, [<del>voyons]</del> – une [risette] – Ah ! qu’il est gentil ! il aura du
+                     [illis.]*</p>
+               </sp>
+               <stage>tous les enfants envoyent des baisers à Jeanne &amp; commencent<lb/>à
+                  marmotter très vite, <del>pendant que</del>
+                  <add><del>en même temps que</del> les mères parlent à fois que</add><add>{pendant
+                     que</add>} les poupons pleurent, [<del>quand</del>]
+                     <add>[<del>mais</del>]</add>
+                  <add>{&amp; que les nourrices chantonnent</add>}<lb/>mais il s’elève dans la
+                  coulisse un gd murmure, <del>[illis.] bourdonnant</del><lb/>comme [<del>il</del>]
+                  serait l’irritation contenue d’une foule lointaine<pb n="98" facs="naf_15810_098.jpg"/><fw>98. <del>115</del></fw>
+                  Paul &amp; Dominique paraissent - [<del>tous illis.</del>] tous les enfants
+                        <add><del>effrayés</del></add>
+                  <del>que</del> s’enfuient, les nourrices<lb/>emmennent leurs nourissons – &amp;
+                  beaucoup de bourgeois &amp; de bourgeoises s’eloignent<lb/>avec des regards
+                  farouches.</stage>
+            </div>
+            <div type="scene" n="5">
+               <head>V.</head>
+               <stage>Qques bourgeois &amp; bourgeoises. Jeanne, le roi, Paul, Dominique.<lb/>Paul
+                  en costume de voyage, sans cravatte, veste de velours<lb/>gd chapeau, ceinture,
+                  pantalon dans les guêtres<lb/>Dominique fort négligé</stage>
+               <sp>
+                  <speaker><del>Dominique</del></speaker>
+                  <stage><del>(regardant derrière lui)</del></stage>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>C’est lui !</p>
+               </sp>
+               <sp>
+                  <speaker>Le roi des gnomes</speaker>
+                  <p>Du calme ! Dissimule. Tu sais qu’il faut de la simplicité </p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(regardant derrière lui<lb/>dans la coulisse.)</stage>
+                  <p>Ils ont l’air assez rebarbatifs, ces particuliers-là ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Qu’importe ! <del>nous allons pouvoir</del> dans un pays aussi tranquille
+                        <add>nous allons pouvoir</add> nous reposer<lb/><del>un peu</del> le corps
+                     &amp; l’esprit</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Oh ! l’esprit surtout, car <add>après tant de travers</add>
+                     <del>nous avons traversé tant de choses que je suis</del><lb/>la tête m’en
+                     tourne</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(examinant <add><del>du r</del>ez</add> les maisons)</stage>
+                  <p>L’architecture, il est vrai, <del>n’en</del>
+                     <add>n’</add> est pas des plus riches, mais p.vu que nous<lb/>trouvions un
+                     gite ! demandons !</p>
+                  <stage>(il s’adresse à une dame)</stage>
+                  <p>Madame auriez-vous l’obligeance</p>
+                  <stage>(la Dame baisse les yeux pudiquement pendant que le<lb/>mari fait un geste
+                     de repulsion)</stage>
+                  <p>Quelle lubie ?</p>
+                  <stage>(à une autre :)</stage>
+                  <p>seriez-vous madame assez bonne ?…</p>
+                  <stage>(même jeu)</stage>
+                  <p>Voilà qui est drôle !</p>
+                  <stage>(à une autre :)</stage>
+                  <p>Madame je vous supplie d’avoir <del>l’extreme</del>
+                     <add>la</add> misericorde <add>extrême</add> de me</p>
+                  <stage>(même jeu)</stage>
+                  <p>Ah c’est <add>{trop</add>} fort !</p>
+                  <pb n="99" facs="naf_15810_099.jpg"/>
+                  <fw>99. <del>116.</del></fw>
+                  <stage>(à un monsieur :)</stage>
+                  <p>Au nom du ciel, dites-moi où je pourrais trouver</p>
+               </sp>
+               <stage>(le bourgeois se leve brusquement, change de place sa chaise<lb/>&amp; se
+                  rasseoit dessus – en lui tournant le dos.<lb/>Paul qui peu à peu a descendu la
+                  scene se trouve près de<lb/>Jeanne &amp; reste interdit.)</stage>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Vous avez besoin de qque choses monsieur ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Ah ! <stage>(à part :)</stage>
+                     <add>Mais…</add> quel vague souvenir me prend ? <stage>(haut :)</stage> oui…
+                     non. mademoiselle<lb/>permettez ; c’est que le son de votre voix.. me rappelle
+                     une autre [<del>illis</del>.]</p>
+                  <stage>(il la considère. elle baisse les yeux, [<del>illis.])</del><lb/>(à
+                     part :)</stage>
+                  <p><del>Ah</del> ! c’est la mode, apparemment ! cependant il me semblait
+                     que<lb/>celle-là.. (il <add>tombe en</add> reverie)</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p><del>Mais</del> Vous <del>paraissez</del>
+                     <add>avez l’air</add>fatigué ? Il faudrait prendre du repos ! on
+                     pourrait<lb/>même vous prêter une paire de pantouffles ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Merci bien, mademoiselle ! <stage><add>(à part :)</add></stage> Quelle
+                     proposition singulière !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Portez-vous de la [illis.] au moins ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Jamais mademoiselle ! <stage>(à part)</stage> Voilà par exemple une
+                     question !..</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Vous avez gd tort !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Elle est pleine de prevenances, decidement <stage>(ht :)</stage> Je ne sais
+                     comment<lb/>reconnaitre tant de bontés</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(à une de ses voisines)</stage>
+                  <p>Il n’est pas si mechant. Il s’assemblera. Aidez-moi</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Et je suis d’autant plus touché que jusqu’à present</p>
+               </sp>
+               <sp>
+                  <speaker>Une dame</speaker>
+                  <p>Pardon, Mr l’etranger. Mais ce costume… est-il… bien convenable ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Mon Dieu, Madame, je ne pensais pas qu’en voyage…</p>
+               </sp>
+               <pb n="100" facs="naf_15810_100.jpg"/>
+               <fw>100. <del>117</del>.</fw>
+               <sp>
+                  <speaker>Une 2<hi rend="superscript">e</hi> Dame</speaker>
+                  <p>Croyez-vous-même qu’il soit <del>très</del> bon p. la santé ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>Comme on s’interesse à ma santé, ici !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>[<del>Allons illis</del>.] <add>Allons retirez</add> le !</p>
+               </sp>
+               <sp>
+                  <speaker>3<seg>e</seg> Dame</speaker>
+                  <stage>(se [chaussant])</stage>
+                  <p>Vous feriez bien de mettre la redingotte de tout le monde !</p>
+               </sp>
+               <stage>(On lui montre une redingotte locale)</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Mais…</p>
+               </sp>
+               <sp>
+                  <speaker><del>4</del><hi rend="superscript">e</hi><del> Dame</del></speaker>
+                  <p><del>Ah ! il le faut !</del></p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(joignant les mains)</stage>
+                  <p>Oui ! oui ! je vous en prie !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Pour vous plaire, soit !</p>
+                  <stage>(il passe la redingotte <add>{en riant</add>})</stage>
+                  <p>me voilà drôlement affublé, [<del>illis</del>.] !</p>
+               </sp>
+               <sp>
+                  <speaker>Toutes les Dames</speaker>
+                  <p>Ah ! à la bonne heure ! <del>à la bonne heure</del> !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p><del>Oui </del>! vous êtes, maintenant, très bien !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><del>Comment</del>
+                     <add>quoi</add> ? vous aussi !</p>
+               </sp>
+               <sp>
+                  <speaker>Un Bourgeois</speaker>
+                  <p>Et desormais, monsieur, vous pouvez vous considerer comme
+                     <del>etant</del><lb/>l’un de nos citoyens</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(d’un ton sec)</stage>
+                  <p>Non ! non ! merci de <del>l’honneur</del> l’avantage !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(joignant les mains)</stage>
+                  <p>Oh !</p>
+               </sp>
+               <sp>
+                  <speaker>Un second Bourgeois</speaker>
+                  <p>En consequence vous aurez à declarer [ <del>avec [illis.]</del> ]<lb/>tout ce
+                     que vous avez fait jusqu’à ce jour, vos <add><del>illis</del>.</add> actions
+                     les moindres<lb/>&amp; vos pensées les plus intimes</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(irrité)</stage>
+                  <p>Ah ! la pretention est etrange !</p>
+               </sp>
+               <pb n="101" facs="naf_15810_101.jpg"/>
+               <fw>101. <del>118</del></fw>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(d’un ton suppliant)</stage>
+                  <p>Pour rester avec nous, vous ne voulez pas ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(à part)</stage>
+                  <p>D’où vient qu’elle m’attendrit ? <del>quel</del>
+                     <add>quel</add> charme ? [<del>Ah</del>] ah ! [illis.] plus tard à
+                     sortir<lb/>d’ici. <stage>(ht :)</stage> Eh bien.. mon Dieu… je ne dis pas
+                        <add>vraiment</add> non</p>
+               </sp>
+               <sp>
+                  <speaker>Tous</speaker>
+                  <stage>(avec satisfaction)</stage>
+                  <p>Ah parfait.</p>
+               </sp>
+               <sp>
+                  <speaker>Le 1<hi rend="superscript">er</hi> Bourgeois</speaker>
+                  <p>Chaque lundi il faudra deposer <del>en lieu public</del> votre programme de la
+                     semaine<lb/>c’est à dire l’indication <del>precise</del> de vos futures
+                     demarches, discours &amp;<lb/>sentiments</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>eh ! comment voulez-vous que je sache, moi-même !..</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>([illis.])</stage>
+                  <p><del>[est-ce] différente</del> ? ignorez-vous donc à qui vous penserez, avec
+                     qui l’on<lb/>causera ?</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Mais c’est <del>de la</del>
+                     <add>une</add> fascination, [<del>illis</del>.] ! <stage>(ht :)</stage> à la
+                     rigueur…<lb/>j’accepterais.. si…</p>
+               </sp>
+               <sp>
+                  <speaker>Tous</speaker>
+                  <p>Ah ! ah ! </p>
+               </sp>
+               <stage>(un perruquier parait avec ses ustensiles, plat à barbe<lb/>ciseaux)</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Qu’est-ce ?</p>
+               </sp>
+               <sp>
+                  <speaker>1<hi rend="superscript">er</hi> Bourgeois</speaker>
+                  <p>un coiffeur p. <del>vous accomoder <add>[illis.] vos cheveux</add>
+                        <add>{[illis.]</add>}</del>
+                     <add>{{disposer vos cheveux</add>}} comme tout le monde</p>
+               </sp>
+               <sp>
+                  <speaker><del>Jeanne</del></speaker>
+                  <stage><del>(suppliante)</del></stage>
+                  <p><del>En commençant par vos cheveux </del></p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Je n’y tiens pas demesurement, <del>mais</del> cependant</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Oh [<del>faites pas</del>] <add>point</add> d’exageration !</p>
+               </sp>
+               <sp>
+                  <speaker>toutes les Dames</speaker>
+                  <p>Oui. oui. Plus d’excentricité ! <hi rend="u">rangez</hi>-vous !</p>
+               </sp>
+               <pb n="102" facs="naf_15810_102.jpg"/>
+               <fw>102 <del>119</del></fw>
+               <stage>une chaise se trouve derrière lui. on l’y pousse. il s’y laisse<lb/>tomber
+                  d’un air resigné - &amp; le coiffeur lui noue une serviette<lb/>autour du cou.
+                  Jeanne ne le quitte pas des yeux. Ils se<lb/>contemplent</stage>
+               <sp>
+                  <speaker><del>1</del>/2<hi rend="superscript">er</hi> Bourgeois</speaker>
+                  <p>Pour vous epargner toute [illis.] <del>o</del>/On vous remettra <add>même</add>
+                     au jour de l’an,<lb/>la liste <add>complete</add> de tout ce que vous êtes
+                     contraint de dire, <hi rend="superscript">x</hi>
+                     <hi rend="u">faire</hi> &amp; penser dans [<del>le</del>]<lb/><del>constant de</del>
+                     l’année. Autrement</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(<add>en sursaut</add> au coiffeur, qui lui passe le rasoir sur la
+                     poire)</stage>
+                  <p>– <del>Arrêtez !</del> que pretendez-vous ?</p>
+               </sp>
+               <sp>
+                  <speaker>Le coiffeur</speaker>
+                  <p>– Mais je taille en plein, monsieur, p. <del>vous faire un <add>le</add></del>
+                     <add>{[etauler] le</add>} collier</p>
+               </sp>
+               <stage>(Jeanne tombe à ses genoux)</stage>
+               <sp>
+                  <speaker>Tout s’ecrient</speaker>
+                  <p><del>Oui !</del> le collier ! le collier !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(se leve, furieux)</stage>
+                  <p>Laissez-moi donc, imbeciles ! croyez-vous que je vais <add><del>Je ne [vais pas
+                           me]</del></add>m’[illis.] [<del>ici</del>]<lb/>à vos inepties !
+                     Bonsoir</p>
+               </sp>
+               <stage>Dans <del>sa precipitation il [illis.]</del>
+                  <add>son egarement</add>
+                  <add>au lieu de</add> prendre son chapeau sur une<lb/>chaise, <del>&amp;</del> il
+                  saisit un tromblon que l’on a mis à la place<lb/>&amp; s’en coiffe d’un air
+                  majestueux.</stage>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(riant)</stage>
+                  <p>Vous avez une bonne tête, decidemment, avec cette machine là sur<lb/>les
+                     epaules !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(portant la main à son front)</stage>
+                  <p>Comment ? – l’odieux tromblon du bourgeois ? </p>
+                  <stage>(il jette par terre – cris d’indignation. la foule<lb/>accourt)</stage>
+                  <p>&amp; la redingotte à la proprietaire !</p>
+                  <stage>(il se l’arrache du corps)</stage>
+                  <p><add>Moi !</add> j’ai pu me deshonorer<lb/>avec ces deux
+                        [illis.]-[<del>illis.]</del>
+                     <add>illis.</add> ! sous ces <del>deux</del> infames symboles !
+                     jamais<lb/>jamais ! </p>
+               </sp>
+               <stage>(il trepigne sur la redingotte &amp; le chapeau avec rage)</stage>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>le malheureux !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p>Arrière ! dinde ! <del>que vous êtes</del></p>
+               </sp>
+               <pb n="103" facs="naf_15810_103.jpg"/>
+               <fw><del>120</del> 103</fw>
+               <sp>
+                  <speaker>Voix de la multitude</speaker>
+                  <p>Il est fou ! prenez garde !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(eperdue)</stage>
+                  <p>Calmez le ! – voyons ! – que faire ?</p>
+               </sp>
+               <sp>
+                  <speaker>Voix de la foule</speaker>
+                  <p>Qu’on le saisisse ! Un boulton ! l’epreuve du bouillon !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>apportez le, vite ! – [illis.] ! – c’est bien ! prenez, mon ami</p>
+                  <stage>(Paul est entouré, tenu par les pieds &amp; par les mains<lb/>Jeanne lui
+                     tend une tasse de bouillon qu’on vient de<lb/>lui remettre &amp; l’approche de
+                     ses lèvres)</stage>
+                  <p>buvez-moi cela, lentement !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(renverse la tasse, d’un revers de main)</stage>
+                  <p>Je ne me moque pas mal de votre bouillon !</p>
+               </sp>
+               <sp>
+                  <speaker>Tous</speaker>
+                  <p>sacrilege ! <del>qu’on l’enferme !</del> – au cachot ! – au cachot ! –
+                     dans<lb/>un cul de basse-fosse !</p>
+               </sp>
+               <stage>(la foule s’est ruée sur lui &amp; on le garotte aux poignets</stage>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <p><del>[illis.] moi</del>
+                     <add>oui</add> ! battez-moi ! <del>oui !</del> j’aime mieux vous injurez que
+                     vos<lb/>+ applaudissements &amp; vos supplices que vos bienfaits ! Avec vos
+                     coeurs<lb/>d’esclaves &amp; vos <del>mines de cornichons</del>
+                     <add>têtes en pain de sucre</add>, vos <del>pitoyables</del>
+                     <add>grotesques</add>
+                     <add>{piètres)</add> costumes, vos<lb/>hideux ameublements, vos occupations
+                     abjectes &amp; vos ferocites d’antro-<lb/>-pophages, Bourgeois, je vous
+                     hais !!! – &amp; du fond de ma <del>prison</del>
+                     <add>misère</add>
+                     <add>{mon cachot</add>}<lb/>Je crache <del>encore</del> sur votre stupidité
+                     &amp; votre bête de pot au feu !</p>
+               </sp>
+               <sp>
+                  <speaker>la Foule</speaker>
+                  <p>C’est du delire !</p>
+               </sp>
+               <sp>
+                  <speaker>Paul</speaker>
+                  <stage>(levant au ciel ses mains enchainés)</stage>
+                  <p>Ah ! que n’ais-je, p. vous broyer tous, la foudre du ciel, ou
+                     [<del>illis</del>.]<lb/>qque puissance <del>humaine</del> terrible &amp;
+                     exterminatrice !</p>
+               </sp>
+               <sp>
+                  <speaker>les Bourgeois</speaker>
+                  <p>Il devient dangereux ! un baillon ! <del>un baillon</del></p>
+               </sp>
+               <stage>(on le baillonne)</stage>
+               <pb n="104" facs="naf_15810_104.jpg"/>
+               <fw><del>121</del>.104.</fw>
+               <sp>
+                  <speaker>un bourgeois</speaker>
+                  <p>et à son domestique <del>aussi</del> !</p>
+               </sp>
+               <sp>
+                  <speaker>tous les Bourgeois</speaker>
+                  <p>Oui oui.</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <stage>(qui a la redingote &amp; le tromblon<lb/>se debattant)</stage>
+                  <p>Mais j’ai la redingote, moi ! j’ai le tromblon ! je ne demande
+                     pas<lb/>mieux !</p>
+               </sp>
+               <sp>
+                  <speaker>un Bourgeois</speaker>
+                  <p>Ça n’y fait rien. en vertu de la solidarité…</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>Je boirai le bouillon !</p>
+               </sp>
+               <sp>
+                  <speaker>les Bourgeois</speaker>
+                  <p>Silence !</p>
+               </sp>
+               <sp>
+                  <speaker>Dominique</speaker>
+                  <p>J’en ai même besoin !</p>
+               </sp>
+               <sp>
+                  <speaker>les Bourgeois</speaker>
+                  <p>insolent !</p>
+               </sp>
+               <stage>(on le baillonne &amp; on les enferme tous les deux, au rez de
+                  chaussée<lb/>dans la prison qui est à droite, en face de l’auberge. – on<lb/>les
+                  aperçoit baillonnés à travers les barreaux.</stage>
+               <sp>
+                  <speaker>la Foule</speaker>
+                  <stage>(pousse un gd soupir de satisfaction)</stage>
+                  <p>Ah ! – Il s’agit maintenant de les moraliser, <add>un peu</add> de les
+                     catechiser !</p>
+               </sp>
+            </div>
+            <div type="scene" n="6">
+               <head>VI.</head>
+               <stage>Les Precedents, le gd Pontife</stage>
+               <sp>
+                  <speaker>Le gd Pontife</speaker>
+                  <p>Ça me regarde ! c’est <del>ma mission</del>
+                     <add>mon devoir</add>. Mon sacerdoce ! je
+                        commence !<lb/>Infortunés !<lb/><del>C’est</del>
+                     <add>voilà</add> un immense bonheur p. vous que d’être tombés entre
+                     nos<lb/>mains, &amp; s’il vous était permis de parler, <del>on entendrait</del>
+                     ce seraient j’en suis<lb/>sûr, des remerciements qui s’[enhaleraient] de vos
+                     lèvres, <del>des [illis.],</del><lb/>des hymnes de reconnaissance p. les
+                     ameliorations que vous [allez]<lb/>subir !</p>
+               </sp>
+               <pb n="105" facs="naf_15810_105.jpg"/>
+               <fw>105. <del>122</del>.</fw>
+               <sp>
+                  <speaker>les Bourgeois</speaker>
+                  <p>hein, eh bien, mes originaux, qu’est-ce que vous en dites, maintenant ?</p>
+               </sp>
+               <sp>
+                  <speaker>le gd-Pontife</speaker>
+                  <p>En effet. Considerez, <del>en effet</del>, l’enormité de votre crime ! Il ne
+                     part pas du coeur, je le sais,<lb/>mais de la tête, raison de plus p. vous
+                     punir impitoyablement ! Vous êtes<lb/>convaincus d’attentat contre la
+                     redingotte &amp; le pot au feu !</p>
+               </sp>
+               <sp>
+                  <speaker>Les Bourgeois</speaker>
+                  <stage>(ricanant)</stage>
+                  <p>Ah ! ah ! ces messieurs n’en voulaient pas !</p>
+               </sp>
+               <sp>
+                  <speaker>le gd-Pontife</speaker>
+                  <p>de dedain p. l’epicerie, [<del>d’illis.</del>], <add>de</add> sentiments,
+                        <add>illis.</add> paroles, manières &amp; [coustumes]<lb/>bizarres, en un
+                     mot d’excentricité !</p>
+               </sp>
+               <sp>
+                  <speaker>Une voix</speaker>
+                  <p>la guillottine !</p>
+               </sp>
+               <sp>
+                  <speaker>le gd Pontife</speaker>
+                  <p>non, mm ! grâce au ciel, nos moeurs sont plus douces ! – nous ne
+                     demandons<lb/>- miserables ! – qu’à vous lessiver par le châtiment, à vous
+                     parifier<lb/>par le remords, - &amp; même, nous voudrions que plu tard, si
+                     c’est possible, à force, de bonne conduite, vous vous [rehabilitassiez] ! Ce
+                     bouillon<lb/>que vous avez rejeté, on vous l’ingurgitera, [<del>illis</del>.]
+                        <add>de force</add>, mais plus clair<lb/>les murs de votre appartement
+                     seront embellis par des inscriptions<lb/>morales, &amp; ce sera, au lieu
+                     d’apprivoiser des araignées, votre<lb/>distraction, unique ! </p>
+                  <stage>(les prisonniers s’agitent, en remuant leurs bras à<lb/>travers les
+                     barreaux)</stage>
+                  <p>Je n’ai pas fini ! La juste fureur du peuple veut, puisque vous ne<lb/>pouvez à
+                     présent nous faire aucun mal, que je vous assomme, ainsi, en<lb/>vous disant un
+                     tas de choses ! Donc on <del>fera</del>
+                     <add>tentera</add> sur vous des experiences</p>
+                  <stage>(un petit râle se fait entendre à toutes les horloges au dessus<lb/>des
+                     portes et 8 heures sonnent. Au premier coup <add>[tous] les bourgeois</add>
+                     tirent<lb/>leurs bonnets de coton de leur poche &amp; <del>se</del> le mettent
+                     sur <del>sa</del> leur tête. <del>Pendant que l’heure sonne</del> Le gd Pontife
+                        s’interrompt<lb/><del>tout a coup, se met le sien</del>
+                     <add>subitement &amp;, [illis.]{{se</add>} coiffe du sien}, en même
+                     temps)</stage>
+                  <p>L’heure de se coucher ! à demain !</p>
+               </sp>
+               <stage>(tous les bourgeois rentrent chez eux !)</stage>
+               <pb n="106" facs="naf_15810_106.jpg"/>
+               <fw>106. <del>123</del>.</fw>
+            </div>
+            <div type="scene" n="7">
+               <head>VII.</head>
+               <stage>Jeanne, le Roi des gnomes</stage>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(avec emportement)</stage>
+                  <p>Delivre le ! delivre le donc, ou je vais moi-même</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>prends garde !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Mais c’est par ta faute qu’il se trouve là &amp; que je l’ai perdu encore
+                     une<lb/>fois</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Par la tienne !</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <p>Ah ! non content de m’avoir trompée</p>
+               </sp>
+               <sp>
+                  <speaker>Le roi</speaker>
+                  <p>Je ne t’ai pas trompée. Je-puis te donner tout ce que tu demandes<lb/>mais il
+                     m’est impossible d’agir sur tes sentiments comme sur les siens ;<lb/>choisis
+                     mieux. À ta première requisition je t’ai accordé les elegances<lb/>du monde
+                     &amp; les niaiseries qu’elles comportent, à la seconde la
+                     simplicité<lb/>bourgeoise avec son cortège de laideurs. De quoi te
+                     plains-tu ?<lb/>que te faut-il ?</p>
+               </sp>
+               <sp>
+                  <speaker>Jeanne</speaker>
+                  <stage>(après un long silence)</stage>
+                  <p>Eh bien ! je vais te dire. Car je l’ai deviné, enfin, lorsqu’au milieu<lb/>de
+                     la populace qui l’enchainait le rêve de son coeur a jailli dans<lb/>une
+                     explosion d’orgueil ! Ce que je veux ? ecoute : c’est un pouvoir<lb/>tellement
+                     demesuré qu’il l’eblouisse ! Je demande des palais de<lb/>basalte avec des
+                     escaliers de diamant, &amp; à le faire asseoir<lb/>auprès de moi sur un trône
+                     d’or, p. qu’il contemple de<lb/>plus haut, toutes les têtes de mes peuples
+                     \esclaves\, prosternés<lb/>dans la poussière !</p>
+               </sp>
+               <sp>
+                  <speaker>le Roi</speaker>
+                  <p>Bien ! bien ! mais pas si fort, ma princesse, de peur de<lb/>reveiller ces
+                     honnêtes populations. </p>
+               </sp>
+               <stage>Il tire de se poche un bonnet de coton<lb/>demesuré, <del>en même temps
+                     qu’il</del>
+                  <add>se l’enfonce sur le chef &amp;</add> relève<lb/>ses lunettes bleues.
+                        <add><del>alors</del></add> son visage est effroyable avec <del>ses</del>
+                  <add>des dents jaunes des</add> yeux cernes jusqu’aux oreilles<pb n="107" facs="naf_15810_107.jpg"/><fw>107
+                        <del>124</del>.</fw> Tandis que son collier de barbe rouge
+                     <del>s’[alongessant]</del>
+                  <add>se developpant</add> sur<lb/>les côtés, ressemble à deux gros plumots. La
+                  mèche<lb/>de son bonnet de coton flamboie. Il disparait avec<lb/>Jeanne.</stage>
+            </div>
+            <div type="scene" n="8">
+               <head>VIII</head>
+               <stage>Aussitôt, le Pot au feu, dont les anses se transforment en deux ailes,
+                  monte<lb/>dans les airs. - &amp; arrivé en haut, il se retourne entièrement.
+                  Tandis que<lb/>les flames du pot au feu vont s’elargissant toujours de manière à
+                  couvrir<lb/>la cité endormie, des legumes lumineux, carottes, navets, poireaux,
+                  s’echappent<lb/>de sa cavité &amp; restent suspendus à la voute noire, comme
+                  des<lb/>constellations.<lb/>Dès que l’obscurité est complète, on entend s’elever
+                  dans toutes<lb/>les maisons un ronflement general.<lb/>Mais il se fait un bruit
+                  sec, comme d’un barreau qu’on brise.<lb/>puis de la prison sortent deux ombres
+                  humaines frôlant les murs<lb/>&amp; marchant sur la pointe des pieds. Paul
+                  apparaît d’abord,<lb/>ensuite Dominique avec le tromblon &amp; la redingotte à la
+                  propietaire<lb/>- &amp; portant sous ses bras ses deux bottes, p. ne point faire
+                  de bruit.<lb/>Le ronflement general repart.<lb/>La toile tombe, lentement</stage>
+
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

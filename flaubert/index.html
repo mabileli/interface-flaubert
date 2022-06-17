@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Le Château des cœurs</title>
+  <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+  <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Barre de navigation -->
+	<div id="navbar">
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col navbar navbar-expand-lg">
+  	 				<a class="navbar-brand" href="index.html">Flaubert</a>
+  	 				<button class="navbar-toggler" type="button" data-toggle="collapse"
+data-target="#navbarScroll">
+  	 					<i class="bi bi-list bi"></i>
+  	 				</button>
+  	 				<div id="navbarScroll" class="collapse navbar-collapse">
+  	 					<ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+style="max-height: 100px;">
+  	 						<li class="nav-item active">
+  	 							<a class="nav-link" href="index.html">Accueil</a>
+  	 						</li>
+  	 						<li class="nav-item">
+  	 							<a class="nav-link" href="apparat.html">Apparat critique</a>
+  	 						</li>
+  	 						<li class="nav-item dropdown">
+  	 							<a class="nav-link dropdown-toggle" href="corpus.html"
+id="navbarScrollingDropdown" role="button" data-toggle="dropdown"
+aria-expanded="false">Manuscrits</a>
+  	 								<ul class="dropdown-menu"
+aria-labelledby="navbarScrollingDropdown">
+  	 									<li><a class="dropdown-item" href="g340.html">Ms
+g340</a></li>
+  	 									<li><a class="dropdown-item" href="#">Ms
+g267</a></li>
+  	 									<li><a class="dropdown-item" href="#">NAF
+15810</a></li>
+  	 								</ul>
+  	 						</li>
+  	 					</ul>
+  	 				</div>
+				</nav>
+				<!-- Bouton jour/nuit -->		
+				<div class="col-1 pt-3">
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox" />
+							<div class="slider round"></div>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Carrousel -->
+	<div class="container">
+    	<div class="row mb-4">
+    		<div class="col"> 
+    			<div id="carouselControls" class="carousel slide" data-ride="carousel">
+    				<div class="carousel-inner">
+    					<div class="carousel-item active">
+    						<img class="d-block w-100" style="height: 70vh;"
+src="media/illustration-viemoderne.jpeg" alt="Illustration de la
+Cheminée de la Mansarde par Scott">
+    						<div class="carousel-caption d-none d-md-block">
+    							<p id="carousel-main-title">Édition génétique du Château des cœurs</h1>
+    						</div>
+    					</div>
+    					<div class="carousel-item">
+    						<img class="d-block w-100" style="height: 70vh;" src="media/g340.jpeg" alt="Ms g340">
+    						<div class="carousel-caption d-none d-md-block">
+    							<p class="carousel-title">Ms g340</p>
+    							<p><a class="btn btn-lg btn-info" href="g340.html"
+role="button">Transcription</a></p>
+    						</div>
+    					</div>
+    					<div class="carousel-item">
+    						<img class="d-block w-100" style="height: 70vh;" src="media/g267.jpeg" alt="Ms g267">
+    						<div class="carousel-caption d-none d-md-block">
+    							<p class="carousel-title">Ms g267</p>
+    							<p><a class="btn btn-lg btn-info" href="#"
+role="button">Transcription</a></p>
+    						</div>
+    					</div>
+    					<div class="carousel-item">
+    						<img class="d-block w-100" style="height: 70vh;" src="media/NAF15810.jpeg" alt="NAF 15810">
+    						<div class="carousel-caption d-none d-md-block">
+    							<p class="carousel-title">NAF 15810</p>
+    							<p><a class="btn btn-lg btn-info" href="#"
+role="button">Transcription</a></p>
+    						</div>
+    					</div>
+    				</div>
+    				<a class="carousel-control-prev" href="#carouselControls"
+role="button" data-slide="prev">
+    					<span class="carousel-control-prev-icon"
+aria-hidden="true"></span>
+    					<span class="sr-only">Précédent</span>
+    				</a>
+    				<a class="carousel-control-next" href="#carouselControls"
+role="button" data-slide="next">
+    					<span class="carousel-control-next-icon"
+aria-hidden="true"></span>
+    					<span class="sr-only">Suivant</span>
+    				</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Cartes de présentation des auteurs -->
+    <div class="container">
+    	<h2 class="pb-2" id="auteurs-titre"><i class="bi bi-arrow-down-right"></i> Les auteurs</h2>
+			<div class="row pb-5">
+    			<div class="col-12 col-lg-4">
+					<div class="card mb-4 mb-lg-0 shadow">
+						<img class="card-img-top img-fluid"  style="height: 50vh;" src="media/portrait-flaubert.jpg"
+alt="Portrait de Gustave Flaubert"/>
+						<div class="card-body">
+							<h5 class="card-title">Gustave Flaubert</h5>
+							<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget eros eu libero gravida interdum quis id risus. Duis nec convallis diam, quis vehicula mauris. Proin volutpat, arcu nec dictum mollis, ipsum ante venenatis lacus, ut auctor ante odio volutpat nulla. Maecenas quis leo ut ipsum dapibus dictum. Sed lobortis ullamcorper faucibus. Donec ut elementum orci. Duis ac blandit sem. Ut consectetur auctor ex id rutrum. Nullam lacinia mattis tellus ornare fermentum. Nulla quis imperdiet diam. Aliquam id tempor eros, suscipit consequat quam. Nunc et velit in magna molestie pretium.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="card mb-4 mb-lg-0 shadow">
+						<img class="card-img-top img-fluid" style="height: 50vh;" src="media/portrait-bouilhet.jpeg"
+alt="Portrait de Louis Bouilhet"/>
+						<div class="card-body">
+							<h5 class="card-title">Louis Bouilhet</h5>
+							<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget eros eu libero gravida interdum quis id risus. Duis nec convallis diam, quis vehicula mauris. Proin volutpat, arcu nec dictum mollis, ipsum ante venenatis lacus, ut auctor ante odio volutpat nulla. Maecenas quis leo ut ipsum dapibus dictum. Sed lobortis ullamcorper faucibus. Donec ut elementum orci. Duis ac blandit sem. Ut consectetur auctor ex id rutrum. Nullam lacinia mattis tellus ornare fermentum. Nulla quis imperdiet diam. Aliquam id tempor eros, suscipit consequat quam. Nunc et velit in magna molestie pretium.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="card mb-4 mb-lg-0 shadow">
+						<img class="card-img-top img-fluid" style="height: 50vh;"
+src="media/portrait-osmoy.jpeg" alt="Portrait de Charles d'Osmoy"/>
+					<div class="card-body">
+						<h5 class="card-title">Charles d'Osmoy</h5>
+						<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget eros eu libero gravida interdum quis id risus. Duis nec convallis diam, quis vehicula mauris. Proin volutpat, arcu nec dictum mollis, ipsum ante venenatis lacus, ut auctor ante odio volutpat nulla. Maecenas quis leo ut ipsum dapibus dictum. Sed lobortis ullamcorper faucibus. Donec ut elementum orci. Duis ac blandit sem. Ut consectetur auctor ex id rutrum. Nullam lacinia mattis tellus ornare fermentum. Nulla quis imperdiet diam. Aliquam id tempor eros, suscipit consequat quam. Nunc et velit in magna molestie pretium.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div id="footer">
+    	<div class="container-fluid">
+      		<div class="row">
+      			<div class="col-4">
+      				<p class="text-left pl-5 pt-3"><a href="droit.html" style="text-decoration: none; color: var(--frame-font-color);">Droit et responsabilité</a></p>
+      			</div>
+      			<div class="col-4">
+      				<p class="text-center pt-3" style="color: var(--frame-font-color);">Élisa Mabille</p>
+      			</div>
+      			<div class="col-4 pr-5 pt-3 text-right">
+      				<a href="https://www.univ-rouen.fr/">
+      					<img src="media/logo-universite.png" width="auto" height="30" alt="Logo Universite">
+      				</a>
+      				<a href="https://ceredi.hypotheses.org/">
+      					<img src="media/logo-ceredi.png" class="pl-2" width="auto" height="30" alt="Logo CEREdI">
+      				</a>
+      			</div>
+      		</div>
+      	</div>
+    </div>
+    
+      <script src="js/script.js"></script>
+
+</body>
+</html>
