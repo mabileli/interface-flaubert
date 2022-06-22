@@ -2,7 +2,7 @@
 
 	/* Dark mode switch */
 	--switch-checked: #91BAE3; /* bleu pâle */
-	--switch-unchecked: black; /* gris pâle #ccc */
+	--switch-unchecked: #05202f; /* bleu très foncé */
 	--slider-color: #fff; /* blanc */
 	
 	/* Light mode */
@@ -18,6 +18,7 @@
 	--card-title: #55829b; /* bleu médium clair */
 	--card-text: black;
 	--caption-color: #999999; /* gris */
+	--background-blockquote: #eee; /* gris pâle */
 	
 }
 	/* Dark mode */
@@ -34,6 +35,7 @@
 	--card-title: #c2d2db; /* bleu pâle clair */
 	--card-text: #e7edf1; /* bleu clair */
 	--caption-color: #c2d2db; /* bleu pâle clair*/
+	--background-blockquote: #516a78; /* bleu gris foncé */
 }
 
 .folio{
@@ -70,6 +72,32 @@ h5{
 	color: var(--carousel-color);
 	font-size: 4vh;
 }
+
+
+	/***************/
+	/*** Apparat ***/
+	/***************/
+
+.footnote{
+	vertical-align: super;
+	font-size: 3mm;
+}
+
+.container_footnote > p{
+	font-size : 3.5mm;
+}
+
+blockquote {
+    margin: 0 40px 0 40px;
+}
+
+blockquote p {
+    padding: 15px;
+    background: var(--background-blockquote);
+    border-radius: 5px;
+    font-size: 3.75mm;
+}
+
 
 	/***************************/
 	/*** Barre de navigation ***/
