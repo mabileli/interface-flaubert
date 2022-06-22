@@ -33,6 +33,7 @@ La navigation à travers les div du fichier html, c'est-à-dire les folios du ma
 | BeautifulSoup | 4.11.1   |
   
 ## Schéma éditorial
+![Schéma éditorial](media/schema-editorial.png)
   
 # Développements en cours
   
