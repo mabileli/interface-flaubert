@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="tei_flaubert.rng"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Dossier manuscrit pour Le Château des cœurs</title>
-                <author key="Flaubert, Gustave (1821-1880)" ref="http://www.idref.fr/026866552"
-                        ><forename>Gustave</forename>
+                <author xml:id="GF" key="Flaubert, Gustave (1821-1880)"
+                    ref="http://www.idref.fr/026866552"><forename>Gustave</forename>
                     <surname>Flaubert</surname></author>
-                <author key="Bouilhet, Louis (1821-1869)" ref="https://www.idref.fr/031850456"
-                        ><forename>Louis</forename>
+                <author xml:id="LB" key="Bouilhet, Louis (1821-1869)"
+                    ref="https://www.idref.fr/031850456"><forename>Louis</forename>
                     <surname>Bouilhet</surname></author>
-                <author key="Osmoy, Charles (d') (1827-1894)" ref="https://www.idref.fr/230396461"
-                        ><forename>Charles</forename>
+                <author xml:id="CD" key="Osmoy, Charles (d') (1827-1894)"
+                    ref="https://www.idref.fr/230396461"><forename>Charles</forename>
                     <surname>d'Osmoy</surname></author>
                 <editor>Élisa Mabille</editor>
             </titleStmt>
@@ -22,537 +20,445 @@
                 <edition>Édition génétique du Château des cœurs</edition>
                 <respStmt>
                     <name xml:id="EM" ref="elisa.mabille@etu.univ-rouen.fr">Mabille, Élisa</name>
-                    <resp>Transcription, édition électronique</resp>
+                    <resp xml:lang="fre">Transcription, édition électronique</resp>
+                    <resp xml:lang="eng">Transcription, digital edition</resp>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
-                <publisher/>
+                <publisher>Élisa Mabille</publisher>
                 <date when="2022"/>
-                <idno type="URL"/>
+                <idno type="https://mabileli.github.io/interface-flaubert/index.html"/>
                 <availability>
-                    <licence/>
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/deed.fr">
+                        <p xml:lang="fre"
+                            >Cette édition est distribuée sous licence CC BY-NC 4.0. Est autorisé le partage et la modification du document à partir du moment où son origine auctoriale est mentionnée. L’utilisation commerciale du document n’est pas autorisée.</p>
+                        <p xml:lang="eng"
+                            >This edition is distributed under the CC BY-NC 4.0 license. Sharing and modification of the document is allowed as long as the author's name is mentioned. Commercial use of the document is not permitted.</p>
+                    </licence>
                 </availability>
             </publicationStmt>
             <sourceDesc>
+                <bibl type="source"
+                    >Dossier manuscrit pour Le Château des cœurs. En partie autographe.</bibl>
                 <msDesc>
                     <msIdentifier>
                         <country>France</country>
                         <settlement>Rouen</settlement>
-                        <repository>Bibliothèque municipale de Rouen</repository>
+                        <repository>Bibliothèque patrimoniale de Rouen</repository>
                         <idno>Ms g 340</idno>
                     </msIdentifier>
+                    <physDesc>
+                        <objectDesc form="manuscript">
+                            <supportDesc material="paper">
+                                <extent>95 feuillets</extent>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <p xml:lang="fre"
+                                        >De nombreuses topographies différentes se retrouvent dans ce dossier. Pour les folios transcrits dans cette édition, nous pouvons tout de même retrouver une organisation similaire de la page entre les auteurs et qui reposent sur l’occupation d’un folio par une colonne principale dont occupe le texte, avec une marge à gauche ou à droite laissée vide dans le cas d’ajouts marginaux.</p>
+                                    <p xml:lang="eng"
+                                        >Many different topographies can be found in this file. For the folios transcribed in this edition, we can nevertheless find a similar organisation of the page between the authors, which are based on the occupation of a folio by a main column which the text occupies, with a margin on the left or right left empty in the case of marginal additions.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="3">
+                            <handNote><name type="person">Flaubert, Gustave</name></handNote>
+                            <handNote><name type="person">Bouilhet, Louis</name></handNote>
+                            <handNote><name type="person">Osmoy, Charles (d’)</name></handNote>
+                        </handDesc>
+                    </physDesc>
                 </msDesc>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
             <abstract>
-                <p>Manuscrit comprenant une étape de scénarisation du Château des cœurs</p>
+                <p xml:lang="fre"
+                    >Manuscrit comprenant une étape de scénarisation du Château des cœurs</p>
+                <p xml:lang="eng">Manuscript including a script stage of the Castle of Hearts</p>
             </abstract>
             <creation><date when="1863"/></creation>
             <langUsage>
                 <language ident="fre">français</language>
             </langUsage>
         </profileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p xml:lang="fre"
+                    >Le texte est transcrit de façon diplomatique, en conservant la graphie des auteurs. L’unique changement apporté est la séparation des mots qui apparaissent collés entre-eux dans le manuscrit.</p>
+                <p xml:lang="eng"
+                    >The text is transcribed in a diplomatic manner, retaining the authors' spelling. The only change made is the separation of words that appear put together in the manuscript.</p>
+            </editorialDecl>
+        </encodingDesc>
         <revisionDesc>
             <change who="#EM"/>
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
+            <list type="speakers">
+                <item xml:id="paul"/>
+                <item xml:id="dominique"/>
+                <item xml:id="roi"/>
+                <item xml:id="huissier"/>
+                <item xml:id="valet_1"/>
+                <item xml:id="valet_2"/>
+                <item xml:id="valet_3"/>
+                <item xml:id="voix"/>
+            </list>
             <div type="act" n="5">
                 <pb n="10v" facs="Xms_g_340_010v.jpg"/>
-                <head>8ème tableau. Le pays de la toilette.</head>
+                <head><handShift resp="#CD"/>8ème tableau. Le pays de la toilette.</head>
                 <note place="margin-left">les<lb/>gnomes<lb/>au<lb/>lieu<lb/>des fées.</note>
                 <p>des arbres à perruque – à poudre (les fleurs chargées de<lb/>poudre sous des houpes qu’on peut ceuillir, quand on en<lb/>a besoin – le vent, en passant, fait une poussière blanche de poudre<lb/>de riz, qui couvre les gazons. des arbres à peignes,<lb/>des arbres à miroir – les cosmétiques poussent comme des roseaux.<lb/>les fontaines sont d’eau de rose, et d’eau de cologne – les montagnes<lb/>blanches et rouges sont de fard – ne pas oublier l’arbre<lb/>à rasoir et à blaireaux – les rasoirs, luisant au soleil, figurent<lb/>les feuilles – les blaireaux chargés de mousse de rasoir, représentent<lb/>des fleurs ou les fruits (c’est ce même arbre qui, autrefois, coupa<lb/>si cruellement le prince charmant changé en oiseau bleu.<del>)</del><lb/>les cailloux sont de savon – de toute forme &amp; de toute couleur.</p>
                 <pb n="39" facs="Xms_g_340_039.jpg"/>
             </div>
             <div type="act" n="5">
                 <head>8eme Tableau<lb/>Le Pays de la toilette</head>
-                <p>Des arbres à perruque. – des arbres à poudre. –<lb/>les fleurs chargées de poudre sont des houpes qu’on<lb/>peut cueillir. – le vent, en passant, fait une<lb/>poussière blanche de poudre de riz, qui couvre<lb/>les gazons. – des arbres à peignes – des arbres<lb/>à miroir – les cosmétiques poussent comme<lb/>des roseaux. – les fontaines sont d’eau de rose, et d’eau de cologne. – les montagnes blanches et rouges sont de fard. – il y a encore, l’arbre à rasoirs et l’arbre à blaireaux – </p>
+                <p>Des arbres à perruque. – des arbres à poudre. –<lb/>les fleurs chargées de poudre sont des houpes qu’on<lb/>peut cueillir. – le vent, en passant, fait une<lb/>poussière blanche de poudre de riz, qui couvre<lb/>les gazons. – des arbres à peignes – des arbres<lb/>à miroir – les cosmétiques poussent comme<lb/>des roseaux. – les fontaines sont d’eau de rose, et d’eau de cologne. – les montagnes blanches et rouges sont de fard. – il y a encore, l’arbre à rasoirs et l’arbre à blaireaux –</p>
                 <pb n="39v" facs="Xms_g_340_039v.jpg"/>
-                <p>– les rasoirs luisant au soleil figurent les<lb/>feuilles – les blaireaux chargés de mousse de<lb/>savon représentent les fleurs ou les fruits. –<lb/>(c’est ce même arbre qui, autrefois, coupa<lb/>si cruellement le prince charmant changé<lb/>en oiseau bleu.) – les Cailloux sont de<lb/>savon de toute forme et de toute couleur. –<lb/>– des étoffes sont étendues sur les collines,<lb/>ou dans les plaines, comme des carrés de<lb/>cultures diverses. – des mouches voltigent ça et là ; – la mouche assassine – la capricieuse – la provocante – elles viennent<lb/>se coller, d’elles mêmes, sur les visages des<lb/>jolies femmes. – la jeune laitière arrive,<lb/>toute effarée, toute honteuse. – le roi des<lb/>gnômes qui la tient par la main, la<lb/>promène et lui explique les choses du décor. – puis il fait un signal et des<lb/>soubrettes élégantes accourent. – toilette de la jeune fille. – c’est le commencement du ballet de la toilette. – peu à peu le ballet<lb/>s’augmente puis il arrive à son apogée. –<lb/>– après le ballet, le roi des gnômes demande<lb/>à la jeune fille si elle est heureuse de<lb/>se trouver au milieu de tant de belles<lb/>choses. – Je suis heureuse de me trouver<lb/>si bien vêtue, répond elle<stage> </stage>; mais ce pays<lb/>que j’ai trouvé si beau en arrivant commence<lb/>à me sembler bien fade. – J’en suis à<lb/>regretter nos champs et le pâtés où<lb/>broute notre vache. –<lb/></p>
-                <p>oh ! la vilaine façon de parler, dit<lb/>le gnôme et les grossières idées ! – </p>
+                <p>– les rasoirs luisant au soleil figurent les<lb/>feuilles – les blaireaux chargés de mousse de<lb/>savon représentent les fleurs ou les fruits. –<lb/>(c’est ce même arbre qui, autrefois, coupa<lb/>si cruellement le prince charmant changé<lb/>en oiseau bleu.) – les Cailloux sont de<lb/>savon de toute forme et de toute couleur. –<lb/>– des étoffes sont étendues sur les collines,<lb/>ou dans les plaines, comme des carrés de<lb/>cultures diverses. – des mouches voltigent ça et là ; – la mouche assassine – la capricieuse – la provocante – elles viennent<lb/>se coller, d’elles mêmes, sur les visages des<lb/>jolies femmes. – la jeune laitière arrive,<lb/>toute effarée, toute honteuse. – le roi des<lb/>gnômes qui la tient par la main, la<lb/>promène et lui explique les choses du décor. – puis il fait un signal et des<lb/>soubrettes élégantes accourent. – toilette de la jeune fille. – c’est le commencement du ballet de la toilette. – peu à peu le ballet<lb/>s’augmente puis il arrive à son apogée. –<lb/>– après le ballet, le roi des gnômes demande<lb/>à la jeune fille si elle est heureuse de<lb/>se trouver au milieu de tant de belles<lb/>choses. – Je suis heureuse de me trouver<lb/>si bien vêtue, répond elle ; mais ce pays<lb/>que j’ai trouvé si beau en arrivant commence<lb/>à me sembler bien fade. – J’en suis à<lb/>regretter nos champs et le pâtés où<lb/>broute notre vache. –<lb/>oh ! la vilaine façon de parler, dit<lb/>le gnôme et les grossières idées ! – </p>
                 <pb n="40" facs="Xms_g_340_040.jpg"/>
-                <p>– Je parle comme une villageoise ; – que voulez vous,<lb/>dit la jeune fille, Je ne suis pas accoutumée aux<lb/>façons d’ici <del>qui me paraissent bien grimacières,<lb/>entre nous. –</del><lb/></p>
-                <p>C’est pourtant le pays de l’élégance,<lb/>des belles manières et du suprême bon ton. – objecte<lb/>le roi des gnômes. –<lb/></p>
-                <p>Je n’entens rien à tout cela, dit la jeune<lb/>fille. /– tout ce que je sais c’est que vos fontaines d’eau de cologne m’affadissent et que la tête<lb/>me tourne rien qu’en regardant vos montagnes<lb/>de fard et vos arbres à houpes. –<lb/></p>
-                <p>peut-être, dit une des suivantes, madame<lb/>a t’elle besoin de quelque nourriture ? –<lb/></p>
-                <p>C’est possible dit la jeune fille.<lb/></p>
-                <p>– que desire madame ? –<lb/></p>
-                <p>moi, répond la jeune fille, oh ! mon dieu<lb/>je me contenterais d’une omelette au lard. –<lb/></p>
-                <p>– à ce mot d’omelette au lard, tout/s les |assistants donnent les marques d’un profond<lb/>dégoût. –<lb/></p>
-                <p>Mais vous avez des [illis.] de basse [courière],<lb/>dit le roi des gnômes. – il faudrait vous efforçer<lb/>d’élever votre esprit au niveau de votre<lb/>costume. –<lb/></p>
-                <p>J’ai une superbe toilette, c’est vrai ;<lb/>dit la jeune fille ; mais ça ne change pas<lb/>mes goûts et mes idées ; – et je n’épouvre pas<lb/>du tout le besoin d’en changer. –<lb/></p>
-                <p>quoi, dit le roi des gnômes, ne seriez<lb/>vous pas heureuse d’avoir l’esprit cultivé ?<lb/></p>
-                <p>– moi, dit la jeune fille, pas du tout.</p>
+                <p>– Je parle comme une villageoise ; – que voulez vous,<lb/>dit la jeune fille, Je ne suis pas accoutumée aux<lb/>façons d’ici [<del>qui me paraissent bien grimacières,<lb/>entre nous. –</del><lb/>C’est pourtant le pays de l’élégance,<lb/>des belles manières et du suprême bon ton. – objecte<lb/>le roi des gnômes. –<lb/>Je n’entends rien à tout cela, dit la jeune<lb/>fille. – tout ce que je sais c’est que vos fontaines<lb/>d’eau de cologne m’affadissent et que la tête<lb/>me tourne rien qu’en regardant vos montagnes<lb/>de fard et vos arbres à houpes. –<lb/>peut-être, dit une des suivantes, madame<lb/>a t’elle besoin de quelque nourriture ? –<lb/>C’est possible dit la jeune fille.<lb/>– que desire madame ? –<lb/>moi, répond la jeune fille, oh ! mon dieu<lb/>je me contenterais d’une omelette au lard. –<lb/>– à ce mot d’omelette au lard, tou<del>t</del>/s les |assistants donnent les marques d’un profond<lb/>dégoût. –<lb/>Mais vous avez des desirs de basse courière,<lb/>dit le roi des gnômes. – il faudrait vous efforçer<lb/>d’élever votre esprit au niveau de votre<lb/>costume. –<lb/>J’ai une superbe toilette, c’est vrai ;<lb/>dit la jeune fille ; mais ça ne change pas<lb/>mes goûts et mes idées ; – et je n’épouvre pas<lb/>du tout le besoin d’en changer. –<lb/>quoi, dit le roi des gnômes, ne seriez<lb/>vous pas heureuse d’avoir l’esprit cultivé ?<lb/>– moi, dit la jeune fille, pas du tout.</p>
                 <pb n="40v" facs="Xms_g_340_040v.jpg"/>
-                <p>mais, au moins, dit le roi des gnômes, seriez<lb/>vous bien aise de posséder les belles manières ?<lb/></p>
-                <p>– je n’en vois pas la nécessité. – dit la<lb/>jeune fille. –<lb/></p>
-                <p>alors vous vous contentez de rester<lb/>telle que vous êtes ? – dit le roi.<lb/></p>
-                <p>dame, oui. – répond la jeune<lb/>fille.<lb/></p>
-                <p>– mais cela ne suffit pas pour<lb/>séduire, pour plaire. –<lb/></p>
-                <p>pour plaire ! – dit la jeune fille –<lb/>c’est pourtant cela que je voudrais. –<lb/>je ne suis donc pas bien ainsi ? –<lb/></p>
-                <p>que de choses vous manquent encore<lb/>pour être parfaite –<lb/></p>
-                <p>et quand j’aurai ces choses – je<lb/>plairai ?<lb/></p>
-                <p>vous serez irrésistible. –<lb/>– oui. mais qui me donnera ces choses<lb/>dont j’ai besoin et que j’ignore, puisque<lb/>je n’en sens pas du tout la nécessité ?<lb/></p>
-                <p>qui vous les donnera ? – les personnes<lb/>attachées à votre maison ; car belle comme<lb/>vous êtes, vous êtes digne d’avoir une cour. –<lb/>et vous allez en avoir une. – (<hi
-                        rend="u"
-                        >sur un signe<lb/>quatre du gnôme, cinq personnages se<lb/>présentent – ils sont convenablement vêtus ;<lb/>mais dans une grande recherche.</hi>)<lb/>voici d’abord, dit le roi des gnômes, (en désignant<lb/>un des personnages) – le chevalier Printemps –<lb/>ce sera votre écuyer cavalcadour et il vous<lb/>initiera aux belles manières. – celui-ci, c’est</p>
+                <p>mais, au moins, dit le roi des gnômes, seriez<lb/>vous bien aise de posséder les belles manières ?<lb/>– je n’en vois pas la nécessité. – dit la<lb/>jeune fille. –<lb/>alors vous vous contentez de rester<lb/>telle que vous êtes ? – dit le roi.<lb/>dame, oui. – répond la jeune<lb/>fille.<lb/>– mais cela ne suffit pas pour<lb/>séduire, pour plaire. –<lb/>pour plaire ! – dit la jeune fille –<lb/>c’est pourtant cela que je voudrais. –<lb/>je ne suis donc pas bien ainsi ? –<lb/>que de choses vous manquent encore<lb/>pour être parfaite ! –<lb/>et quand j’aurai ces choses – je<lb/>plairai ?<lb/>vous serez irrésistible. –<lb/>– oui. mais qui me donnera ces choses<lb/>dont j’ai besoin et que j’ignore, puisque<lb/>je n’en sens pas du tout la nécessité ?<lb/>qui vous les donnera ? – les personnes<lb/>attachées à votre maison ; car belle comme<lb/>vous êtes, vous êtes digne d’avoir une cour. –<lb/>et vous allez en avoir une. – (<hi
+                        rend="u">sur un signe</hi><lb/><del>quatre</del>
+                    <hi rend="u"
+                        >du gnôme, cinq personnages se<lb/>présentent – ils sont convenablement vêtus ;<lb/>mais dans une grande recherche.</hi>)<lb/>voici d’abord, dit le roi des gnômes, (en désignant<lb/>un des personnages) – le chevalier Printemps –<lb/>ce sera votre écuyer cavalcadour et il vous<lb/>initiera aux belles manières. – celui-ci, c’est</p>
                 <pb n="41" facs="Xms_g_340_041.jpg"/>
-                <p>l’amiral zéphir – il vous fera parcourir les plus<lb/>beaux endroits de ce royaume – les voyages forment<lb/>la jeunesse. –<lb/></p>
-                <p>– oui, dit l’amiral zéphir. – nous nous<lb/>embarquerons d’abord sur le fleuve de lait sur<lb/>les bords duquel les habitants ne parlent qu’en musique. –<lb/>– le vaisseau que nous monterons est tout dérisoire<lb/>vert avec des sculptures plus fines que celles des<lb/>branches d’un éventail fouillé par un artiste chinois. –<lb/>– les voiles sont de pourpre – les cordages de<lb/>filigrane – les mots sont d’or et d’argent – la<lb/>poupe représente une belle femme taillée dans<lb/>une émeraude colossalle. – l’ancre est <del>d’[émeraude]</del> <add>de rubis</add><lb/>et quand on la jette dans les flots ou qu’on<lb/>la retire, elle fait entendre des chants si mélodieux<lb/>que c’est merveille. – quantité de peintures<lb/>décorent l’intérieur du navire – quelques unes dont<lb/>éxécutées avec une si rare perfection que de<lb/>temps à autres elles s’animent – c’est la vie en<lb/>miniature. – pour mousses, pour matelots, nous<lb/>avons des poëtes, des musiciens, des sculpteurs – | le pilote est un architecte qui fait quand il lui<lb/>plait sortir des flots des palais de toutes sortes<lb/>où l’équipage se repose. – mille femmes délicieuses<lb/>nagent constamment à l’avant du vaisseau et<lb/>véritablement nous naviguons au milieu d’un<lb/>choeur de danses. – quand vous voudrez dormir,<lb/>un [illis.], sur ses ailes étendues, vous bercera<lb/>comme un enfant – à votre réveil, s’il vous prend<lb/>fantaisie de quelque toilette, il vous suffira de<lb/>tremper votre main dans l’eau et d’en secouer ensuite<lb/>les gouttes sur votre chevelure, chaque goutte<lb/>en tombant durcira et vous serez inondée de<lb/>perles fines et de toutes les espèces de pierreries. –</p>
+                <p>l’amiral zéphir – il vous fera parcourir les plus<lb/>beaux endroits de ce royaume – les voyages forment<lb/>la jeunesse. –<lb/>– oui, dit l’amiral zéphir. – nous nous<lb/>embarquerons d’abord sur le fleuve de lait sur<lb/>les bords duquel les habitants ne parlent qu’en musique. –<lb/>– le vaisseau que nous monterons est tout dérisoire<lb/>vert avec des sculptures plus fines que celles des<lb/>branches d’un éventail fouillé par un artiste chinois. –<lb/>– les voiles sont de pourpre – les cordages de<lb/>filigrane – les mots sont d’or et d’argent – la<lb/>poupe représente une belle femme taillée dans<lb/>une émeraude colossalle. – l’ancre est <del>d’emeraude</del>
+                    <add>de rubis</add><lb/>et quand on la jette dans les flots ou qu’on<lb/>la retire, elle fait entendre des chants si mélodieux<lb/>que c’est merveille. – quantité de peintures<lb/>décorent l’intérieur du navire – quelques unes dont<lb/>éxécutées avec une si rare perfection que de<lb/>temps à autres elles s’animent – c’est la vie en<lb/>miniature. – pour mousses, pour matelots, nous<lb/>avons des poëtes, des musiciens, des sculpteurs –<lb/>le pilote est un architecte qui fait quand il lui<lb/>plait sortir des flots des palais de toutes sortes<lb/>où l’équipage se repose. – mille femmes délicieuses<lb/>nagent constamment à l’avant du vaisseau et<lb/>véritablement nous naviguons au milieu d’un<lb/>choeur de danses. – quand vous voudrez dormir,<lb/>un alcyon, sur ses ailes étendues, vous bercera<lb/>comme un enfant – à votre réveil, s’il vous prend<lb/>fantaisie de quelque toilette, il vous suffira de<lb/>tremper votre main dans l’eau et d’en secouer ensuite<lb/>les gouttes sur votre chevelure, chaque goutte<lb/>en tombant durcira et vous serez inondée de<lb/>perles fines et de toutes les espèces de pierreries. –</p>
                 <pb n="41v" facs="Xms_g_340_041v.jpg"/>
-                <p>que vous dirais-je, du reste ? – tout est à l’avenant. –<lb/>vous plaît-il que nous partions tout-à-l’heure ? –<lb/></p>
-                <p>– cet autre, dit le des gnômes, est l’abbé<lb/>calibri. – il est notre poëte ordinaire et vous<lb/>initiera à tous les raffinements de l’esprit. –<lb/>– il vous inculquera la belle façon de parler, les tours de phrases ingénieux – les délicatesses<lb/>de pensées. –<lb/></p>
-                <p>l’abbé répond par un madrigal. –<lb/>il tire un livre de sa poche et demande à<lb/>la jeune fille <add>la permission</add> de lui en lire quelques extraits,<lb/>pendant qu’elle va considérer les divers habitants<lb/>du royaume. – quelques minutes me suffiront,<lb/>dit il, pour élever cette intelligence dont la<lb/>forme me parait furieusement enfoncée dans<lb/>la matière. – [symbole]</p>
-                <p>*[symbole] Comment les trouvez<lb/>vous, dit le roi des<lb/>gnômes à la jeune fille ?<lb/>– parfaitement<lb/>inintelligibles, dit<lb/>la jeune fille. – tout<lb/>ce que je remarque c’est que leur costume<lb/>ne me plaît pas. –<lb/>– qu’à cela ne<lb/>tienne, dit le roi<lb/>des gnômes ? –<lb/>(<hi
-                        rend="u"
-                        >aussitôt, les pièces<lb/>d’étoffes étendues<lb/>dans les plaines<lb/>viennent, d’elles<lb/>mêmes, habiller<lb/>splendidement les<lb/>3 personnages</hi>)*</p>
-                <p>(<hi rend="u"
-                        >à ce moment des espèces d’automates<lb/>paraissent au fond du théatre</hi>. – <hi
-                        rend="u">ces automates<lb/>sont ainsi faits</hi> : – <hi rend="u"
-                        >ils restent dans la plus parfaite<lb/>immobilité jusqu’à ce que l’un deux, à l’aide<lb/>du clef, remonte l’autre ; alors celui qui a été<lb/>remonté se met à parler avec une volubilité<lb/>extrême</hi>, <hi
-                        rend="u">et fait</hi>, <hi rend="u">par exemple</hi>, <hi rend="u"
-                        >si c’est un automate<lb/>homme</hi>, <hi rend="u"
-                        >une déclaration échevelée à l’autre qui<lb/>est une automate femme</hi>. – <hi
-                        rend="u"
-                        >pendant la déclaration<lb/>l’automate femme reste dans la plus parfaite<lb/>immobilité</hi>, <hi
-                        rend="u"
-                        >alors l’automate homme remonte<lb/>la femme à son tour et rétombe, lui, dans</hi><lb/>l’attitude rigide d’un polichinelle ; – <hi
-                        rend="u">la femme<lb/>répond à son tour etc etc</hi>…)<lb/></p>
-                <p>les drôles de gens, dit la jeune fille. –<lb/>elle remonte le théatre pour les voir de plus<lb/>près. – l’abbé la suit son livre à la main ;<lb/>et lui fait la lecture. – le chevalier printemps<lb/>fait des poses avec l’amiral zéphir. –</p>
-                <pb n="42" facs="Xms_g_340_042.jpg"/>
-                <p>un gnôme subalterne, dit alors au roi des gnômes,<lb/>je crains bien que l’abbé en soit pour ses frais de<lb/>lecture. –<lb/></p>
-                <p>pourquoi ? – demande le roi.<lb/>parce que cette petite fille me parait si naïve, si<lb/>franche, si naturelle et si pleine de bon sens<lb/>que le factice, le convenu, le prétentieux, le<lb/>maniéré doit avoir peu de prise sur elle. –<lb/></p>
-                <p>je le crains. – répond le roi.<lb/>– des personnages de toute sorte inondent le<lb/>théatre ; mais ce que remarquent le plus la jeune<lb/>fille c’est le changement de modes. – en effet, à<lb/>chaque instant les costument changent. – elle<lb/>en remarque un particulièrement – alors, elle descend<lb/>la scène et s’adressant au roi des gnômes elle<lb/>dit qu’elle voudrait bien porter un pareil costume. –<lb/>– mais cela est très vieux, répond le roi, vous<lb/>n’y songez pas – c’était porté il y a 10 minutes. –<lb/></p>
-                <p>et celui-ci, dit la jeune fille désignant<lb/>un autre costume ?<lb/></p>
-                <p>oh ! celui là est trop neuf. – il ne sera à<lb/>la mode que dans une demie heure ; répond<lb/>le roi. –<lb/></p>
-                <p>(<hi rend="u"
-                        >peu à peu le théatre se dégarnit et<lb/>les personnages essentiels à l’action sont seuls<lb/>scène</hi>.)<lb/></p>
-                <p>eh ! bien, dit l’abbé, l’éducation est<lb/>fait. –<lb/></p>
-                <p>nous allons bien voir, dit le roi des<lb/>gnômes ; mais j’ai bien peur du contraire. –<lb/></p>
-                <p>– ne trouvez vous pas, madame, dit le<lb/>roi des gnômes, qu’il manque quelque chose<lb/>à ce pays charmant ?</p>
-                <pb n="42v" facs="Xms_g_340_042v.jpg"/>
-                <p>mais non, dit la jeune fille, je ne vois pas –<lb/>quoi donc ?<lb/></p>
-                <p>– une vache, dit le roi.<lb/>– oh ! fi ! – l’horreur ! – dit la jeune fille. –<lb/>pouvez vous employer des termes d’une grossiereté<lb/>pareille ! – si on veut à toute force exprimer une<lb/>idée aussi répugnante./, on dit : la nourrice aux flancs<lb/>roux qui mugit dans les herbes. n’est-ce-pas,<lb/>l’abbé ? –<lb/></p>
-                <p>bravo, dit-à-part le roi des gnômes,<lb/>poursuivons. – – puis tout haut et en s’inclinant :<lb/>je tâcherai de profiter de la leçon, madame.<lb/>Voyez donc, mon cher Printemps, dit<lb/>la jeune fille, la gauche façon de saluer. –<lb/>vous n’avez aucune frace, mon bon seigneur,<lb/>aucune désinvolture. –<lb/></p>
-                <p>soit, dit le roi des gnômes ; mais je vais<lb/>réparer tous mes torts en vous faisant servir…<lb/>quoi donc ? – dit la jeune fille.<lb/>– une omelette au lard, – répond le roi.<lb/>– il ne s’en est fallu de rien que je ne m’évanouisse<lb/>à ce mot là ; mais par la blancheur des colombes,<lb/>vous avez donc une nature de bourier ? – qu’on<lb/>m’apporte tout au plus un parfum de jasmin<lb/>trempé dans une <del>p</del> souvenir de [illis.] avec<lb/>une pointe de regrets de giroflée. –<lb/></p>
-                <p>elle va bien, dit le roi. – puis s’adressant<lb/>à la jeune fille, vous sentez vous en état de<lb/>supporter quelque musique ? (dit la jeune fille)<lb/></p>
-                <p>cela m’agite singulièrement les nerfs ;<lb/>mais cependant… (dit la jeune fille.)<lb/></p>
-                <p>Qu’on fasse avancer mon orchestre,<lb/>dit le roi, surtout qu’on n’oublie point les<lb/>flûtes et les cymbales. –</p>
-                <pb n="43" facs="Xms_g_340_043.jpg"/>
-                <p>– vous voulez donc m’écorcher toute vive ! –<lb/>– si vous voulez des cymbales prenez au moins<lb/>les deux aîles d’un papillon pour flûter la tige<lb/>d’une violette et je pourrai entendre votre<lb/>symphonie sans trop me boucher les oreilles.<lb/><add>dit la jeune fille</add></p>
-                <p>– non, dit l’abbé, point de musique ;<lb/>mais plus tôt quelque poësie. (il <hi
-                        rend="u">re</hi>cite)<lb/></p>
-                <lg>
-                    <l>Allez au pays de chine<lb/></l>
-                    <l>et sur ma table apportez<lb/></l>
-                    <l>le papiet de paille fine<lb/></l>
-                    <l>plein de reflets argentés.<lb/></l>
-                </lg>
-                <p>– la chine – c’est bien barbare, dit la jeune fille.<lb/>– quand au papier de paille, cela est rugueux et<lb/>agaçant, cela vous [<del>qui</del>] crispe le toucher et vous<lb/>éraille les yeux.<lb/></p>
-                <lg>
-                    <l>pour encre et pour écritoire<lb/></l>
-                    <l>allez prendre à l’alhambra<lb/></l>
-                    <l>le sang d’une mûre noire<lb/></l>
-                    <l>et l’écorce d’un cédrat.<lb/></l>
-                </lg>
-                <p>– <del>pour</del> encre ! – écritoire ! – quelle grossiereté ! –<lb/>et ce sang, pour l’amour de dieu otez moi ce sang !<lb/><add>dit la jeune fille</add><lb/></p>
-                <lg>
-                    <l>alors de ma main fidèlle<lb/></l>
-                    <l>peut-être oserais-je, un jour,<lb/></l>
-                    <l><del>écrire</del>
-                        <add>traçer doux</add> le nom de celle<lb/></l>
-                    <l>qui me fait <hi rend="u">mourir</hi> d’amour<lb/></l>
-                </lg>
-                <p>J’aime assez la main fidèle – oserais-je est<lb/><del>d’écl</del> délicat – traçer le doux nom est absolument<lb/>délicieux ; mais Amour ! cela choque étrangement<lb/>la pudeur – on peut le faire soupçonner avec<lb/>des précautions ; mais le nommer, jamais.<lb/>(dit la jeune fille)<lb/></p>
-                <p>Allons, dit le roi des gnomes c’est une<lb/>grue accomplie. – il ne s’agit plus que de<lb/>la retenir ici. – c’est l’afaire du capitaine<lb/>Bourreau des cœurs, le don juan de cet<lb/>empire. – </p>
-                <pb n="43" facs="Xms_g_340_043v.jpg"/>
-                <p>– le capitaine bourreau des cœurs, paraît. – tout<lb/>le monde se retire. – la jeune fille est charmée<lb/>de son extérieur. – ici commençe entre eux<lb/>une scène d’amour pleine de maniérisme<lb/>et d’afféterie, on y étale des sentiments<lb/>dignes de la Sybille d’octave feuillet,<lb/>le langage est à la hauteur des idées. – quand le capitaine bourreau des cœurs<lb/>croit avoir subjugué la jeune fille, il lui<lb/>fait une déclaration à toute vapeur et<lb/>la supplie de lui donner son cœur. –<lb/></p>
-                <p>la jeune fille qui a été fascinée<lb/>comme par un serpent, hésite, se<lb/>trouble, balbutie. –<lb/></p>
-                <p>Elle est à nous dit le capitaine<lb/>bourreau des cœurs. –<lb/></p>
-                <p>tout-à-coup, la jeune fille fait<lb/>un violent effort sur elle-même – on sent<lb/>toutes les souffrances qu’elle épouvre<lb/>et qu’elle peine elle a se retrouver elle-même<lb/>au milieu de ce pays qui l’enchante ; mais<lb/>elle triomphe et dit : mon cœur n’est pas<lb/>à moi. – n’en parlons plus – je le garde<lb/>tout entier pour celui que j’aime et<lb/>que je voudrais revoir à tout prix.<lb/></p>
-                <p>– à ce moment le roi des gnômes<lb/>revient avec toute sa cour. – <del>il parait</del><lb/>tu veux revoir ce jeune homme ? – eh ! bien,<lb/>soit. – tu pourras même te retrouver<lb/>avec lui – l’entendre – lui parler ; mais<lb/>si dans n’importe quelle circonstance<lb/>tu as le malheur de lui dire : Je suis la<lb/>petite laitière – tu mourras. – accepte<lb/>tu à ce prix là ?<lb/></p>
-                <p>J’accepte, dit la jeune fille.<lb/></p>
-                <p><hi rend="u">Tableau</hi>. (<hi rend="u">la toile tombe</hi>.)</p>
-            </div>
-            <pb n="59" facs="Xms_g_340_059.jpg"/>
-            <fw>14 [<del>illis.</del>]<lb/>59</fw>
-            <div type="act" n="7">
-                <head><del>Pays</del>
-                    <add>Royaume</add> du Pot au Feu</head>
                 <note place="margin-right"
-                    >pendant tout<lb/>ce tableau, comme<lb/>psychologie interne,<lb/>theorie du progrès inversé</note>
-                <stage><del>Une ville</del>
-                    <add>La</add> place de ville. – en demi rond ; toutes les rues y<lb/>aboutissent de <del>manière</del>
-                    <add>façon</add> qu’on <add>peut</add> la voir entière d’un seul coup<lb/>d’oeil. Toutes les maisons, pareilles, &amp; d’une architecture<lb/>d’une [illis.] pitoyable, sont peintes en chocolat. Au milieu<lb/>de la place un pot au feu gigantesque. – par derrière <add>des</add> sieges<lb/>en fer à cheval - <add>qui sont des</add> fauteuils de bureau. <del>avec des [illis.]</del>.</stage>
-                <stage>*D [le pontif] <add>Il</add> trace<lb/>un cercle en l’air après avoir trempé son doigt<lb/>dans le bouillon. – ça vous<lb/>enferme tous dans ce cercle de bouillons [et] – –<lb/>–– M*</stage>
-                <div type="scene" n="1">
-                    <head>I.</head>
-                    <p>foule des habitants. – [<del>font</del>] recueillie. – discours du grand<lb/>pontife <add><del>i</del></add> ; – expliquent toute la situation. – on renouvelle les serments. – Chaque corporation y prend part. – dans ces corporations se <add>tous les hommes portent la barbe en collier.</add><lb/>trouvent un poëte, un savant [de] <add>[<del>illis</del>.]</add>… *<del>B</del> enfants au maillot<lb/>enfants de tous les âges.* <del>Cette cérémonie se</del><lb/><add>{cette ceremonie se</add>} clôt par la/un digne cabalistique <add>du pontife</add> qui les affermit tous dans<lb/>la croyance commune. <add>C</add> – <add>M</add> la séance est [serée]. – on<lb/>emporte à droite et à gauche les sièges des [<del>illis</del>.] <add>notables</add>. – <del>le</del><lb/>*Le* pot-au-feu reste sur la place et tous les habitants s’arrêtent<lb/>le dos tourné au spectateur à considérer l’aiguille de<lb/>chaque horloge. – au moment où l’heure sonne partout,<lb/>ils se précipitent dans l’intérieur des maisons. – on entend<lb/>d’abord un cliquetis de cuillères et de fourchettes – puis marquer<lb/>par des phrases nettes et courtes les différentes étapes du diner.<lb/>– après la soupe, on entend : <hi
-                            rend="u">Ah ! ça fait bien</hi>. – puis,<lb/><hi rend="u"
-                            >voila ce qu’on ne trouve pas au restaurant</hi>. – bruits de<lb/>fourchettes. – puis, pour marquer le dessert : <hi
-                            rend="u">nous sommes</hi><lb/><hi rend="u"
-                            >entre la poire et la/e fromage</hi>. *<del>alternativement un [illis.] et un [illis</del>.]* – ici petit éclat de rire. – <add>, de satisfaction bourgeois</add> un <lb/>silence, – « la bonne, le café ! » – (un silence) – « je le veux<lb/>brûlant. » – un grand bruit de chaises. – après quoi<lb/>les bourgeois à chaque fenêtre étendent leur main. – tous<lb/>ensemble : « il fait chaud » – *[Q] Chacun en passant dit une bêtise* une femme arrive à<lb/>chaque fenêtre et dit : « oui ; mais le fond de l’air est<lb/>froid. » – chaque mari : « c’est vrai. » – tous descendent<lb/>et apparaissent timidement au seuil de la porte en<lb/>disant en choeur : « ça va t’il se maintenir ? » – tous<lb/>tappent sur la queue des baromètres. – réponse<lb/>de tout le monde  : <add>« oui » alors</add><del>oui, nous pourrons nous asseoir</del><lb/><del>devant les portes</del>. – <del>[illis.] général</del><lb/><del>et imbécille</del>. – <del>arrivé de la jeune fille et du roi</del>
-                        <add><del>après</del> un petit four pour la digestion ou – [symbole]</add></p>
-                    <p><add>[<del>O</del>] ils font une</add>[symbole] promenade chaque groupe<lb/><add>contient</add> un monsieur, une<lb/>femme et un petit<lb/>garcon habillé en Turco.<lb/>une petite fille en [surpesse] [symbole]<lb/>puis ils rentrent &amp;<lb/>s’asseoient sur les portes<lb/>« prenons fraicheur [<del>illis</del>.]*</p>
-                    <pb n="60" facs="Xms_g_340_060.jpg"/>
-                    <fw>15. [<del>illis</del>.]</fw>
-                </div>
-                <div type="scene" n="2">
-                    <head>II</head>
-                    <p>*<del>les enfants dansent<lb/>autour du pot au feu</del>*</p>
-                    <p><add>Arrivée de la jeune fille &amp; du roi, des</add> Des gnômes . – [il porte un pardessus sur une redingotte<lb/>à la propriétaire. – (<del>tout le monde porte la barbe en</del><lb/><del>collier</del>) – il donne son bras gauche à Jeannette – il a<lb/>a sa main droite un parapluie de famille [symbole] – et passé<lb/>à son bras un rond en cuir – il a ses lunettes à<lb/>quatre verres –<lb/>du coton dans les oreilles – des gants<lb/>de [fisoselles] – des caoutchoux autour de ses bottes –<lb/>– Jeanne a à son bras gauche un cabas. – elle est<lb/>habillée comme une petite bourgeoise. –]<lb/>salutations de tous les habitants et murmures flatteurs –<lb/>ça et là on entend : « Ah ! très bien. – tu vois, ma<lb/>fille », dit le gnôme, « que notre première récompense est<lb/>l’admiration du monde et l’estime des honnêtes gens. – »<lb/>– « oh ! oui », dit la jeune fille, « quelle bonne vie calme,<lb/>Comme cela vaut mieux <del>que [vos]</del>
-                        <add>que le</add>sot étalage d’un<lb/>luxe <del>étalage</del> inutile. – Je ne comprends que trop pourquoi<lb/>je l’ai dégouté. – C’est un homme sérieux, fatigué<lb/>peut-être des luttes <del>de la vie</del>
-                        <add>du monde</add>. – Je le dorlotterai dans<lb/>Ce pays où la vie ne craint pas [le] viscinitudes. – [<del>illis</del>.]<lb/>[<del>illis</del>.] ; « oui, <add>reprend le gnome</add>, « mais il faut nous loger en attendant –<lb/>– <del>[la] petite fille, [sir],</del> cherchons une auberge. » – [<del>comme</del>] <add>reprend Jeanne</add><lb/><del>Auberge, repond le gnôme, il n’y <add>en</add> a pas dans ce pays on y</del><lb/><del>craint trop les étrangers. – chacun chez soi chacun pour</del><lb/><del>soi.</del> – en voilà une. – (<del>ils</del> X</p>
-                    <p>*([symbole] il a <add>un</add> parapluie<lb/>casse – sous la pomme<lb/>du parapluie il y a une<lb/>tabatière. –)*</p>
-                </div>
-                <div type="scene" n="3">
-                    <head>III.</head>
-                    <p><del>[Des] agents de police viennent les visiter, <add>les</add> prevenant<lb/>que p. etre admi dans le pays il ne faut<lb/>apporter [illis.]<lb/>[illis.] trouver dans leurs bagages<lb/>rien que d’orthodoxe. on loue le gnôme de son<lb/>rond</del> [symbole]</p>
-                </div>
-                <div type="scene" n="4">
-                    <head>IV.</head>
-                    <p>Paul &amp; Jean entrent<lb/>ils entrent [<del>au</del>] <add>sur le</add> seuil <del>du cabaret</del>
-                        <add>de l’auberge</add><add>qui est au second<lb/>plan à gauche</add>. <add>alors</add>sortent deux<lb/>valets qui veulent prendre le cabas et le rond<pb
-                            n="61" facs="Xms_g_340_061.jpg"
-                            /><fw>16</fw> du gnôme. – « non, <del>dit celui-ci</del>, C’est mon vade mecum. »<lb/>– « eh ! bien asseyez vous », dit le domestique, c’est l’heure <lb/></p>
-                    <p>*L’auberge est au<lb/>second plan à gauche.*</p>
-                    <p>qu’on doit prendre le frais. – « je le savais bien » dit<lb/>le gnôme » c’est pour ça que j’ai gardé mon rond. » –<lb/>les parents sur le seuil des portes disent, « allez<lb/>mes enfants voici l’heure où les enfants doivent<lb/>s’amuser. » – I pendant que les enfants se placent,<lb/>– <del>la petite fille dit sans [illis.]</del>
-                        <add>autour du pot au feu p. danser Jeanne dit à son compagnon</add> « vous m’affirmez<lb/>que je vais le revoir » – « oui, il va venir je le sais », <del>dit le gnome</del>
-                        <add>Jeanne contemple le bal d’enfants</add>. – <del>la jeune fille [danse –] ah ! les</del><lb/>« les jolies enfants, – heureuses mères ! – remerciements – <lb/>
-                        <add>des mères &amp; des moutards</add> salutations. – baisers qu’on force les enfants d’envoyer.</p>
-                </div>
-                <div type="scene" n="4">
-                    <head>IV</head>
-                    <p>– tout-à-coup, apparition de Paul et [illis.]<lb/><del>domestique</del>
-                        <add>Dominique</add>. – rumeurs lointaines. – « Qu’est-ce-que<lb/>c’est ? » – à leur approche les petits enfants se<lb/>réfugient sous le [catillon] de leurs mamans. ]<lb/>poussant ses petits cris aigus de terreur. – Paul<lb/>qui est entré en scène dit à Jean : « enfin, voici un pays<lb/>bien calme et où nous allons pouvoir nous reposer l’esprit et le corps. – je vais m’informer où trouver un gite. » – il s’approche d’un couple, la femme baisse<lb/>les yeux <add>pudiquement</add> – l’homme fait un geste de répulsion. même<lb/>jeu de tous les groupes. – Jeanne est apitoyée et inquiète. – il vient vers elle, <add>Elle</add> seule <del>elle</del> lui fait<lb/>bonne mine ; ce qui l’engage à <del>s’approcher</del>
-                        <add>s’asseoir près</add> d’elle. –<lb/><del>acceuil de la jeune fille – le jeune homme dit</del>
-                        <add>il lui dit</add> que sa<lb/>[vain] lui rappelle une autre femme. – [<del>illis</del>.]. –<lb/>alors <del>la jeune fille</del>
-                        <add>Jeanne</add> se penchant vers une dame <del>lui</del><lb/><del>dit</del> – « c’est un étranger – il est excentrique c’est vrai ;<lb/>mais il se corrigera peut-être – d’ailleurs en aussi belle<lb/>compagnie il ne saurait se soustraire au [coureneble] – si vous<lb/>voulez m’aider »… elle <del>lui</del> propose <add>à Paul</add> des douceurs <add>domestiques</add>. – « Voulez<lb/>vous des pantoufles – vous devriez mettre de la flanelle » –<lb/>*etc »* <del>[illis.] ; mais ce pays si tranquille</del><pb
-                            n="62" facs="Xms_g_340_062.jpg"/><fw>17<lb/><del>12</del></fw>
-                        <del>va le reposer. – vous avez faim sans doute ? il ne faut<lb/>pas jouer avec son estomac – si vous preniez quelque chose…</del><lb/>un bouillon – <add>Paul</add> en est attendri et reconnaissant. –<lb/>– « vous voyez » dit <del>la jeune fille </del><add>Jeanne</add> à une dame : « vous voyez<lb/>il n’est pas si méchant qu’il en a l’air – il a déjà fait<lb/>des progrès. » – alors une dame s’approchant dit au<lb/>jeune homme : « ce n’est pas pour <del>vot</del> vous donner un<lb/>ordre ; mais ce costume est-il bien convenable ? » – une<lb/>autre dit : « croyez vous que ce costume soit bon pour<lb/>la santé. – vous feriez bien de mettre <hi
-                            rend="u"
-                            >la</hi> redingotte » – « mais….<lb/>dit <del>le jeune homme</del>
-                        <add>Paul</add> – … « il le faut » dit la dame. –<lb/><del>le jeune homme</del>
-                        <add>Paul</add> y consent <add>par complaisance</add> et met la redingotte *X– « me voila bien<lb/>affable. » – <add>en riant</add> sur lui-même<lb/>– « comme il est beau<lb/>dit <add><del>s’ecrit</del></add>
-                        <del>la jeune fille</del>
-                        <add>Jeanne</add> !<lb/>– « comment, vous aussi ! – maintenant* – <del>maintenant</del><lb/>il faudrait avoir le chapeau – puis <add>se decouper</add> les cheveux <add>comme toute</add> le monde<lb/>puis <del>le</del>
-                        <add>avoir le</add> collier <add>d’usage</add>. – <del>un perruquier</del> « c’est impossible. –<lb/>[illis.] voyez les tous. – <del>il se met à rire. – alors</del>
-                        <add>&amp;</add> un perruquier<lb/>se présente devant lui. – <add>p<hi
-                                rend="superscript">r</hi> l’accommoder suivant les us du pays</add>
-                        <del>voyons, monsieur, c’est</del><lb/>*« Allons, monsieur c’est* pour votre bien ; – dit <del>la jeune fille</del>. – <add>Jeanne</add> « Est-ce qu’elle<lb/>serait encore plus bête que les autres <del>dit le jeune</del>
-                        <add>se dit Paul</add><lb/><del>homme</del>. – le perruquier s’approche. – <add>va se mettre en besogne</add> « non c’est trop<lb/>fort <add> » dit Paul</add>, <add>{qui se lève d’indignation &amp; croyant prendre son</add>} <del>Le jeune homme qui s’est assis [illis.] <add>[illis.]</add> prend</del><lb/><add>{chapeau, il prend</add>} <del>son chapeau – on en</del> un chapeau <add>{local</add>} qu’on a <del>mis</del>
-                        <add>{pose exprès</add>} à la<lb/>place du sien – il le met sur sa tête, sans le remarquer,<lb/>« Ah ! par exemple, monsieur », <del>dit le domestique sans</del>
-                        <add>s’ecrie Dominique</add><lb/>« vous avez une bonne binette comme ça » – fureur [illis.]<lb/><del>jeune homme</del>
-                        <add>Paul</add> il examine le chapeau, le jette par<lb/>terre et le foule aux pieds – cris d’indignation – pendant que la foule accourt, il retire sa redingotte<lb/>et la jette <del>aussi</del>
-                        <add>par terre</add>. – <del>la jeune fille dit [illis.]</del>
-                        <add>Jeanne s’ecrit</add><lb/>« le malheureux ! » x – Jeune dinde, répond le jeune homme.<lb/>*[<del>illis</del>.]* [<del>illis</del>.] – les <del>hab</del> propositions <add>morales des habitants</add> doivent<lb/>être par degrés de progression. – <add>jusqu’au moment où {{on</add>} lui propose du bouillon de la [illis.]} <del>enfin</del> (on le mene<lb/>en prison ; c’est alors qu’il dit : « si j’étais assez puissant<lb/>pour vous écraser tous. – on entraine aussi le<lb/>domestique qui, lui, est orthodoxe comme vêtement<lb/>et demande à prendre le bouillon, on le lui<pb
-                            n="63" facs="Xms_g_340_063.jpg"
-                                /><fw>18.<lb/><del>13</del>.</fw> refuse. – et on baillonne Paul pour l’empêcher<lb/>de gueuler. – Quand ils sont en prison. – le<lb/>grand pontife le harangue. – tout le peuple<lb/>écoute touché d’admiration. – <add><del>au</del></add>
-                        <del>loin</del>, en face <del>la jeune</del><lb/><del>fille</del>
-                        <add>Jeanne</add> soutenue par le gnôme <del>et</del> sanglotte<del>nt</del>. –<lb/>tout-à-coup, une cloche lointaine retentit –<lb/>tous les cadras font leur petit tintement ; <del>c’est</del><lb/><del>encore le crepuscule [Cependant]</del>
-                        <add>et qu’il fasse encore demi jour</add>. – immédiatement<lb/>tous les hommes mettent leur bonnet de coton. – le grand pontife interrompt son discours <add>net, p.</add> mettre son<lb/>bonnet comme les autres <add>&amp; l’en [illis.]]. – <del>tout le monde</del> {chacun</add><lb/>rentre <add>dans sa maison</add> tous les volets se ferment d’eux-mêmes. –<lb/>– « Que voulez vous donc de moi », dit <del>la jeune</del>
-                        <add>Jeanne</add><lb/><del>fille</del> au gnôme ? – q/Vous m’avez trompé deux<lb/>fois – il m’échappe toujours. » – « je vous ai trompé,<lb/>moi ! – n’avez-vous a eu à votre 1<hi
-                            rend="superscript"
-                            >er</hi> réquisition<lb/>*<del>?</del>* toutes les graces <add>d’une coquette</add> et toutes les habilités d’une<lb/>ménagère. – ne vous ais-je pas sans cesse<lb/>conduit sur ses traces ; j’ai le pouvoir d’accomplir<lb/>tous vos desir<del>s</del> ; mais il ne m’est pas permis<lb/>d’agir sur vos sentiments si sur ceux de<lb/>Paul. – c’est à vous à mieux désirer. – »<lb/>Je sais bien maintenant ce <del>qu’il</del> que je veux<lb/><add>reprend Jeanne</add> C’est la puissance, il l’a demandée lui-même<lb/>tout-à-l’heure – Ah ! si je l’avais eue aux<lb/>mains, comme je l’aurais sauvé de cette<lb/>populace. (mouvement <add>interieur</add> d’orgueil qui la<lb/>fait déjà raine.) – « Vous en êtes bien sûre ? » –<lb/>« oui, oui, oui. » – « pas si haut vous aurez tous<lb/>cela. » – puis il tire le bonnet de coton plus exageré<pb
-                            n="64" facs="Xms_g_340_064.jpg"
-                            /><fw>14/9.</fw> que les autres. <add>&amp; se l’enfance sur les oreilles</add> (si on veut la mêche du bonnet<lb/>sera flamboyante.) – cependant le jour est<lb/>immédiatement <del>faire monter</del> le pot-au-feu<lb/>dont les [<del>illis</del>.] anses sont transformées<lb/> en ailes <add>monte dans les airs</add> et quand il est arrivé au dessus de<lb/>la ville il se retourne <add><del>complement. [illis.] &amp;</del></add>
-                        <del>(« c’est [puissant] »)</del> de<lb/>sa cavité s’échappent des legumes lumineux<lb/>carottes, navets et poireaux qui restent<lb/>suspendus <add>à la voute noire</add> Comme des constellations –<lb/>tandis qu’au dessus les flancs de la<lb/>marmite <add>ont été</add> s’élargissa/ent d’une façon formidable<lb/>de <del>facon</del>
-                        <add>manière</add> à couvrir la cité endormie. –<lb/>à peine l’obscurité est elle complete <add>que l’on entend</add>
-                        <del>un</del><lb/>*sortir de toutes les maisons un* ronflement général. – <del>alors</del>
-                        <add>mais il se fait</add> un bruit sec<lb/>Comme d’un barreau qu’on <del>vient</del> – <add>brise. puis</add> deux<lb/>ombres frôlent les murailles sur la pointe<lb/>des pieds. – Paul <add>apparait</add> d’abord – puis <del>le</del><lb/><del>domestique</del>
-                        <add>Dominique</add> toujours avec le tromblon et la<lb/>redingotte à la propriétaire, porte/ant ses deux<lb/>bottes sous ses bras pour ne pas faire de<lb/>bruit, <del>et</del>
-                        <add>il</add> contemple <add>un instant</add> avec un étonnement<lb/>mêlé d’effroi les constellations légumes. –<lb/>le ronflement repart. – la toile tombe lentement. –</p>
-                </div>
+                        >⁜ Comment les trouvez<lb/>vous, dit le roi des<lb/>gnômes à la jeune fille ?<lb/>– parfaitement<lb/>inintelligibles, dit<lb/>la jeune fille. – tout<lb/>ce que je remarque<lb/>c’est que leur costume<lb/>ne me plaît pas. –<lb/>– qu’à cela ne<lb/>tienne, dit le roi<lb/>des gnômes. –<lb/>(<hi
+                        rend="u"
+                        >aussitôt, les pièces<lb/>d’étoffes étendues<lb/>dans les plaines<lb/>viennent, d’elles<lb/>mêmes, habiller<lb/>splendidement les<lb/>3 personnages</hi>)
+                </note>
+                <p>que vous dirais-je, du reste ? – tout est à l’avenant. –<lb/>vous plaît-il que nous partions tout-à-l’heure ? –<lb/>– cet autre, dit le des gnômes, est l’abbé<lb/>calibri. – il est notre poëte ordinaire et vous<lb/>initiera à tous les raffinements de l’esprit. –<lb/>– il vous inculquera la belle façon de parler,<lb/>les tours de phrases ingénieux – les délicatesses<lb/>de pensée<del>s</del>. –<lb/>l’abbé répond par un madrigal. –<lb/>il tire un livre de sa poche et demande à<lb/>la jeune fille <add>la permission</add> de lui en lire quelques extraits,<lb/>pendant qu’elle va considérer les divers habitants<lb/>du royaume. – quelques minutes me suffiront,<lb/>dit il, pour élever cette intelligence dont la<lb/>forme me parait furieusement enfoncée dans<lb/>la matière. – ⁜<lb/>(<hi
+                        rend="u"
+                        >à ce moment des espèces d’automates<lb/>paraissent au fond du théatre. – ces automates<lb/>sont ainsi faits : – ils restent dans la plus parfaite<lb/>immobilité jusqu’à ce que l’un deux, à l’aide<lb/>du clef, remonte l’autre ; alors celui qui a été<lb/>remonté se met à parler avec une volubilité<lb/>extrême, et fait, par exemple, si c’est un automate<lb/>homme, une déclaration échevelée à l’autre qui<lb/>est une automate femme. – pendant la déclaration<lb/>l’automate femme reste dans la plus parfaite<lb/>immobilité, alors l’automate homme remonte<lb/>la femme à son tour et rétombe, lui, dans<lb/>l’attitude rigide d’un polichinelle ; – la femme<lb/>répond à son tour etc etc.</hi>)<lb/>les drôles de gens, dit la jeune fille. –<lb/>elle remonte le théatre pour les voir de plus<lb/>près. – l’abbé la suit son livre à la main ;<lb/>et lui fait la lecture. – le chevalier printemps<lb/>fait des poses avec l’amiral zéphir. –</p>
+                <pb n="42" facs="Xms_g_340_042.jpg"/>
+                <p>un gnôme subalterne, dit alors au roi des gnômes,<lb/>je crains bien que l’abbé en soit pour ses frais de<lb/>lecture. –<lb/>pourquoi ? – demande le roi.<lb/>parce que cette petite fille me parait si naïve, si<lb/>franche, si naturelle et si pleine de bon sens<lb/>que le factice, le convenu, le prétentieux, le<lb/>maniéré doit avoir peu de prise sur elle. –<lb/>je le crains. – répond le roi.<lb/>– des personnages de toute sorte inondent le<lb/>théatre ; mais ce que remarquent le plus la jeune<lb/>fille c’est le changement de modes. – en effet, à<lb/>chaque instant les costument changent. – elle<lb/>en remarque un particulièrement – alors, elle descend<lb/>la scène et s’adressant au roi des gnômes elle<lb/>dit qu’elle voudrait bien porter un pareil costume. –<lb/>– mais cela est très vieux, répond le roi, vous<lb/>n’y songez pas – c’était porté il y a 10 minutes. –<lb/>et celui-ci, dit la jeune fille désignant<lb/>un autre costume ?<lb/>oh ! celui là est trop neuf. – il ne sera à<lb/>la mode que dans une demie heure ; répond<lb/>le roi. –<lb/>(<hi
+                        rend="u"
+                        >peu à peu le théatre se dégarnit et<lb/>les personnages essentiels à l’action sont seuls<lb/>scène</hi>.)<lb/>eh ! bien, dit l’abbé, l’éducation est<lb/>faite. –<lb/>nous allons bien voir, dit le roi des<lb/>gnômes ; mais j’ai bien peur du contraire. –<lb/>– ne trouvez vous pas, madame, dit le<lb/>roi des gnômes, qu’il manque quelque chose<lb/>à ce pays charmant ?</p>
+                <pb n="42v" facs="Xms_g_340_042v.jpg"/>
+                <p>mais non, dit la jeune fille, je ne vois pas –<lb/>quoi donc ?<lb/>– une vache, dit le roi.<lb/>– oh ! fi ! – l’horreur ! – dit la jeune fille. –<lb/>pouvez vous employer des termes d’une grossiereté<lb/>pareille ! – si on veut à toute force exprimer une<lb/>idée aussi répugnante<del>.</del>/, on dit : la nourrice aux flancs<lb/>roux qui mugit dans les herbes. n’est-ce-pas,<lb/>l’abbé ? –<lb/>bravo, dit-à-part le roi des gnômes,<lb/>poursuivons. – – puis tout haut et en s’inclinant :<lb/>je tâcherai de profiter de la leçon, madame.<lb/>Voyez donc, mon cher Printemps, dit<lb/>la jeune fille, la gauche façon de saluer. –<lb/>vous n’avez aucune frace, mon bon seigneur,<lb/>aucune désinvolture. –<lb/>soit, dit le roi des gnômes ; mais je vais<lb/>réparer tous mes torts en vous faisant servir…<lb/>quoi donc ? – dit la jeune fille.<lb/>– une omelette au lard, – répond le roi.<lb/>– il ne s’en est fallu de rien que je ne m’évanouisse<lb/>à ce mot là ; mais par la blancheur des colombes,<lb/>vous avez donc une nature de bourier ? – qu’on<lb/>m’apporte tout au plus un parfum de jasmin<lb/>trempé dans un<del>e</del>
+                    <del>p</del> souvenir de l’ubéreuse avec<lb/>une pointe de regrets de giroflée. –<lb/>elle va bien, dit le roi. – puis s’adressant<lb/>à la jeune fille, vous sentez vous en état de<lb/>supporter quelque musique ? (dit la jeune fille)<lb/>cela m’agite singulièrement les nerfs ;<lb/>mais cependant… (dit la jeune fille.)<lb/>Qu’on fasse avancer mon orchestre,<lb/>dit le roi, surtout qu’on n’oublie point les<lb/>flûtes et les cymbales. –</p>
+                <pb n="43" facs="Xms_g_340_043.jpg"/>
+                <p>– vous voulez donc m’écorcher toute vive ! –<lb/>– si vous voulez des cymbales prenez au moins<lb/>les deux aîles d’un papillon pour flûter la tige<lb/>d’une violette et je pourrai entendre votre<lb/>symphonie sans trop me boucher les oreilles.<lb/><add>(</add><add>dit la jeune fille</add><add>)</add> – non, dit l’abbé, point de musique ;<lb/>mais plus tôt quelque poësie. (<hi
+                        rend="u">il recite</hi>)</p>
+                <l>Allez au pays de chine</l>
+                <l>et sur ma table apportez</l>
+                <l>le papiet de paille fine</l>
+                <l>plein de reflets argentés.</l>
+                <p>– la chine – c’est bien barbare, dit la jeune fille.<lb/>– quand au papier de paille, cela est rugueux et<lb/>agaçant, cela vous *<del>cris</del>* crispe le toucher et vous<lb/>éraille les yeux.</p>
+                <l>pour encre et pour écritoire</l>
+                <l>allez prendre à l’alhambra</l>
+                <l>le sang d’une mûre noire</l>
+                <l>et l’écorce d’un cédrat.</l>
+                <p>– <del>pour</del> encre ! – écritoire ! – quelle grossiereté ! –<lb/>et ce sang, pour l’amour de dieu otez moi ce sang !<lb/><add>(</add><add>dit la jeune fille</add></p>
+                <l>alors de ma main fidèlle</l>
+                <l>peut-être oserais-je, un jour,</l>
+                <l><del>écrire</del><add>traçer doux</add> le nom de celle</l>
+                <l>qui me fait <hi rend="u">mourir</hi> d’amour</l>
+                <p>J’aime assez la main fidèle – oserais-je est<lb/>d’écl délicat – traçer le doux nom est absolument<lb/>délicieux ; mais Amour ! cela choque étrangement<lb/>la pudeur – on peut le faire soupçonner avec<lb/>des précautions ; mais le nommer, jamais.<lb/><add>(dit la jeune fille)</add> Allons, dit le roi des gnomes c’est une<lb/>grue accomplie. – il ne s’agit plus que de<lb/>la retenir ici. – c’est l’afaire du capitaine<lb/>Bourreau des cœurs, le don juan de cet<lb/>empire. –</p>
+                <pb n="43" facs="Xms_g_340_043v.jpg"/>
+                <p>– le capitaine bourreau des cœurs, paraît. – tout<lb/>le monde se retire. – la jeune fille est charmée<lb/>de son extérieur. – ici commençe entre eux<lb/>une scène d’amour pleine de maniérisme<lb/>et d’afféterie, on y étale des sentiments<lb/>dignes de la Sybille d’octave feuillet,<lb/>le langage est à la hauteur des idées. – quand le capitaine bourreau des cœurs<lb/>croit avoir subjugué la jeune fille, il lui<lb/>fait une déclaration à toute vapeur et<lb/>la supplie de lui donner son cœur. –<lb/>la jeune fille qui a été fascinée<lb/>comme par un serpent, hésite, se<lb/>trouble, balbutie. –<lb/>Elle est à nous dit le capitaine<lb/>bourreau des cœurs. –<lb/>tout-à-coup, la jeune fille fait<lb/>un violent effort sur elle-même – on sent<lb/>toutes les souffrances qu’elle éprouve<lb/>et qu’elle peine elle a se retrouver elle-même<lb/>au milieu de ce pays qui l’enchante ; mais<lb/>elle triomphe et dit : mon cœur n’est pas<lb/>à moi. – n’en parlons plus – je le garde<lb/>tout entier pour celui que j’aime et<lb/>que je voudrais revoir à tout prix.<lb/>– à ce moment le roi des gnômes<lb/>revient avec toute sa cour. – <del>il parait</del><lb/>tu veux revoir ce jeune homme ? – eh ! bien,<lb/>soit. – tu pourras même te retrouver<lb/>avec lui – l’entendre – lui parler ; mais<lb/>si dans n’importe quelle circonstance<lb/>tu as le malheur de lui dire : Je suis la<lb/>petite laitière – tu mourras. – accepte<lb/>tu à ce prix là ?<lb/>J’accepte, dit la jeune fille.<lb/><hi
+                        rend="u">Tableau</hi>. (<hi rend="u">la toile tombe</hi>.)</p>
+                <pb n="76" facs="Xms_g_340_076.jpg"/>
             </div>
-            <pb n="76" facs="Xms_g_340_076.jpg"/>
-            <fw>129-130.</fw>
             <div type="act" n="6">
-                <div type="scene" n="2">
+                <fw><handShift resp="#GF"/>129-130.</fw>
+                <div n="2" type="scene">
                     <head>Scène II.</head>
-                    <stage>Paul, Dominique.<lb/>(Paul reste immobile, suivant du regard, les Pasteurs qui s’eloignent)</stage>
-                    <sp>
+                    <stage>Paul, Dominique.</stage>
+                    <stage>(Paul reste immobile, suivant du regard, les Pasteurs qui s’eloignent)</stage>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Monsieur ! monsieur !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>hein ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Suivons les ! ou plutot quittons les ! Partons definitivement</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
-                        <p><del><add>Eh !</add></del> Pourquoi</p>
+                        <p><del>Eh !</del> Pourquoi</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique.</speaker>
                         <p>Monsieur ne va pas, j’imaginer, passer le restant de ses jours avec ces espèces<lb/>de sauvage</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
-                        <p>Leur tristesse est belle, cependant, ils boivent dans leurs mains l’eau des<lb/>monts, dorment au soleil, chassent l’antilope. &amp; les fatigues d’un<lb/>travail exorbitant les defaits de l’ambition, l’etourdissement que<lb/>nous procure la gde machine civilisée, ils ne connaissent rien<lb/>de tout cela. moi, je trouve qu’il y a ici un charme</p>
+                        <p>Leur tristesse est belle, cependant, ils boivent dans leurs mains l’eau des<lb/>monts, dorment au soleil, chassent l’antilope. &amp; les fatigues d’un<lb/>travail exorbitant les defaits de l’ambition, l’etourdissement que<lb/>nous procure la gde machine civilisée, ils ne reconnaissent rien<lb/>de tout cela. moi, je trouve qu’il y a ici un charme</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>d’accord. le paysage est magnifique mais</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>on voudrait même y vivre perpetuellement, si l’on pouvait dans<lb/>cette solitude avoir le coeur desiré, la bien aimée inconnue…</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
-                        <stage>(– à part, en haussant les epaules)</stage>
-                        <p>Ah ! nous y re-voilà ! <stage><del>(haut)</del>
-                                <add>{à Paul</add>}</stage> decidement que voulez-vous ?<lb/>que cherchez-vous ? où est le but ? il y a six moi nous etions<lb/>en Chine, quand<pb
-                                n="77" facs="Xms_g_340_077.jpg"
-                                /><fw>131.</fw> tout a coup, vous <del>vous jetez</del>
+                        <stage> (– à part, en haussant les epaules)</stage>
+                        <p>Ah ! nous y re-voilà ! <stage>(<del>haut</del>
+                                <add>à Paul</add>)</stage> decidement que voulez-vous ?<lb/>que cherchez-vous ? où est le but ? il y a six moi nous etions<lb/>en Chine, quand</p>
+                        <pb n="77" facs="Xms_g_340_077.jpg"/>
+                        <fw>131.</fw>
+                        <p>tout a coup, vous <del>vous jetez</del>
                             <add>bondissez</add> derrière un palanquin. où se trouvaient etendu</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Paul</speaker>
                         <p>oui. J’avais cru… si bizarre &amp; si charmante ! il m’avait semblé…</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p><del>Il vous a semblé</del>
-                            <add>Oh !</add> durant trois jours. <del>moi</del>, <add>pendant ce temps là</add> je me mets à la besogne<lb/>ma torture était faite ! j’allais fonder une <del>magasin</del>
+                            <add><handShift medium="pencil"/>Oh !</add>
+                            <handShift medium="black-ink"
+                                />durant trois jours. <del>moi</del>, <add>pendant ce temps là</add> je me mets à la besogne<lb/>ma torture était faite ! j’allais fonder une <del>magasin</del>
                             <add>maison</add> de curiosités –<lb/>patatras ! vous revenez tête basse <add>le coeur gros</add> &amp; nous de [illis.] p. les pages les plus<lb/>saugrenus, le mongol, l’inde, la Perse, <del>l’Egypte</del></p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>et partout… <del>partout</del>… la desillusion !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Oh ! <del>de quoi</del>
                             <add>de la desillusion</add> à meubler trois [illis.] au gd [illis.] ! enfin nous arrivons<lb/>en Espagne. cette fois, vous la reconnaissez. c’est bien elle. [illis.].</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>toutes les apparences, en effet</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>j’avais même pris des [illis.] une mine argentifère. Mais non<lb/>ce n’était pas <add>elle</add> encore. <del>[illis.]-là &amp;</del> nous voilà ici !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>que veux-tu ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique.</speaker>
                         <p>en partir &amp; tout de suite ; ou sinon, monsieur avec tout le<lb/>respect que je vous dois…</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>quoi, <del>après</del> ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique.</speaker>
                         <p>Je serai forcé de guetter Monsieur.</p>
                     </sp>
                     <pb n="78" facs="Xms_g_340_078.jpg"/>
                     <fw>132.</fw>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Tu le regretteras Dominique ! – Peut-etre, vais-je bientôt reussir.<lb/><del>prends garde</del>.</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Au moins si je comprenais ! mais c’est la bouteille à l’[illis.] que votre<lb/>diable d’histoire !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Rien de plus simple ! je dois rencontrer qquepart une jeune fille au coeur<lb/>pur, au desinteressement absolu, la reconnaitre, en etre aimé &amp;, <del>m’emp</del>
                             <add>fort</add><lb/>de cet amour, m’emparer du château des coeurs.</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
-                        <p>Ah ! très bien <del>,</del>/! une femme qui n’existe guère, un chateau qui n’existe<lb/>pas ! car enfin, qu’y a-t-il donc <del>[de si] [illis.]</del> dans ce [savoyard]<lb/>de château <del>,</del>/? des tresors, des diamants ?</p>
+                        <p>Ah ! très bien <del>,</del>/! une femme qui n’existe guère, un chateau qui n’existe<lb/>pas ! car enfin, qu’y a-t-il donc <del>*de si* [illis.]</del> dans ce savoyard<lb/>de château <del>,</del>/? des tresors, des diamants ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p><del>oui</del>
                             <add>non ! mais</add> un fortune tellement extraordinaire que tu ne peux même l’imaginer</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
-                        <p>Oh ! oh ! reste à savoir ! allons, Monsieur, un bon [mouvement]. Revenez<lb/>avec moi à Paris ! oh les boulevards, les cafés, les magasins de<lb/>comestibles, les cocottes &amp; les [illis.], vous n’etes donc pas<lb/>français, Monsieur <del>,</del>/? le coeur ne vous dit rien !</p>
+                        <p>Oh ! oh ! reste à savoir ! allons, Monsieur, un bon *mouvement*. Revenez<lb/>avec moi à Paris ! oh les boulevards, les cafés, les magasins de<lb/>comestibles, les cocottes &amp; les [illis.], vous n’etes donc pas<lb/>français, Monsieur <del>,</del>/? le coeur ne vous dit rien !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Decidement, je reste !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Vous avez tort ! – car sur votre route, vous auriez<lb/>[<del>illis.</del>] recontré…</p>
                     </sp>
                     <pb n="79" facs="Xms_g_340_079.jpg"/>
                     <fw>133.</fw>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Au fait <del>,</del>/? p.quoi pas ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>J’en suis certain</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Qui te fait croire.</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>un pressentiment</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Il a peut-etre raison. Voilà longtemps que je vagabonde p.<lb/>rien. Il faut peut-etre revenir en arriere ? <del>même [illis.]</del>
                             <add>– &amp; puis,</add> je<lb/>suis si las ! si decouragé ! – Eh bien soit partons !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>à la bonne heure ! Je me precipite !</p>
                     </sp>
                     <pb n="80" facs="Xms_g_340_080.jpg"/>
                     <fw>134.</fw>
                 </div>
-                <div type="scene" n="3">
+                <div n="3" type="scene">
+                    <note place="margin-top-left">(Pasteur)</note>
                     <head>Sc. III.</head>
-                    <note place="margin-top-right">(Pasteur)</note>
                     <stage>Au moment où Paul &amp; Dominique vont p. sortir, apparaissent<lb/>sur les trois cotés de la scène, trois valets de pied, en gde tenue.</stage>
-                    <sp>
+                    <sp who="#valet_1">
                         <speaker>I<seg rend="superscript">er</seg> valet</speaker>
                         <stage>(<hi rend="u">à Dominique</hi>)</stage>
                         <p>On ne passe pas ! Voyez par l’autre porte !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>Quelle porte ? –</p>
                         <stage>(<hi rend="u">se tournant vers Paul</hi>)</stage>
                         <p>qu’est-ce que ça veut dire</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Je n’en sais rien !</p>
                         <stage>(apercevant le second valet)</stage>
                         <p>tiens ! en voilà un<lb/>autre !</p>
                         <stage>(il s’avance)</stage>
                     </sp>
-                    <sp>
+                    <sp who="#valet_2">
                         <speaker>2e valet</speaker>
                         <stage>(à Paul)</stage>
                         <p><del>Non</del>. <add>Pardon</add> Monsieur. Madame n’est pas visible.</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Quel Madame ?</p>
                     </sp>
                     <stage>le deuxième valet fait un geste <add>comme</add> pour <del>indiquer </del>
                         <add>dire</add> qu’il<lb/>ne faut pas insister davantage)</stage>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p><del>Mais</del> ça ne peut dire qu’une princesse.</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>tant qu’il lui plaira ! mais vouloir nous barrer la<lb/>route !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
-                        <p>ma foi ! Monsieur ! <del>ne nous faisons pas</del> d’affair<del>es</del>/e ! <add>inutile de nous attirer une</add><lb/>en prenant par ce coté<del>-</del>là <del>(</del>/nous allons… <stage>(il s’avance)</stage><lb/>ah [bien] !</p>
+                        <p>ma foi ! Monsieur ! <del>ne nous faisons pas</del> d’affair<del>es</del>/e ! <add>inutile de nous attirer une</add><lb/>en prenant par ce coté<del>-</del>là <del>(</del>/nous allons… <stage>(il s’avance)</stage><lb/>ah *bien* !</p>
                     </sp>
                     <pb n="81" facs="Xms_g_340_081.jpg"/>
                     <fw>[<del>illis.</del>] 135.</fw>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Quoi donc ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <stage>(designant le 3<seg rend="superscript">e</seg> valet)</stage>
                         <p>encore un !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <stage>(marchant resolument vers le 3e valet)</stage>
-                        <p>[ <del>Pr le coup, c’est trop fort</del> ] ! Je <del>vais [pousser] au [illis.]</del>
+                        <p><handShift medium="pencil"/>[<del><handShift medium="black-ink"
+                                />Pr le coup, c’est trop fort</del><handShift medium="pencil"
+                                />] <handShift medium="black-ink"
+                                />! Je <del>vais *pousser* au [illis.]</del>
                             <add>me moque bien</add></p>
                     </sp>
-                    <sp>
+                    <sp who="#valet_3">
                         <speaker>3<hi rend="superscript">e</hi> valet</speaker>
                         <p>[<del>illis.</del>] une minute seulement, Madame passe ses gants.</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <stage>(au valet)</stage>
                         <p>Ah ! ça drôle !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>un peu de patience. je vais lui parler peut-etre qu’en<lb/>lui remettant notre carte avec P.P.C. p. prendre congé<lb/>on nous laissera partir ?</p>
                     </sp>
                     <pb n="82" facs="Xms_g_340_082.jpg"/>
                     <fw>[<del>illis.</del>] 136.</fw>
                     <stage>(Pendant ce qui precède le Roi des gnomes en costume<lb/>de courrier a surgi sur un des pics des montagnes<lb/><del>faisant</del>
-                        <add>et a fait</add> plusieurs gestes à la canto[n]nade, comme<lb/>p. appeler des gens. au dernier mot de Dominique<lb/>des <del>porteurs</del>
+                        <add>et a fait</add> plusieurs gestes à la cantonnade, comme<lb/>p. appeler des gens. au dernier mot de Dominique<lb/>des <del>porteurs</del>
                         <add>hommes</add>, chargés de bagages qu’ils roulent<lb/>au sur leur sol ou portent sur leurs epaules<lb/>debouchent sur la scène de droite &amp; de<lb/>gauche.)</stage>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le Roi des gnomes</speaker>
                         <stage>(qui s’est<lb/>avancé)</stage>
                         <p>Là, là – plus doucement ! vous allez casser les<lb/>cristaux, imbecilles ! – Bien ici <del>poser les</del> –<lb/>non là – plus loin ! et le coffre à<lb/>l’argenterie où est-il ?</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <stage>(ebahi – à Paul)</stage>
                         <p>de l’argenterie !</p>
                     </sp>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le Roi des gnomes</speaker>
                         <stage>(s’agitant)</stage>
                         <p>Mais je ne vois pas les six [illis.] <del>ordinaires</del><lb/>le petit gueridon, les eventails ! ces [illis.]<lb/>là sont d’une lenteur !…</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique.</speaker>
                         <p>Ah ! ça ! qui etes-vous donc <del>!</del>/? vous !</p>
                     </sp>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le Roi des gnomes</speaker>
                         <stage>(sans l’ecouter)</stage>
-                        <p>et la boite de parfumerie, les brosses, la<lb/>pierre ponce, <add>les peignoirs</add> la baignoire. <del>les peignoirs</del><lb/><del>les trois douzaines de ciseaux p.</del> les<lb/><del>ongles</del>. Bon ! – Mais saperlotte ! où est<lb/>le gd [illis.] de vermeil p. faire<lb/>chauffer l’eau <add><del>le [bain]</del></add> de Madame.</p>
+                        <p>et la boite de parfumerie, les brosses, la<lb/>pierre ponce, <add>les peignoirs</add> la baignoire. <del>les peignoirs</del><lb/><del>les trois douzaines de ciseaux p.</del> les<lb/><del>ongles</del>. Bon ! – Mais saperlotte ! où est<lb/>le gd [illis.] de vermeil p. faire<lb/>chauffer l’eau <add><del>le bain</del></add> de Madame.</p>
                     </sp>
                     <pb n="83" facs="Xms_g_340_083.jpg"/>
                     <fw>[<del>illis.</del>] 137</fw>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Mais encore une fois, au nom du ciel, quel<lb/>Madame !</p>
                     </sp>
                     <stage>(le roi des gnomes lui tourne le dos)</stage>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique.</speaker>
                         <p>il est poli ! [illis.]</p>
                     </sp>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le roi des gnomes</speaker>
                         <p>est-ce que j’ai le temps de vous repondre !</p>
                         <stage>aux<lb/><del>(</del>porteurs<del>)</del></stage>
-                        <p>Plus vite, nom d’une belle… <del>Deployez</del><lb/>moi <add>par terre</add>, ce tapis – quatre coussins, [<del>pas</del>] tout<lb/>autour <add>, bien</add> ! <del>la fourrure plus bas</del> – Il est 3 heures<lb/>et demie ! nous n’avons plus que 10 minutes<lb/>p. le lunch ! – <del>oui saperlotte</del> on a oublié les<lb/>mufines. où sont les gens de la bouche. –<lb/><del>là ce pliant</del> ! ici le fauteuil – la fourrure<lb/>p. les pieds, <del>plus bas</del> ! est-ce tout ?</p>
+                        <p>Plus vite, nom d’une belle… <del>Deployez</del><lb/>moi <add>par terre</add>, ce tapis – quatre coussins, *<del>pas</del>* tout<lb/>autour <add>, bien</add> ! <del>la fourrure plus bas</del> – Il est 3 heures<lb/>et demie ! nous n’avons plus que 10 minutes<lb/>p. le lunch ! – <del>oui saperlotte</del> on a oublié les<lb/>mufines. où sont les gens de la bouche. –<lb/><del>là ce pliant</del> ! ici le fauteuil – la fourrure<lb/>p. les pieds, <del>plus bas</del> ! est-ce tout ?</p>
                     </sp>
                     <stage>(<del>on apporte un piano</del> !)</stage>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <p>un piano ! c’est <add>trop</add> fort !</p>
                     </sp>
-                    <sp>
+                    <sp who="#paul">
                         <speaker>Paul</speaker>
                         <p>Comment ! ce serait p. …</p>
                     </sp>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le roi des gnomes</speaker>
                         <p>Mais certainement ! – p. elle ! oui ! est-ce qu’on<lb/>peut voyager sans ça.</p>
                     </sp>
@@ -560,28 +466,153 @@
                     <fw>138 [<del>illis.</del>]</fw>
                     <stage>(un gd brouhaha s’elève, comme celui d’une foule qui se rapproche<lb/>et ça &amp; là dans la montagne paraissent des Pasteurs<lb/>dans l’attitude de gens qui regardent qque chose venir du<lb/>fond de l’horizon. qques valets [illis.] aux trois valets<lb/>de la scène precedente apparaissent mêlés aux pasteurs<lb/>ça &amp; là. le mouvement augment.) – <del>qques</del>
                     </stage>
-                    <sp>
+                    <sp who="#voix">
                         <speaker>qques voix.</speaker>
                         <p>Par ici ! à droite ! encore un peu plus haut ! – nous<lb/>y sommes !</p>
                     </sp>
-                    <sp>
+                    <sp who="#dominique">
                         <speaker>Dominique</speaker>
                         <stage>(qui s’est avancé vers le fond de la<lb/>scène)</stage>
                         <p>Monsieur ! Monsieur ! venez donc voir ! une belle dame –<lb/> une parisienne !</p>
                     </sp>
                     <stage>(Paul remonte la scène)</stage>
-                    <sp>
+                    <sp who="#roi">
                         <speaker>le Roi des gnomes</speaker>
                         <stage>(à part)</stage>
                         <p>Quant à toi, mon mignon qu’on fait voyager <del>dans le</del>
                             <add>au</add> pays de<lb/>l’innocence, dans l’espoir que la Fiancée ideale s’y revelera<lb/>tu peux la voir, tout à ton aise, mais la j/reconnaitre<lb/>je t’en defie.</p>
                     </sp>
                     <stage>Les valets se rangent sur les deux côtés</stage>
-                    <sp>
+                    <sp who="#huissier">
                         <speaker>un Huissier</speaker>
                         <stage>, (à hte voix)</stage>
                         <p>Madame !</p>
                     </sp>
+                </div>
+                <pb n="59" facs="Xms_g_340_059.jpg"/>
+            </div>
+            <div n="7" type="act">
+                <fw>14 [illis.]</fw>
+                <note place="top-left"
+                    >pendant tout<lb/>ce tableau, comme<lb/>psychologie interne,<lb/>theorie du Progrès inversé</note>
+                <head><del>Pays</del><add>Royaume</add> du Pot au Feu</head>
+                <p><del>Une</del><add>La</add><del>ville</del> place de ville. – en demi rond ; toutes les rues y<lb/>aboutissent de <del>manière</del>
+                    <add>façon</add> qu’on <add>peut</add> la voir entière d’un seul coup<lb/>d’oeil. Toutes les maisons, pareilles, &amp; d’une architecture<lb/>d’une pauvreté pitoyable, sont peintes en chocolat. Au milieu<lb/>de la place un pot au feu gigantesque. – par derrière <add>des</add> sieges<lb/>en fer à cheval – <add>qui sont des</add> fauteuils de bureau. <del>avec des [illis.]</del>.</p>
+                <note place="margin-left"
+                        ><del>D</del><del>le pontif</del><add>Il</add> trace<lb/>un cercle en l’air après<lb/>avoir trempé son doigt<lb/>dans le bouillon. – ça vous<lb/>enferme tous dans ce cercle de bouillons <del>et</del> – –<lb/>–– M</note>
+                <div n="1" type="scene">
+                    <head>I.</head>
+                    <p>foule des habitants. – <del>font</del> recueillie. – discours du grand<lb/>pontife <del>i</del> ; – expliquant toute la situation. – on renouvelle les serments. – Chaque corporation y prend part. – <add>tous les hommes portent la barbe en collier.</add> dans ces corporations se<lb/>trouvent un poëte, un savant etc. <del>A</del>/⁜ <del>[Cette cérémonie se</del></p>
+                    <note place="margin-left"
+                        ><del>B</del>/⁜ enfants au maillot<lb/>enfants de tous les âges.</note>
+                    <p><add>cette ceremonie se</add> clôt par <del>le</del>/un digne cabalistique <add>du </add><add>Pontife</add> qui les affermit tous dans<lb/>la croyance commune. <add>C</add> – <add>M</add> la séance est levée. – on<lb/>emporte à droite et à gauche les sièges des <del>juges</del>
+                        <add>notables</add>. – <del>le</del><lb/>Le pot-au-feu reste sur la place et tous les habitants s’arrêtent<lb/>le dos tourné au spectateur à considérer l’aiguille de<lb/>chaque horloge. – au moment où l’heure sonne partout,<lb/>ils se précipitent dans l’intérieur des maisons. – on entend<lb/>d’abord un cliquetis de cuillères et de fourchettes – puis marquer<lb/>par des phrases nettes et courtes les différentes étapes du diner.<lb/>– après la soupe, on entend : <hi
+                            rend="u">Ah ! ça fait bien</hi>. – puis,<lb/><hi rend="u"
+                            >voila ce qu’on ne trouve pas au restaurant</hi>. – bruits de<lb/>fourchettes. – puis, pour marquer le dessert : <hi
+                            rend="u">nous sommes</hi><lb/><hi rend="u"
+                            >entre la poire et l</hi><del>a</del><hi rend="u"
+                            >/e fromage</hi>. – ici petit éclat de rire. <add>de satisfaction bourgeois</add> – un<lb/>silence, – « la bonne, le café ! » – (un silence) – « je le veux<lb/>brûlant. » – un grand bruit de chaises. – après quoi<lb/>les bourgeois à chaque fenêtre étendent leur main. – tous<lb/>ensemble : « il fait chaud » – une femme arrive à<lb/>chaque fenêtre et dit : « oui ; mais le fond de l’air est<lb/>froid. » – chaque mari : « c’est vrai. » – tous descendent<lb/>et apparaissent timidement au seuil de la porte en<lb/>disant en choeur : « ça va t’il se maintenir ? » – tous<lb/>tappent sur la queue des baromètres. – réponse<lb/>de tout le monde : <del>oui, – nous pourrons nous asseoir</del>
+                        <add>« </add><add>oui » alors</add>
+                        <add>(</add><del>après</del>
+                        <add>(</add><add>un petit four pour la digestion ou – ⁜</add><lb/><del>devant les portes</del>. – <del>on entend alors un [illis.] général</del><lb/><del>et imbécille</del>. – <del>arrivée de la jeune fille et du roi</del></p>
+                    <note place="margin-left"
+                            ><del>alternativement un [illis.]<lb/>et une suissesse</del></note>
+                    <note place="margin-left">Q Chacun en passant<lb/>dit une bêtise</note>
+                    <note place="margin-left"
+                        >ils font une<lb/>⁜ promenade chaque groupe<lb/>contient un monsieur, une<lb/>femme et un petit<lb/>garcon habillé en Turco.<lb/>une petite fille en Suissesse ⍦<lb/>puis ils rentrent &amp;<lb/>s’asseoient sur les portes<lb/>« prenons fraicheur<lb/>un peu la</note>
+                    <pb n="60" facs="Xms_g_340_060.jpg"/>
+                    <fw>15. [illis.]</fw>
+                </div>
+                <div n="2" type="scene">
+                    <note place="margin-left"
+                            ><del>les enfants dansent<lb/>autour du pot au feu</del></note>
+                    <head>II</head>
+                    <note place="margin-left"
+                        >(⁜ il a <add>un</add> parapluie<lb/>canne – sous la pomme<lb/>du parapluie il y a une<lb/>tabatière. –</note>
+                    <p><add>Arrivée de la jeune fille &amp; du roi, </add><del>des</del> des gnômes . – [il porte un pardessus sur une redingotte<lb/>à la propriétaire. – (<del>tout le monde porte la barbe en<lb/>collier</del>) – il donne son bras gauche à Jeannette – il a<lb/>a sa main droite un parapluie de famille ⁜ – et passé )<lb/>à son bras un rond en cuir – il a ses lunettes à<lb/>quatre verres –<lb/>du coton dans les oreilles – des gants<lb/>de filoselles – des caoutchoux autour de ses bottes –<lb/>– Jeanne a à son bras gauche un cabas. – elle est<lb/>habillée comme une petite bourgeoise. –]<lb/>salutations de tous les habitants et murmures flatteurs –<lb/>ça et là on entend : « Ah ! très bien. – tu vois, ma<lb/>fille », dit le gnôme, « que notre première récompense est<lb/>l’admiration du monde et l’estime des honnêtes gens. – »<lb/>– « oh ! oui », dit la jeune fille, « quelle bonne vie calme,<lb/>Comme cela vaut mieux <del>que vos</del>
+                        <add>que le</add> sot étalage d’un<lb/>luxe <del>étalage</del> inutile. – Je ne comprends que trop pourquoi<lb/>je l’ai dégouté. – C’est un homme sérieux, fatigué<lb/>peut-être des luttes <del>de la vie</del>
+                        <add>du monde</add>. – Je le dorlotterai dans<lb/>Ce pays où la vie ne craint pas de viscissitudes. – <del>le</del><lb/><del>gnôme dit</del> ; « oui, <add>» </add><add>repond</add><add> le gnome</add> « mais il faut nous loger en attendant –<lb/>– <del>la petite fille, sir,</del> cherchons une auberge. » – <add>reprend Jeanne</add>
+                        <del>une</del><lb/><del>Auberge, repond le gnôme, il n’y </del><add>en</add><del> a pas dans ce pays on y<lb/>craint trop les étrangers. – chacun chez soi chacun pour<lb/>soi</del>. – en voilà une. – (<del>ils</del> X</p>
+                </div>
+                <div n="3" type="scene">
+                    <head>III.</head>
+                    <p>
+                        <del>Deux agents de police viennent les visiter, </del>
+                        <add>les</add>
+                        <del> prevenant<lb/>que p. etre admi dans le pays il ne faut<lb/>apporter rien de dangereux, [illis.]<lb/></del>
+                        <del>costume,</del>
+                        <del> [illis.] trouver dans leurs bagages<lb/>rien que d’orthodoxe. on loue le gnôme de son<lb/>rond</del>
+                    </p>
+                </div>
+                <div n="4" type="scene">
+                    <head>
+                        <del>IV.</del>
+                    </head>
+                    <p><del>Paul &amp; Jean entrent</del><lb/>ils entrent <del>au</del>
+                        <add>sur le</add> seuil <del>du cabaret</del>. <del>–</del>
+                        <add>de l’auberge</add>
+                        <add>qui est au second<lb/>plan à gauche</add>
+                        <add>alors</add> Sortent deux<lb/>valets qui veulent prendre le cabas et le rond</p>
+                    <pb n="61" facs="Xms_g_340_061.jpg"/>
+                    <fw>16</fw>
+                    <note place="margin-left"
+                        ><del>L’auberge est au<lb/>second plan à gauche.</del></note>
+                    <p>du gnôme. – « non, <del>dit celui-ci</del>, C’est mon vade mecum. »<lb/>– « eh ! bien asseyez vous », dit le domestique, c’est l’heure<lb/>qu’on doit prendre le frais. – « je le savais bien » dit<lb/>le gnôme » c’est pour ça que j’ai gardé mon rond. » –<lb/>les parents sur le seuil des portes disent, « allez<lb/>mes enfants voici l’heure où les enfants doivent<lb/>s’amuser. » – ][ pendant que les enfants se placent,<lb/><add>autour du pot au feu p. danser</add> – <del>la petite fille dit vous [illis.]</del>
+                        <add>Jeanne dit à son compagnon</add> « vous m’affirmez<lb/>que je vais le revoir » – « oui, il va venir je le<lb/>sais », <del>dit le gn</del><del><del>ô</del></del><del>me</del>. – <add>Jeanne contemple le bal d’enfants</add>
+                        <del>la jeune fille *danse* ah ! les</del><lb/>« les jolies enfants, – heureuses mères ! – remerciements –<lb/><add>des mères &amp; des moutards</add> salutations. – baisers qu’on force les enfants d’envoyer.</p>
+                </div>
+                <div n="4" type="scene">
+                    <head>IV</head>
+                    <p>– tout-à-coup, apparition de Paul et d<del>u</del>/e<lb/><del>domestique</del>
+                        <add>Dominique</add>. – rumeurs lointaines. – « Qu’est-ce-que<lb/>c’est ? » – à leur approche les petits enfants se<lb/>réfugient sous le cotillon de leurs mamans. –<lb/>poussant ses petits cris aigus de terreur. – Paul<lb/>qui est entré en scène dit à Jean : « enfin, voici un pays<lb/>bien calme et où nous allons pouvoir nous reposer l’esprit et le corps. – je vais m’informer où trouver un gite. » – il s’approche d’un couple, la femme baisse<lb/>les yeux <add>pudiquement</add> – l’homme fait un geste de répulsion. même<lb/>jeu de tous les groupes. – Jeanne est apitoyée et inquiète. – il vient vers elle, <add>Elle</add> seule <del>elle</del> lui fait<lb/>bonne mine ; ce qui l’engage à <del>s’approcher</del>
+                        <add>s’asseoir près</add> d’elle. –<lb/><del>accueil de la jeune fille – le </del><del>jeune homme dit</del>
+                        <add>il lui dit</add> que sa<lb/>*vain* lui rappelle une autre femme. – <del>il [illis.]</del>. –<lb/>alors <del>la jeune fille</del>
+                        <add>Jeanne</add> se penchant vers une dame <del>lui</del><lb/><del>dit</del> – « c’est un étranger – il est excentrique c’est vrai ;<lb/>mais il se corrigera peut-être – d’ailleurs en aussi belle<lb/>compagnie il ne saurait se soustraire au couvenable – si vous<lb/>voulez m’aider »… elle <del>lui</del> propose <add>à Paul</add> des douceurs <add>domestiques</add>. – « Voulez<lb/>vous des pantoufles – vous devriez mettre de la flanelle » –<lb/>etc » <del>le jeune homme la remercie ; mais ce pays si tranquille</del></p>
+                    <pb n="62" facs="Xms_g_340_062.jpg"/>
+                    <fw>17<lb/><del>12</del></fw>
+                    <p><del>va le reposer. – vous avez faim sans doute ? il ne faut<lb/>pas jouer avec son estomac – si vous preniez quelque chose…<lb/>un bouillon</del> – <add>Paul</add> en est attendri et reconnaissant. –<lb/>– « vous voyez » dit <del>la jeune fille</del>
+                        <add>Jeanne</add> à une dame : « vous voyez<lb/>il n’est pas si méchant qu’il en a l’air – il a déjà fait<lb/>des progrès. » – alors une dame s’approchant dit au<lb/>jeune homme : « ce n’est pas pour <del>vot</del> vous donner un<lb/>ordre ; mais ce costume est-il bien convenable ? » – une<lb/>autre dit : « croyez vous que ce costume soit bon pour<lb/>la santé. – vous feriez bien de mettre la redingotte » – « mais…<lb/>dit <del>le jeune homme</del>
+                        <add>Paul</add> – … « il le faut » dit la dame. –<lb/><del>le jeune homme</del>
+                        <add>Paul</add> y consent <add>par complaisance</add> et met la redingotte – <del>maintenant</del></p>
+                    <note place="margin-left"
+                            >X– « me voila bien<lb/>affable. » – <add>en riant</add> sur lui-même<lb/>– « comme il est beau<lb/>dit <del>s’ecrit</del>
+                        <del>la jeune fille</del>
+                        <add>Jeanne</add> !<lb/>– « comment, vous aussi ! – maintenant
+                    </note>
+                    <p>il faudrait avoir le chapeau – puis <add>se decouper</add> les cheveux <add>comme tout</add> le monde<lb/>puis <del>le</del>
+                        <add>avoir le</add> collier <add>d’usage</add>. – <add>un perruquier</add> « C’est impossible. –<lb/>Mais voyez les tous. – <del>il se met à rire</del>. – <del>alors</del>
+                        <add>&amp;</add> un perruquier<lb/>se présente devant lui <add>pr l’accommoder suivant les us du pays</add>.– <del>voyons, monsieur, c’est</del><lb/><add>« Allons, monsieur c’est</add> pour votre bien ; – dit <del>la jeune fille</del>
+                        <add>Jeanne</add>. – « Est-ce qu’elle<lb/>serait encore plus bête que les autres <del>dit le jeune</del>
+                        <add>se dit Paul</add><lb/><del>homme</del>. – le perruquier s’approche <add>va se mettre en besogne</add>. – « non c’est trop<lb/>fort <add> » dit Paul</add>, <add>qui se lève d’indignation &amp; croyant prendre son</add>
+                        <del>Le jeune homme qui s’est assis [illis.] </del><add>[illis.]</add><del> prend</del><lb/><add>chapeau, il prend</add>
+                        <del>son chapeau – on en</del> un chapeau <add>local</add> qu’on a <del>mis</del>
+                        <add>pose exprès</add> à la<lb/>place du sien – il le met sur sa tête, sans le remarquer,<lb/>« Ah ! par exemple, monsieur », <del>dit le domestique</del>
+                        <del>vous</del>
+                        <add>s’ecrie Dominique</add><lb/>« vous avez une bonne binette comme ça » – fureur d<del>u</del>/e<lb/><del><del>jeune homme</del></del>
+                        <add>Paul</add>, il examine le chapeau, le jette par<lb/>terre et le foule aux pieds – cris d’indignation – pendant que la foule accourt, il retire sa redingotte<lb/>et la jette <del>aussi</del>
+                        <add>par terre</add>. – <del>la jeune fille dit [illis.]</del>
+                        <add>Jeanne s’ecrit</add><lb/>« le malheureux ! » – <add>x</add> « Jeune dinde, répond le jeune homme.<lb/><del>p</del>
+                        <del>le rire ad libitum</del> – les <del>hab</del> propositions <add>morales des habitants</add> doivent<lb/>être par degrés de progression. – <add>jusqu’au moment où on lui propose du bouillon de la [illis.]</add>
+                        <del>enfin</del> (on le mene<lb/>en prison ; c’est alors qu’il dit : « si j’étais assez puissant<lb/>pour vous écraser tous. – on entraine aussi le<lb/>domestique qui, lui, est orthodoxe comme vêtement<lb/>et demande à prendre le bouillon, on le lui</p>
+                    <pb n="63" facs="Xms_g_340_063.jpg"/>
+                    <fw>18.<lb/><del>13</del>.</fw>
+                    <p>refuse. – et on baillonne Paul pour l’empêcher<lb/>de gueuler. – Quand ils sont en prison. – le<lb/>grand pontife le har<del>e</del>/angue. – tout le peuple<lb/>écoute touché d’admiration. – <del>au</del>
+                        <del>loin</del>, en face <del>la jeune<lb/>fille</del>
+                        <add>Jeanne</add> soutenue par le gnôme <del>et</del> sanglott<del>ant</del>/e. –<lb/>tout-à-coup, une cloche lointaine retentit –<lb/>tous les cadras font leur petit tintement ; <del>c’est<lb/>encore le crepuscule *Cependant*</del>
+                        <add>et qu’il fasse encore demi jour</add>. – immédiatement<lb/>tous les hommes mettent leur bonnet de coton. – le grand pontife interrompt son discours <add>net, p.</add> mettre son<lb/>bonnet comme les autres <add>&amp; </add><add>s’en aller</add>. – <del>tout le monde</del>
+                        <add>chacun</add><lb/>rentre <add>dans sa maison</add> – tous les volets se ferment d’eux-mêmes. –<lb/>– « Que voulez vous donc de moi », dit <del>la jeune</del>
+                        <add>Jeanne</add><lb/><del>fille</del> au gnôme ? – <del>q</del>/Vous m’avez trompé deux<lb/>fois – il m’échappe toujours. » – « je vous ai trompé,<lb/>moi ! – n’avez-vous a eu à votre 1<hi
+                            rend="sup">er</hi> réquisition</p>
+                    <note place="margin-left"><del>?</del></note>
+                    <p>toutes les graces <add>d’une coquette</add> et toutes les habilités d’une<lb/>ménagère. – ne vous ais-je pas sans cesse<lb/>conduit sur ses traces ; j’ai le pouvoir d’accomplir<lb/>tous vos desirs ; mais il ne m’est pas permis<lb/>d’agir sur vos sentiments si sur ceux de<lb/>Paul. – c’est à vous à mieux désirer. – »<lb/>Je sais bien maintenant ce <del>qu’il</del> que je veux<lb/><add>reprend Jeanne</add> C’est la puissance, il l’a demandée lui-même<lb/>tout-à-l’heure – Ah ! si je l’avais eue aux<lb/>mains, comme je l’aurais sauvé de cette<lb/>populace. (mouvement <add>interieur</add> d’orgueil qui la<lb/>fait déjà reine.) – « Vous en êtes bien sûre ? » –<lb/>« oui, oui, oui. » – « pas si haut vous aurez tous<lb/>cela. » – puis il tire le bonnet de coton plus exageré</p>
+                    <pb n="64" facs="Xms_g_340_064.jpg"/>
+                    <fw>1<del>4</del>/9.</fw>
+                    <p>que les autres. <add>&amp; se </add><add>l’enfonce</add><add> sur les oreilles</add> (si on veut la mêche du bonnet<lb/>sera flamboyante.) – <del>cependant le jour est</del><lb/>immédiatement <del>faire monter</del> le pot-au-feu<lb/>dont les <del>[illis.]</del> anses sont transformées<lb/> en ailes <add>monte dans les airs</add> et quand il est arrivé au dessus de<lb/>la ville il se retourne <add>complement.</add> (<del>[illis.] possible</del>)<add> </add><add>[illis.]</add><add> &amp; de</add><lb/>sa cavité s’échappent des legumes lumineux<lb/>carottes, navets et poireaux qui restent<lb/>suspendus <add>à la voute noire</add> Comme des constellations –<lb/>tandis qu’au dessus les flancs de la<lb/>marmite <add>ont été</add> s’élargiss<del>a</del>/ent d’une façon formidable<lb/>de <del>façon</del>
+                        <add>manière</add> à couvrir la cité endormie. –<lb/>à peine l’obscurité est elle complete <add>que l’on entend</add>
+                        <del>un</del><lb/><add>sortir de toutes les maisons un</add> ronflement général. – <del>alors</del>
+                        <add>mais il se fait</add> un bruit sec<lb/>Comme d’un barreau qu’on vient <add>brise. puis</add> – deux<lb/>ombres frôlent les murailles sur la pointe<lb/>des pieds. – Paul <add>apparait</add> d’abord – puis le<lb/><del>domestique</del>
+                        <add>Dominique</add> toujours avec le tromblon et la<lb/>redingotte à la propriétaire, port<del>e</del>/ant ses deux<lb/>bottes sous ses bras pour ne pas faire de<lb/>bruit, <del>et</del>
+                        <add>il</add> contemple <add>un instant</add> avec un étonnement<lb/>mêlé d’effroi les constellations légumes. –<lb/>le ronflement repart. – la toile tombe lentement. –</p>
                 </div>
             </div>
         </body>

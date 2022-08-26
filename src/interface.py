@@ -26,23 +26,44 @@ def makeInterface(sourceXml, sourceHtml, targetHtml, tempFile):
 			elt.name = "span"
 			elt.attrs = {"class" : "underline"}
 			
+		for elt in myText.find_all("hi", attrs = {"rend" : "superscript"}):
+			elt.name = "sup"
+			elt.attrs = {}
+			
 		for elt in myText.find_all("head"):
 			elt.name = "h2"
+			elt.attrs = {"class" : "play-title"}
 			
 		for elt in myText.find_all("lb"):	
 			elt.name = "br"
-			
-		for elt in myText.find_all("note", attrs = {"place" : "margin-right"}):
-			elt.name = "p"
-			elt.attrs = {"class" : "note"}
 			
 		for elt in myText.find_all("p"):
 			elt.name = "p"
 			elt.attrs = {"class" : "main"}
 			
+		for elt in myText.find_all("note", attrs = {"place" : "margin-right"}):
+			elt.name = "p"
+			elt.attrs = {"class" : "note-right"}
+			
 		for elt in myText.find_all("note", attrs = {"place" : "margin-left"}):
 			elt.name = "p"
-			elt.attrs = {"class" : "note"}
+			elt.attrs = {"class" : "note-left"}
+			
+		for elt in myText.find_all("note", attrs = {"place" : "margin-top-left"}):
+			elt.name = "p"
+			elt.attrs = {"class" : "note-left"}
+			
+		for elt in myText.find_all("fw"):
+			elt.name = "p"
+			elt.attrs = {"class" : "folio"}
+			
+		for elt in myText.find_all("speaker"):
+			elt.name = "span"
+			elt.attrs = {"class" : "speaker"}
+			
+		for elt in myText.find_all("stage"):
+			elt.name = "span"
+			elt.attrs = {"class" : "stage"}
 	
 	with open(tempFile, "w", encoding="utf-8") as file:
 		file.write(str(myText))
@@ -61,10 +82,18 @@ def makeInterface(sourceXml, sourceHtml, targetHtml, tempFile):
 			line = re.sub(r'^\s*$', "", line)
 			line = re.sub("<body>", "<div>", line)
 			line = re.sub("</body>", "</div></div>", line)
-			line = re.sub("<sp>", "", line)
+			line = re.sub('<sp who="(.*?)">', "", line)
 			line = re.sub("</sp>", "", line)
-			line = re.sub("<speaker>", "<br></br>", line)
-			line = re.sub("</speaker>", "", line)
+			line = re.sub("<l>", '<p class="line">', line)
+			line = re.sub("</l>", "</p>", line)
+			line = re.sub('<list type="speakers">', "", line)
+			line = re.sub("</list>", "", line)
+			line = re.sub('<item xml:id="(.*?)"></item>', "", line)
+			line = re.sub('<delspan spanto="(.*?)" type="(.*?)"></delspan>', '<span class="delSpan"></span>', line)
+			line = re.sub('<anchor xml:id="(.*?)"></anchor>', '<span class="delSpan"></span>', line)
+			line = re.sub('<handshift medium="(.*?)"></handshift>', "", line)
+			line = re.sub('<handshift resp="(.*?)"></handshift>', "", line)
+			
 			linesCorr.append(line)
 			
 	with open(tempFile, "w", encoding="utf-8") as file:
@@ -122,11 +151,24 @@ def makeInterface(sourceXml, sourceHtml, targetHtml, tempFile):
 		fichier.write(soup.prettify("utf-8"))
 		print("Done", "Make interface", targetHtml)
 	
+	
+	# JavaScript #
+		
+	with open(targetHtml, "r", encoding="utf-8") as file:
+		soup = BeautifulSoup(file, "html.parser")
+		myScript = soup.find("script", attrs = {"src" : "js/script.js"})
+		myScript.name = "script"
+		myScript.attrs = {"src" : "js/script_g267.js"}
+			
+	with open(targetHtml, "wb") as fichier:
+		fichier.write(soup.prettify("utf-8"))
+		print("Done", "Change Script", targetHtml)
+		
 def main():
 
-	sourceXml = os.path.abspath("../corpus/flaubert_g340.xml")
+	sourceXml = os.path.abspath("../corpus/flaubert_g267.xml")
 	sourceHtml = os.path.abspath("../src/lorem-ipsum.html")
-	targetHtml = os.path.abspath("../g340.html")
+	targetHtml = os.path.abspath("../g267.html")
 	tempFile = os.path.abspath("../src/tempFile.xml")
 	makeInterface(
 		sourceXml=sourceXml,

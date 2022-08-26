@@ -1,0 +1,6561 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Le Château des cœurs
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="https://code.jquery.com/jquery-3.5.1.min.js">
+  </script>
+ </head>
+ <body>
+  <!-- Barre de navigation -->
+  <div id="navbar">
+   <div class="container-fluid">
+    <div class="row">
+     <nav class="col navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+       Flaubert
+      </a>
+      <button class="navbar-toggler" data-target="#navbarScroll" data-toggle="collapse" type="button">
+       <i class="bi bi-list bi">
+       </i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+       <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+        <li class="nav-item">
+         <a class="nav-link" href="index.html">
+          Accueil
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="apparat.html">
+          Apparat critique
+         </a>
+        </li>
+        <li class="nav-item dropdown active">
+         <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="corpus.html" id="navbarScrollingDropdown" role="button">
+          Manuscrits
+         </a>
+         <ul aria-labelledby="navbarScrollingDropdown" class="dropdown-menu">
+          <li>
+           <a class="dropdown-item" href="g340.html?id=0">
+            Ms
+g340
+           </a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="g267.html?id=0">
+            Ms
+g267
+           </a>
+          </li>
+          <li>
+           <a class="dropdown-item" href="NAF15810.html?id=0">
+            NAF
+15810
+           </a>
+          </li>
+         </ul>
+        </li>
+       </ul>
+      </div>
+     </nav>
+     <!-- Bouton jour/nuit -->
+     <div class="col-1 pt-3">
+      <div class="theme-switch-wrapper">
+       <label class="theme-switch" for="checkbox">
+        <input id="checkbox" type="checkbox"/>
+        <div class="slider round">
+        </div>
+       </label>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col">
+     <button class="btn btn-primary" data-target=".bd-example-modal-sm" data-toggle="modal" type="button">
+      Codes de transcription
+     </button>
+     <div aria-hidden="true" aria-labelledby="mySmallModalLabel" class="modal fade bd-example-modal-sm justify-content-start pt-3" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-sm">
+       <div class="modal-content">
+        <p>
+         <ul>
+          <li>
+           La graphie des auteurs est maintenue.
+          </li>
+          <li>
+           Les ratures sont
+           <del>
+            barrés
+           </del>
+           .
+          </li>
+          <li>
+           Les ajouts en interligne sont en bleus et sont dans la continuité du texte.
+          </li>
+          <li>
+           Les passages illisibles sont indiqués par la mention [illis.].
+          </li>
+          <li>
+           Les mots dont la transcription est incertaine sont placés entre astérisques.
+          </li>
+          <li>
+           Les mots soulignés sont
+           <span style="text-decoration: underline;">
+            soulignés
+           </span>
+           .
+          </li>
+          <li>
+           Les passages supprimés soit par plusieurs lignes verticales soit par une croix de Saint-André sont placés entre lignes horizontales.
+          </li>
+         </ul>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- Bouton foliotage -->
+    <div class="col">
+     <nav aria-label="foliotage">
+      <ul class="pagination justify-content-end pt-3">
+       <li class="page-item">
+        <a aria-label="Previous" class="page-link folio" href="#" id="previous">
+         <span aria-hidden="true" style="color: var(--frame-font-color);">
+          «
+         </span>
+        </a>
+       </li>
+       <li class="page-item">
+        <a aria-label="Next" class="page-link folio" href="#" id="next">
+         <span aria-hidden="true" style="color: var(--frame-font-color);">
+          »
+         </span>
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </div>
+   </div>
+  </div>
+  <div class="container-fluid" id="mainText">
+   <div class="row" id="text">
+    <div>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage0" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0097.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText0" style="display:none; max-height:80vh">
+     <p class="folio">
+      7
+      <del>
+       5
+      </del>
+      /3.
+     </p>
+     <h2 class="play-title">
+      L’ile de la toilette
+     </h2>
+     <span class="stage">
+      – Decor –
+     </span>
+     <h2 class="play-title">
+      I.
+     </h2>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      appuyée contre l
+      <del>
+       a
+      </del>
+      e
+      <del>
+       fon
+      </del>
+      rocher
+      <ins>
+       gard
+      </ins>
+      d’un *couch* la fontaine
+      <br/>
+      d’eau de cologne –
+      <del>
+       se m
+      </del>
+      <ins>
+       reste
+      </ins>
+      immobile qq temps – puis
+      <br/>
+      leve la tête. &amp; regarde tout à l’entour avec
+      <br/>
+      ebahissement
+     </span>
+     <p class="main">
+      tiens ! – comme c’est joli ?
+      <del>
+       où suis-je donc
+      </del>
+      ? &amp; comme on sent bon !
+      <br/>
+      <del>
+       Mais
+      </del>
+      <ins>
+       on dirait l’odeur
+      </ins>
+      c’est de l’eau de cologne –
+      <ins>
+       d’où
+                        vient-elle
+      </ins>
+      <del>
+       oui, dans
+      </del>
+      <ins>
+       de
+      </ins>
+      cette fontaine –
+      <ins>
+       mais oui !
+      </ins>
+      <br/>
+      Ah – si je m’y lavais les mains
+     </p>
+     <span class="stage">
+      <ins>
+       <del>
+        [illis.]
+       </del>
+       /elle y plonge ses bras
+      </ins>
+     </span>
+     <p class="main">
+      – on n’a pas peur
+      <br/>
+      d’en perdre je peux bien m’en mettre dans les cheveux A
+     </p>
+     <p class="note-left">
+      <span class="stage">
+       elle s’en verse
+       <del>
+        nt
+       </del>
+       <br/>
+       qq gouttes qui
+       <br/>
+       <ins>
+        deviennent aussitot de
+       </ins>
+       <del>
+        sechange en
+       </del>
+       diamants
+       <br/>
+       sans qu’elle s’en aperçoive
+      </span>
+     </p>
+     <span class="stage">
+      ([illis.] pendant qu’elle est penchee
+      <ins>
+       sur la fontaine
+      </ins>
+      – un branche de l’arbre
+      <br/>
+      à peigne s’abaisse p. la demêler par derrière) E
+      <br/>
+      Elle se retourne
+      <ins>
+       surprise
+      </ins>
+      en tendant la joue droite –
+     </span>
+     <p class="main">
+      <del>
+       qui donc
+      </del>
+      <ins>
+       qu’est-ce qui
+      </ins>
+      me prend les cheveux
+      <del>
+       Ah
+      </del>
+      Continuez Vous ne me faites pas mal !
+     </p>
+     <span class="stage">
+      (l’arbre à houppes
+      <ins>
+       s’abaisse sur [illis.] &amp;.
+      </ins>
+      la caresse de sa poudre de riz)
+     </span>
+     <p class="main">
+      Oh comme c’est doux ! comme c’est doux ! qui donc me fait
+      <br/>
+      ça ?
+     </p>
+     <span class="stage">
+      (elle tend l’autre
+      <ins>
+       [illis.] la gauche
+      </ins>
+      joue – même jeu de l’arbre à houppe).
+     </span>
+     <p class="main">
+      Ah –
+      <br/>
+      encore –
+      <ins>
+       Ah/*Mais* ça me chatouille ?
+      </ins>
+      <del>
+       non
+      </del>
+      ?
+      <del>
+       c’est fini :
+      </del>
+      <del>
+       finissez
+      </del>
+      <ins>
+       cessez
+      </ins>
+      . j’ai envie de rire
+      <br/>
+      Ah ! ah ! ah ! –
+     </p>
+     <p class="note-left">
+      <span class="stage">
+       (l’arbre s’arrête)
+      </span>
+      <br/>
+      C’est fini ? Je vous
+      <br/>
+      remercie bien monsieur
+      <br/>
+      <span class="stage">
+       (elle se relève)
+      </span>
+      <br/>
+      Comment personne ?
+      <br/>
+      Voilà qui est drôle
+      <br/>
+      par exemple
+     </p>
+     <span class="stage">
+      (
+      <del>
+       elle se releve
+      </del>
+      &amp;
+      <ins>
+       elle
+      </ins>
+      considere tout
+      <ins>
+       les objets
+      </ins>
+      autour d’elle
+      <br/>
+      en marchant lentement) s’arrêtant devant
+      <br/>
+      eux &amp; les maniant
+     </span>
+     <p class="main">
+      Ah ! mon Dieu le singulier pays – des peignes sur les arbres
+      <br/>
+      – &amp; qui y tiennent. en voilà un où
+      <del>
+       les
+      </del>
+      <ins>
+       poussent des
+      </ins>
+      perruques
+      <br/>
+      et tout ces vêtements par terre, comme des feuilles
+      <br/>
+      mortes ! –
+     </p>
+     <span class="stage">
+      <del>
+       &amp;
+      </del>
+      <del>
+       elle arrive devant le
+      </del>
+      –(regardant le gazon)
+     </span>
+     <p class="main">
+      <del>
+       la belle rosée
+      </del>
+      Ah ! la belle [illis.]
+      <ins>
+       [illis.]
+      </ins>
+      . Avec ces grosses gouttes
+      <br/>
+      <ins>
+       de rosée
+      </ins>
+      qui reluisent. – Mais non ! ce sont des paillettes d’argent.
+     </p>
+     <span class="stage">
+      (elle s’aperçoit dans une des glaces de l’arbre à miroir)
+     </span>
+     <p class="main">
+      et
+      <del>
+       cel
+      </del>
+      ça ? – cela ? – c’est moi.
+      <del>
+       Comment
+      </del>
+      <br/>
+      Avec
+      <ins>
+       et
+      </ins>
+      des diamants.
+      <del>
+       Ah ! Comme je suis heureuse
+      </del>
+      <br/>
+      j’ai l’air d’un soleil
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage1" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0098.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText1" style="display:none; max-height:80vh">
+     <p class="main">
+      L’infinité des choses comme dans une liberté sans
+      <br/>
+      limites.
+      <br/>
+      c’est lui ! c’est lui ! il
+      <del>
+       nous
+      </del>
+      monte ! il
+      <del>
+       brille
+      </del>
+      nous
+      <br/>
+      chauffe. Levons les bras ! sa gde couleur rose
+      <ins>
+       toute *entouré*
+      </ins>
+      entre dans
+      <br/>
+      nos coeurs
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage2" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0100.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText2" style="display:none; max-height:80vh">
+     <p class="folio">
+      74 bis
+     </p>
+     <span class="stage">
+      <span class="delSpan">
+      </span>
+      (le vent lui enleve s)on jupon
+     </span>
+     <p class="main">
+      Ah
+      <ins>
+       le vent qui me deshabille
+      </ins>
+      que devenir
+      <del>
+       !
+      </del>
+      /? j’ai honte !
+     </p>
+     <p class="note-left">
+      <span class="stage">
+       (habillée)
+      </span>
+     </p>
+     <p class="main">
+      <del>
+       Comment ? le vent
+      </del>
+      <ins>
+       Eh bien Eh bien
+      </ins>
+      me voilà toute habillée maintenant –
+     </p>
+     <p class="note-left">
+      <span class="stage">
+       (le bracelet la serre)
+      </span>
+     </p>
+     <p class="main">
+      – qu’est-ce qui me
+      <del>
+       prend
+      </del>
+      <ins>
+       retient ? p.quoi ?
+      </ins>
+      laissez-moi donc ?
+      <ins>
+       *
+       <del>
+        je
+       </del>
+       *
+      </ins>
+     </p>
+     <span class="stage">
+      (elle tire, le
+      <br/>
+      bracelet reste)
+     </span>
+     <p class="main">
+      – Ah ! cela fait bien sur
+      <del>
+       mon br
+      </del>
+      <ins>
+       ma peau
+      </ins>
+      –
+      <br/>
+      <del>
+       br
+      </del>
+      (collier) qu’est-ce, mon Dieu ? – un
+      <del>
+       beau
+      </del>
+      collier !
+      <br/>
+      Ah comme je suis
+      <del>
+       heureuse
+      </del>
+      <ins>
+       belle
+      </ins>
+      !
+      <del>
+       quel bonheur
+      </del>
+      <br/>
+      [
+      <del>
+       Je m’aime
+      </del>
+      ]. Je voudrais m’embrasser !
+      <span class="delSpan">
+      </span>
+      <br/>
+      Mais
+      <del>
+       Mais
+      </del>
+      <ins>
+       <del>
+        Ah sans doute
+       </del>
+      </ins>
+      je reve sans doute.
+      <del>
+       p.tant il me semble que
+      </del>
+      <br/>
+      <del>
+       mon
+      </del>
+      <ins>
+       cependant ?
+       <del>
+        mais
+       </del>
+      </ins>
+      <ins>
+       non ?
+      </ins>
+      ce n’est pas possible. Je vais me *revaluer* tout
+      <br/>
+      à l’heure ? où suis-je donc ?
+      <del>
+       quel est ce
+      </del>
+      pays ?
+      <ins>
+       dans quel
+      </ins>
+     </p>
+     <span class="speaker">
+      Choeur
+     </span>
+     <p class="line">
+      C’est le pays de la toilette
+     </p>
+     <p class="line">
+      du mignon, du coquet,
+     </p>
+     <p class="line">
+      du …
+     </p>
+     <p class="line">
+      qui rend les femmes
+      <ins>
+       <del>
+        &amp; les
+       </del>
+      </ins>
+      jolies
+     </p>
+     <p class="line">
+      &amp; capables de plaire. X
+     </p>
+     <p class="line">
+      Agitez vous arbres à poudre
+     </p>
+     <p class="line">
+      fontaine d’eau de cologne, coulez
+     </p>
+     <p class="line">
+      <del>
+       Diamants accourez
+      </del>
+      <ins>
+       Savonnettes, Savonnez
+      </ins>
+     </p>
+     <p class="line">
+      <del>
+       Mouches posez vous de vous *même*
+      </del>
+     </p>
+     <p class="line">
+      etc. X
+     </p>
+     <span class="stage">
+      bruit de [illis.] – tamtam, chapeau chinois, flutes.
+     </span>
+     <p class="main">
+      qu’est-ce ? du monde qui s’avance ?
+     </p>
+     <span class="stage">
+      (elle remonte la scène)
+     </span>
+     <p class="note-left">
+      changement
+      <br/>
+      de rythme
+      <br/>
+      des vers plus
+      <br/>
+      longs.
+     </p>
+     <p class="line">
+      Voilà notre roi qui s’avance
+     </p>
+     <p class="line">
+      dans toute sa gloire, avec toute sa cour
+     </p>
+     <p class="line">
+      le souverain de la mode
+     </p>
+     <p class="line">
+      le Premier des perruquiers
+     </p>
+     <p class="line">
+      tout se soumet à ses decisions
+     </p>
+     <p class="line">
+      Bien qu’il gouverne
+      <del>
+       un empire
+      </del>
+      <ins>
+       des sujets peu
+      </ins>
+      respectueux
+     </p>
+     <p class="note-right">
+      « J’ai peur de tout
+      <br/>
+      ce beau monde ! cachons
+      <br/>
+      nous.
+      <br/>
+      elle se cache
+      <br/>
+      sous l’arbre
+      <br/>
+      à [illis.].
+     </p>
+     <span class="stage">
+      <del>
+       – effroi de Jeanne qui se cache en l’appercevant
+      </del>
+     </span>
+     <p class="line">
+      honneur à lui ! ses decisions sont terribles,
+     </p>
+     <p class="line">
+      on est perdu quand on les transgresse.
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage3" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0101.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText3" style="display:none; max-height:80vh">
+     <p class="folio">
+      75.
+     </p>
+     <h2 class="play-title">
+      II.
+     </h2>
+     <span class="stage">
+      le roi Pomadin 83, la reine Couturine
+      <br/>
+      toute la Cour, hommes &amp; femmes
+      <br/>
+      Il arrive porté à bras
+      <ins>
+       sur
+       <del>
+        une espèce
+       </del>
+       d’estrade
+      </ins>
+      dans une espece de fauteuil trone
+      <br/>
+      qui a des
+      <ins>
+       de petites boites
+      </ins>
+      compartimens
+      <del>
+       à
+      </del>
+      <del>
+       boi
+      </del>
+      sur les côtés
+      <br/>
+      2 marabouts sur les montants, en haut – un miroir
+      <br/>
+      au dossier– on l’abaisse jusqu’à terre –
+     </span>
+     <p class="note-left">
+      <span class="stage">
+       <ins>
+        à
+        <del>
+         droite
+        </del>
+        <ins>
+         <del>
+          l’un de
+         </del>
+         ses cotés
+        </ins>
+        <ins>
+         deux
+        </ins>
+        sur deux sieges
+        <ins>
+         [illis.]
+        </ins>
+        –
+        <br/>
+        Couturine &amp; son premier ministre
+        <ins>
+         plus bas
+        </ins>
+       </ins>
+      </span>
+     </p>
+     <p class="note-left">
+      <span class="stage">
+       <ins>
+        ⍦ le Prince de la bretelle
+        <br/>
+        le deux du caoutchoux
+        <br/>
+        &amp; autres
+       </ins>
+      </span>
+     </p>
+     <span class="speaker">
+      Pomadin
+     </span>
+     <p class="main">
+      Là ! – c’est bien ! arrêtez-vous. – &amp; puisque nous
+      <del>
+       sommes
+      </del>
+      <ins>
+       voilà
+      </ins>
+      tous reunis
+      <br/>
+      dans l’endroit consacré
+      <ins>
+       des seances royales
+      </ins>
+      <ins>
+       trois fois [illis.]
+      </ins>
+      – ayant à notre droite
+      <del>
+       Couturine
+      </del>
+      notre
+      <br/>
+      chere epouse
+      <ins>
+       la
+       <del>
+        belle
+       </del>
+       couturine
+      </ins>
+      <ins>
+       brillante
+      </ins>
+     </p>
+     <p class="note-left">
+      <ins>
+       elle lui prend la [
+       <del>
+        illis.
+       </del>
+       ]
+       <ins>
+        main
+       </ins>
+       [illis.]
+      </ins>
+      <br/>
+      <ins>
+       – toujours tendre Pommadin
+      </ins>
+     </p>
+     <p class="main">
+      – &amp; à notre gauche
+      <del>
+       l’archiduc Frison
+      </del>
+      notre premier
+      <ins>
+       le gdreferendaire des chemises ⍦
+       <br/>
+       l’archi-tailleur [illis.]
+       <br/>
+       ministre, [illis.]
+      </ins>
+      <ins>
+       l’indispensable
+      </ins>
+      <del>
+       commençons *Occupons*
+      </del>
+      <ins>
+       Graisse d’ours
+      </ins>
+      [
+      <del>
+       illis
+      </del>
+      .] devant nous
+      <del>
+       nos
+      </del>
+      les gds dignataires de notre bonnet
+     </p>
+     <p class="note-left">
+      <ins>
+       – Vous etes trop bon Majesté –
+      </ins>
+     </p>
+     <p class="note-left">
+      <ins>
+       – nous *redeverons* de
+       <br/>
+       vous ô souverain
+      </ins>
+     </p>
+     <p class="main">
+      <ins>
+       y compris
+      </ins>
+      avec les dames de notre
+      <del>
+       *cou*
+      </del>
+      cour
+      <del>
+       (
+      </del>
+      qui en font l’ornement
+     </p>
+     <span class="stage">
+      (il
+      <br/>
+      salue)
+     </span>
+     <p class="note-left">
+      <ins>
+       – oh charmant –
+      </ins>
+     </p>
+     <p class="main">
+      &amp; derrière nous le peuple volage,
+      <ins>
+       [illis.]
+       <del>
+        portant
+       </del>
+      </ins>
+      <del>
+       fer en main &amp; peigne
+      </del>
+      <br/>
+      <del>
+       en tete, moi Pomadin 83 roi
+      </del>
+      <ins>
+       mon
+      </ins>
+      <del>
+       du pays de la toilette
+      </del>
+     </p>
+     <p class="main">
+      il
+      <del>
+       est
+      </del>
+      faudra
+      <del>
+       proceder
+      </del>
+      <ins>
+       <del>
+        decider
+       </del>
+      </ins>
+     </p>
+     <p class="note-left">
+      <ins>
+       – quel gd roi
+      </ins>
+     </p>
+     <p class="note-left">
+      <ins>
+       – Il faudrait donc
+      </ins>
+     </p>
+     <p class="main">
+      selon la coutume –
+      <del>
+       quels
+      </del>
+      <ins>
+       <del>
+        decider
+       </del>
+       tous
+      </ins>
+      <ins>
+       proceder
+      </ins>
+      ensemble
+      <del>
+       quels seront
+      </del>
+      les
+      <ins>
+       à etablir
+      </ins>
+      <br/>
+      modes de la saison prochaine.
+     </p>
+     <span class="speaker">
+      la Foule
+     </span>
+     <span class="stage">
+      (babillant &amp; se demenant vivement)
+     </span>
+     <p class="main">
+      <del>
+       etablissons
+      </del>
+      – voyons.
+      <del>
+       parlons
+      </del>
+      – choisissons ;
+      <del>
+       qu’y a t-il neuf
+      </del>
+      <br/>
+      quel *valeur* quelle longueur
+     </p>
+     <span class="speaker">
+      Pomadin
+     </span>
+     <p class="main">
+      un moment. Pour ne
+      <del>
+       pas
+      </del>
+      <ins>
+       <del>
+        trop
+       </del>
+      </ins>
+      s’ecarter du vrai gout
+      <del>
+       &amp; ne point
+      </del>
+      <br/>
+      <del>
+       perdre un temps
+      </del>
+      , Je pense qu’il faudrait
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      d’abord bien
+      <br/>
+      convenir des principes
+     </p>
+     <span class="speaker">
+      graisse d’Ours
+     </span>
+     <p class="main">
+      hum.
+      <del>
+       les principes
+      </del>
+     </p>
+     <span class="speaker">
+      Pomadin
+     </span>
+     <p class="main">
+      Qu’avez-vous à grogner, graisse d’Ours ? vous etes une
+      <br/>
+      *base* je le sais |
+      <del>
+       &amp; vous neutralisez
+      </del>
+      | mais ce n’est
+      <br/>
+      pas une raison p. vous
+      <del>
+       croire au dessus de tout
+      </del>
+      <ins>
+       [illis.]
+       <ins>
+        au dessus
+       </ins>
+       <del>
+        voyons
+       </del>
+      </ins>
+     </p>
+     <p class="main">
+      <ins>
+       <del>
+        toujours
+       </del>
+      </ins>
+      &amp; quand je dis les principes
+      <ins>
+       <del>
+        que dites
+       </del>
+      </ins>
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage4" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0102.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText4" style="display:none; max-height:80vh">
+     <p class="folio">
+      82
+     </p>
+     <h2 class="play-title">
+      IV.
+     </h2>
+     <span class="stage">
+      Jeanne, Pommadin, Couturine
+     </span>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      Eh bien, jeune fille,
+      <del>
+       cette beauté
+      </del>
+      <ins>
+       ce luxe
+      </ins>
+      de la toilette,
+      <del>
+       cette grace, ce luxe
+      </del>
+      que
+      <ins>
+       <del>
+        cet eclat
+       </del>
+      </ins>
+      <br/>
+      tu desirais si fort,
+      <del>
+       tu le possedes, à present
+      </del>
+      ?
+      <ins>
+       le voilà
+      </ins>
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <ins>
+       C’est donc vrai.
+      </ins>
+      <ins>
+       Je ne rêve pas ?
+      </ins>
+      <del>
+       Ce n’est donc pas un rêve ?
+      </del>
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      Non. les g/Genies superieurs, à qui rien n’est caché, te protègent
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      moi ? Comment
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      <del>
+       Mais
+      </del>
+      <ins>
+       n’en doute plus
+      </ins>
+      <del>
+       en peux-tu douter ? après tout ce qui t’arrive ?
+      </del>
+      <ins>
+       <del>
+        mais
+       </del>
+      </ins>
+      Aucune, grace
+      <br/>
+      à nous, ne serai
+      <ins>
+       aussi seduisante
+      </ins>
+      *
+      <del>
+       aussi
+      </del>
+      *
+      <del>
+       [&amp; irresistible] comme toi
+      </del>
+      .
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Oh merci ! merci ! il va donc m’aimer
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      <ins>
+       <del>
+        un *instant*
+       </del>
+      </ins>
+      <ins>
+       <del>
+        Oh. pas tout de suite
+       </del>
+      </ins>
+      Pas
+      <span class="underline">
+       encore
+      </span>
+      – Pour atteindre à la dignité
+      <ins>
+       moderne
+      </ins>
+      <del>
+       d’une
+      </del>
+      <ins>
+       de
+      </ins>
+      <del>
+       veritable
+      </del>
+      femme
+      <br/>
+      – tâche de comprendre, – p. devenir tout à fait cet être charmant
+      <br/>
+      inextricable &amp; funeste commencé par Dieu &amp; achevé par
+      <br/>
+      les poëtes &amp; les coiffeurs, si bien qu’il y a fallu
+      <del>
+       au monde
+      </del>
+      <br/>
+      soixante siecles
+      <ins>
+       au monde
+      </ins>
+      avant de produire la Parisienne, il te
+      <br/>
+      manque encore, ô petite fille, bien des choses
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Lesquelles ? dis les donc !
+      <del>
+       pour que je lui plaise enfin, p. qu’il
+      </del>
+      <br/>
+      <span class="delSpan">
+      </span>
+      me prenne
+      <ins>
+       m’accepte
+      </ins>
+      p. qu’il me garde, – explique toi – j’ecoute
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <span class="stage">
+      (la considerant ironiquement.)
+     </span>
+     <p class="main">
+      Certes, voilà une coiffure bien disposée – Mais saurais-tu
+      <br/>
+      pendant qu’il [illis.] relever un [illis.] avec deux
+      <br/>
+      doigts une boucle qui s’echappe ? [ou raffermir
+      <br/>
+      par derrière, en te plaignant de la migraine ta torsade trop lourde ?] Comme t’y prendrais-tu en montant les escaliers p. faire braire
+      <ins>
+       [illis.]
+      </ins>
+      sur les marches
+      <br/>
+      tu [illis.] ?
+      <span class="delSpan">
+      </span>
+     </p>
+     <p class="note-left">
+      Pommadin
+      <br/>
+      – Oh mille secrets qui
+      <br/>
+      composent le gd art. Tu ne sais
+      <br/>
+      [
+      <del>
+       illis
+      </del>
+      .]
+      <del>
+       que
+      </del>
+      <ins>
+       pas
+      </ins>
+      faire *braire* decemment
+      <br/>
+      la [illis.] de ta robe, ni pincer la bouche
+      <br/>
+      ni cligner
+      <ins>
+       [illis.]
+      </ins>
+      des yeux ni debiter des
+      <br/>
+      melancolies en prenant
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      sur un
+      <br/>
+      sopha des poses de fleur
+      <del>
+       s
+      </del>
+      battue par la brise. Comment
+      <del>
+       ferais tu
+      </del>
+      <br/>
+      ferais-tu – voyons, – en l’entendant
+      <br/>
+      soupirer ? – &amp; quelle serait ta reponse s’il te demandait
+      <br/>
+      « m’aimes-tu ?
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage5" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0103.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText5" style="display:none; max-height:80vh">
+     <p class="folio">
+      83.
+     </p>
+     <p class="main">
+      <span class="delSpan">
+      </span>
+      montres moi l’attitude
+      <ins>
+       ton attitude
+      </ins>
+      que tu aurais en l’ecoutant soupirer
+      <br/>
+      &amp; quelle serait ta reponse, –
+      <del>
+       voyons
+      </del>
+      – s’il murmurait
+      <ins>
+       te demandait
+      </ins>
+      à ton
+      <br/>
+      oreille – « je t’aime
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Mon Dieu, je repondrais « j’en suis bien contente
+     </p>
+     <span class="speaker">
+      Couturine
+     </span>
+     <span class="stage">
+      (indignée)
+     </span>
+     <p class="main">
+      On le fait voir ! on ne l’avoue pas !
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      et quand il ajoutera « et toi, m’aimes tu ?
+     </p>
+     <p class="note-left">
+      et quelle serait ta
+      <br/>
+      reponse s’il te
+      <br/>
+      demandait « m’aimes-tu
+      <span class="delSpan">
+      </span>
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      eh bien, je
+      <del>
+       dirais
+      </del>
+      /repondrais « oui !
+     </p>
+     <span class="speaker">
+      Couturine
+     </span>
+     <p class="main">
+      <ins>
+       Ça ne se dit pas
+      </ins>
+      <del>
+       *Ce* mot-là est indecent
+      </del>
+      jeune fille.
+      <del>
+       c’est une expression naturelle, pop
+      </del>
+      <ins>
+       [
+       <del>
+        illis
+       </del>
+       .]
+      </ins>
+      <ins>
+       c’est un mot indecent, naturel &amp; populaire
+      </ins>
+      <br/>
+      <del>
+       &amp; populaire
+      </del>
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Mais comment faut-il donc parler ?
+      <ins>
+       s’y prendre
+      </ins>
+      au nom du ciel, dis-le. Je
+      <ins>
+       qu’on m’explique
+      </ins>
+      <br/>
+      <del>
+       me fie à toi
+      </del>
+      . Sois mon
+      <ins>
+       𝄐
+      </ins>
+      maitre,
+      <del>
+       mon guide
+      </del>
+      , mon protecteur,
+      <ins>
+       𝄐
+      </ins>
+      <br/>
+      <del>
+       mon [illis.]
+      </del>
+      !
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      Hola les deux types du [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       savoir-vivre, arrivez !
+      </ins>
+     </p>
+     <h2 class="play-title">
+      V.
+     </h2>
+     <span class="stage">
+      les Precedents.
+     </span>
+     <span class="stage">
+      – Deux mannequins
+      <ins>
+       homme &amp; femme
+      </ins>
+      que l’on
+      <br/>
+      apporte. (le mannequin-homme a une raie sur le
+      <br/>
+      derrière de la tete, qui se continue par les poils de sa
+      <br/>
+      paletot symetriquement divisée, jusqu’au bas des [illis.]
+      <br/>
+      corgnon dans l’oeil – chose anglais
+     </span>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      Considère ces deux [
+      <del>
+       aimables [illis.] de la plus haute [illis.]] ces honnêtes
+      </del>
+      <br/>
+      <ins>
+       honnêtes
+      </ins>
+      mannequins qui ressemblent à des mortels – tache de reproduire leurs
+      <br/>
+      mouvements,
+      <del>
+       &amp; tu auras
+      </del>
+      <ins>
+       si tu veux avoir
+      </ins>
+      de belles manières –
+      <del>
+       Ecoute les parler
+      </del>
+      <br/>
+      rappelle toi leurs discours – &amp; en qque lieu que tu te trouves, à la
+      <br/>
+      campagne,
+      <del>
+       aux bains de mer
+      </del>
+      , en visite
+      <del>
+       &amp; au bal
+      </del>
+      <ins>
+       en soirée
+      </ins>
+      , dans un diner au
+      <br/>
+      spectacle ou à l’eglise tu pourras jacasser hardiment sur
+      <br/>
+      la nature la littérature
+      <del>
+       &amp;
+      </del>
+      <ins>
+       <del>
+        *ou*
+       </del>
+      </ins>
+      la peinture,
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      les enfants aux tetes
+      <br/>
+      blondes,
+      <del>
+       les esprits *frappeurs*, le probleme social
+      </del>
+      ,
+      <ins>
+       <del>
+        la charité [illis.]
+       </del>
+      </ins>
+      le turf,
+      <del>
+       les chemins
+      </del>
+      <br/>
+      <del>
+       de fer
+      </del>
+      &amp; autres chose. – La clef, Couturine !
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage6" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0104.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText6" style="display:none; max-height:80vh">
+     <p class="folio">
+      84.
+     </p>
+     <span class="stage">
+      (il entr’ouvre la poitrine des deux automates – &amp; remonte
+      <br/>
+      un ressort d’horloge) que l’on entend craquer) –
+     </span>
+     <p class="note-left">
+      Commençons – en appuyant ici par exemple
+     </p>
+     <p class="main">
+      <del>
+       Nous allons combiner l’effet des deux, [illis.] celle du lien &amp; celle
+      </del>
+      <ins>
+       <del>
+        ressorts celui qui
+       </del>
+      </ins>
+      <ins>
+       <del>
+        ou d’après
+       </del>
+      </ins>
+      <ins>
+       <del>
+        agit &amp; l’on
+       </del>
+      </ins>
+      <br/>
+      <ins>
+       &amp; maintenant
+      </ins>
+      <ins>
+       bien – en appuyant
+       <del>
+        ici
+       </del>
+      </ins>
+      <del>
+       du sentiment
+      </del>
+      nous obtenons ce qu’on
+      <ins>
+       quil
+      </ins>
+      doit dire dans
+      <del>
+       *trouve* – &amp; celle celui du sentiment
+      </del>
+      . c’est une rencontre en plein
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      <ins>
+       où l’on se
+      </ins>
+      <br/>
+      soleil entre Monsieur &amp; Dame,
+      <ins>
+       M &amp; Dame
+      </ins>
+      , en plein soleil devant
+      <ins>
+       *
+       <del>
+        son
+       </del>
+       *
+      </ins>
+      un beau
+      <br/>
+      paysage –
+      <del>
+       allez
+      </del>
+      . partez ! –
+     </p>
+     <p class="note-left">
+      à la fois
+      <br/>
+      sur ces deux
+      <br/>
+      ressorts celui du
+      <br/>
+      lien &amp; du sentiment
+     </p>
+     <span class="stage">
+      il les souleve comme des [illis.] en les prenant par les epaules
+     </span>
+     <span class="speaker">
+      – le monsieur –
+     </span>
+     <span class="stage">
+      (avec de petits gestes rapides de la main droite &amp; l’air guilleret)
+     </span>
+     <p class="main">
+      bonjour chère
+     </p>
+     <span class="speaker">
+      la Dame –
+     </span>
+     <span class="stage">
+      (avec le mène jour jeu)
+     </span>
+     <p class="main">
+      bonjour, bonjour mon bon
+     </p>
+     <span class="stage">
+      (ils se rapprochent en glissant sur leur roulette – &amp; comme le
+      <br/>
+      Mr fume un cigare, la dame une cigarette &amp; qu’ils se trouvent
+      <br/>
+      nez à nez
+      <ins>
+       face à face
+      </ins>
+      , ils s’envoient au visage reciproquement des
+      <br/>
+      tourbillons de fumée)
+     </span>
+     <span class="speaker">
+      le monsieur –
+     </span>
+     <p class="main">
+      <del>
+       charme
+      </del>
+      <ins>
+       eh c’est une bonne fortune
+      </ins>
+     </p>
+     <span class="speaker">
+      la dame –
+     </span>
+     <span class="stage">
+      en même temps
+     </span>
+     <p class="main">
+      enchantée moi-même
+     </p>
+     <span class="stage">
+      ils se prennent
+      <ins>
+       la main
+      </ins>
+      &amp; se la [illis.] pendant qq temps
+      <ins>
+       minutes
+      </ins>
+      <br/>
+      avec vehemence, en ricanant
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      [est-ce qu’
+      <del>
+       il doivent
+      </del>
+      <ins>
+       ils doivent
+      </ins>
+      se serrer la main si
+      <br/>
+      «
+      <del>
+       Comment aussi
+      </del>
+      fort
+                     que cela ?
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      Oui, comme deux crocheteurs au cabaret. –] Ce gentleman,
+      <br/>
+      <del>
+       du reste
+      </del>
+      est le modele
+      <ins>
+       numero un
+      </ins>
+      <del>
+       suprême
+      </del>
+      , – un gaillard
+      <del>
+       froid &amp;
+      </del>
+      <ins>
+       [illis.] negatif [illis.]
+      </ins>
+      <ins>
+       serieux
+      </ins>
+      <br/>
+      <del>
+       &amp; pertinent
+      </del>
+      <ins>
+       <del>
+        tout à gd la place
+       </del>
+      </ins>
+      taillé dans le sapin d’un comptoir avec des fils,
+      <br/>
+      d’archal
+      <ins>
+       [illis.]
+      </ins>
+      en guise de nerfs, du foin dans les bottes &amp; du
+      <br/>
+      [illis.]
+      <ins>
+       [illis.]
+      </ins>
+      dans la tête
+      <ins>
+       cervelle
+      </ins>
+      <ins>
+       <del>
+        cervelle
+       </del>
+      </ins>
+      – ecoute le.
+     </p>
+     <span class="speaker">
+      le Mr
+     </span>
+     <span class="stage">
+      (regardant autour de lui par de petits mouvements de face [illis.]
+     </span>
+     <p class="main">
+      tiens tiens tiens,
+      <del>
+       Po
+      </del>
+      où sommes-nous ? donc ici
+     </p>
+     <span class="speaker">
+      Pommadin
+     </span>
+     <p class="main">
+      &amp; la cocotte de ce coco qui est
+      <del>
+       une creature
+      </del>
+      <ins>
+       la poupée de ce mannequin
+      </ins>
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage7" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0115.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText7" style="display:none; max-height:80vh">
+     <p class="folio">
+      151.
+     </p>
+     <span class="stage">
+      (
+      <span class="underline">
+       aussitôt arrivant des baigneurs &amp; des baigneuses.
+       <ins>
+        très petites
+       </ins>
+       La plage en est couverte.
+       <br/>
+       beaucoup sont en costume de bains de mer. callecons, toiles cirées.
+      </span>
+      etc –
+      <br/>
+      Choeur de Messieurs et de dames
+      <del>
+       aux
+      </del>
+      Bains de mer.
+      <br/>
+      Tout en chantant, ils font mille politesses à Paul &amp; veulent l’entrainer
+      <br/>
+      avec eux. Il se debat, &amp; parvient à s’echapper
+     </span>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      Eh ! non ! non ! non ! c’est pitoyable !
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Oh oui ! Je vous comprends ! Il faudrait mettre une grande toile cirée
+      <br/>
+      sur la plage
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      , *
+      <del>
+       vernir
+      </del>
+      * vernir les coquillages, remplacer les [illis.]
+      <br/>
+      par des [illis.] &amp; ces affreuses cabanes par de bonnes petites
+      <br/>
+      voitures, avoir au milieu des vagues ça &amp; là, des buffets de [
+      <del>
+       illis.
+      </del>
+      ]
+      <ins>
+       chemin de fer
+      </ins>
+      <br/>
+      sous les pieds un bon plancher comme aux ecoles de natation,
+      <br/>
+      derrière soi, p. prendre les vues un photographe en permanence
+      <br/>
+      et des bateaux concerts
+      <del>
+       à l’horizon
+      </del>
+      , des [illis.] dans l’ecume.
+      <br/>
+      Je voudrais que les maitres baigneurs fassent des pedicures [
+      <del>
+       &amp;
+      </del>
+      ] toutes
+      <br/>
+      les huitres des huitres d’*ostensile*.
+     </p>
+     <span class="speaker">
+      Paul,
+     </span>
+     <span class="stage">
+      (en faisant un gd geste de desespoir)
+     </span>
+     <p class="main">
+      Misericorde !
+     </p>
+     <span class="stage">
+      (il s’en va)
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Reviens ! aimons-nous !
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      Pas de cette façon-là !
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Ecoute-moi !
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      Jamais.
+     </p>
+     <span class="stage">
+      (il disparait par la gauche)
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage8" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0116.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText8" style="display:none; max-height:80vh">
+     <p class="folio">
+      152.
+     </p>
+     <span class="speaker">
+      Dominique
+     </span>
+     <p class="main">
+      Comment ? enfui ! c’était p.tant bien *
+      <del>
+       aussi
+      </del>
+      *
+      <ins>
+       confortable
+      </ins>
+      !
+     </p>
+     <span class="stage">
+      (il sort.
+     </span>
+     <h2 class="play-title">
+      Scène VIIe
+     </h2>
+     <span class="stage">
+      Les mêmes, (moins Paul &amp; Dominique)
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (afferée &amp; considerant le roi des gnome, près d’elle
+     </span>
+     <p class="main">
+      Eh bien ? Eh bien ?
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      Qu’as-tu donc ?
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (eclate en sanglots &amp; s’appuyant sur l’epaule du
+      <br/>
+      roi des gnomes)
+     </span>
+     <p class="main">
+      Ah ! je suis horriblement malheureuse !
+     </p>
+     <span class="stage">
+      Choeur des Messieurs &amp; des Dames
+      <br/>
+      Ils tachent de lui faire oublier son desespoir en lui donnant des
+      <br/>
+      conseils à l’usage des yeux du monde.
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (les regarde qq temps sans comprendre, puis, tout a coup
+     </span>
+     <p class="main">
+      Miserables ! c’est vous qui en etes la cause avec vos fadeurs
+      <br/>
+      imbeciles, la platitude de vos esprits &amp; la bouffissure de vos
+      <br/>
+      etoffes, allez-vous en ! Mensonges du cœur
+      <ins>
+       <del>
+        de l’âme
+       </del>
+      </ins>
+      &amp; de la *joue* ! hypocrisie &amp; maquillage, faux sentiments faux chignons
+      <br/>
+      petites voilettes, petits detours, poitrines debraillés
+      <br/>
+      coeurs etroits.
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage9" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0117.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText9" style="display:none; max-height:80vh">
+     <p class="folio">
+      148.
+     </p>
+     <p class="main">
+      assise
+      <del>
+       au bord
+      </del>
+      dans le kiosque, au bord de la route, je le vois venir le long des cuisses d’orange
+      <ins>
+       celui que j’idolatre
+      </ins>
+      le jeune militaire ! » –
+     </p>
+     <span class="stage">
+      (
+      <span class="underline">
+       Pendant que Jeanne chantait &amp; à mesure que sa romance devenait
+       <br/>
+       plus intense de vulgarité, le paysage, peu à peu, s’est amoindri
+       <br/>
+       les montagnes se sont abaissées, &amp; representent des petites falaises
+       <br/>
+       au fond, à peine si l’on
+       <del>
+        voit
+       </del>
+       <ins>
+        distingue
+       </ins>
+       au bout d’une longue plage, une
+       <br/>
+       mer toute
+       <del>
+        plat
+       </del>
+       [illis.]. à droite quantité de cabanes
+       <del>
+        lillilu
+       </del>
+       lilligrutiennes
+       <br/>
+       plus loin de petites roches noires, à gauche un casino, le même dimensions.
+       <br/>
+       Paul est resté, auprès du piano, la tête basse.
+      </span>
+      )
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (
+      <span class="underline">
+       etonnée de son silence
+      </span>
+      )
+     </span>
+     <p class="main">
+      Comment ? vous ne trouvez pas ça gentil
+      <del>
+       )
+      </del>
+      /?
+     </p>
+     <span class="stage">
+      (
+      <span class="underline">
+       Paul, toujours muet, la considère d’un air consterné.
+      </span>
+      )
+     </span>
+     <p class="main">
+      Preferez-vous une chansonnette comique ? – avec beaucoup de
+      <br/>
+      paroles entre les couplets ? Je sais faire des [illis.] !
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (
+      <span class="underline">
+       douloureusement
+      </span>
+      )
+     </span>
+     <p class="main">
+      Oh ! non ! non !
+     </p>
+     <span class="stage">
+      (
+      <span class="underline">
+       en se detournant, il aperçoit le paysage nouveau
+       <br/>
+       et s’ecrie :)
+      </span>
+     </span>
+     <p class="main">
+      Horrible !
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage10" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0092.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText10" style="display:none; max-height:80vh">
+     <span class="stage">
+      fureur contre elle-même. elle
+      <br/>
+      dechire ses habits
+     </span>
+     <p class="main">
+      Moi-même j’ai gardé des [illis.]. [illis.] imbecille
+      <br/>
+      Ah ce que j’aurais du être c’est une femme raisonnable
+      <br/>
+      serieuse, sans excentricité imbécile
+      <ins>
+       a
+      </ins>
+      lors il m’aimerait
+     </p>
+     <span class="stage">
+      le roi des gnomes reparait
+     </span>
+     <p class="main">
+      « vous avez
+      <br/>
+      raison. Venez »
+     </p>
+     <span class="stage">
+      elle s’enfuit p/du côté par où Paul
+      <br/>
+      est parti
+     </span>
+     <span class="speaker">
+      Cascade, vieux sapin
+     </span>
+     <span class="stage">
+      *Dans* les remerciements des Bergers rococo
+     </span>
+     <p class="main">
+      « merci d’avoir
+      <br/>
+      chassé ces [illis.] et de nous avoir appelé à la place.
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage11" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0095.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText11" style="display:none; max-height:80vh">
+     <p class="folio">
+      102
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      Mais comment donc
+      <ins>
+       au nom du ciel
+      </ins>
+      voulez-vous qu’ils soient ?
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <ins>
+       Mais agreables !
+      </ins>
+      C’est bien simple !
+     </p>
+     <span class="stage">
+      aussitot arrivent deux bandes
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ] en trottinant
+      </ins>
+      de paysans rococo – bergers
+      <br/>
+      &amp; bergères
+      <ins>
+       avec des rubans [illis.] leur
+      </ins>
+      <del>
+       au en
+      </del>
+      chapeau
+      <del>
+       de fleurs
+      </del>
+      , au de petits paniers
+      <br/>
+      de fleurs
+      <ins>
+       au bras
+      </ins>
+      &amp; des houlettes.
+      <br/>
+      Ils chantent –
+     </span>
+     <h2 class="play-title">
+      <del>
+       VI.
+      </del>
+     </h2>
+     <h2 class="play-title">
+      VI.
+     </h2>
+     <span class="speaker">
+      Choeur
+     </span>
+     <p class="line">
+      Honneur à notre chatelaine
+     </p>
+     <p class="line">
+      qui vient de nous tirer de peine
+     </p>
+     <p class="line">
+      en bannissant tous ces lourdauds
+     </p>
+     <p class="line">
+      tous ces vilains, tous ces rustauds
+     </p>
+     <p class="line">
+      <del>
+       qui
+      </del>
+      …
+     </p>
+     <p class="line">
+      ……
+     </p>
+     <p class="line">
+      leurs mines sales… leurs…
+      <del>
+       ah
+      </del>
+      horreur
+     </p>
+     <p class="line">
+      Mais du fard des pompoms – Ah quel bonheur
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Oui oui
+      <del>
+       c’est cela ! c’est cela
+      </del>
+      !
+      <ins>
+       voilà mon rêve.
+      </ins>
+      <ins>
+       *charmant*
+       <del>
+        ravissant
+       </del>
+       – exquis enchanteur
+      </ins>
+      <ins>
+       C’est Watteau Pompadour
+      </ins>
+      <ins>
+       bois de rose
+      </ins>
+      <del>
+       [illis.] de [illis.]
+      </del>
+      , talon rouge
+      <br/>
+      &amp; regence
+     </p>
+     <span class="speaker">
+      Le bailli
+     </span>
+     <p class="main">
+      Moi le bailli de ce village.
+      <br/>
+      J’ai l’honneur de vous presenter cet essaim de fillettes
+      <br/>
+      ces jouvençaux
+      <del>
+       Rose &amp; Colas –
+      </del>
+      <br/>
+      ces moutons frises
+      <ins>
+       tous decents, coquets
+      </ins>
+      . – qui vous danser p. vous rejouir
+     </p>
+     <span class="stage">
+      Ballet.
+     </span>
+     <span class="stage">
+      *Ques* uns des bergers deposent par terre,
+      <del>
+       entre
+      </del>
+      <ins>
+       ça &amp;
+      </ins>
+      sur le gazon bordé de fleurs
+      <br/>
+      des moutons avec des faveurs roses au col. &amp; se
+      <br/>
+      mettent à danser. ][
+      <ins>
+       autour tandis qu’au fond les Bergères seules dansent alignees en haie
+      </ins>
+      ][ Rose poursuit Colas qui se derobe
+      <br/>
+      Mais un
+      <del>
+       petit
+      </del>
+      <ins>
+       petit
+      </ins>
+      amour apparait
+      <ins>
+       &amp;
+      </ins>
+      lance sà flèche à
+      <br/>
+      Colas qui court après Rose. ][
+      <ins>
+       puis
+      </ins>
+      les Bergèr
+      <del>
+       es
+      </del>
+      /s poursuivent les
+      <br/>
+      Bergères.
+      <del>
+       qui
+      </del>
+      Frappées par les flèches de l’amour elles
+      <br/>
+      se laissent attraper. ][
+      <ins>
+       bientot &amp; dansent au bras des Bergers
+      </ins>
+      ][ L’Amour en larde tous les
+      <br/>
+      moutons qui belent ± &amp; *e*/furieux de voir Paul
+      <br/>
+      sombre &amp; immobile, il le vise &amp; lui en lance
+      <br/>
+      plusieurs. Les Bergers &amp; les Bergères veulent
+      <br/>
+      l’entrainer dans leur danse
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage12" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0105.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText12" style="display:none; max-height:80vh">
+     <p class="folio">
+      89
+     </p>
+     <h2 class="play-title">
+      VII. Le Pays de l’Innocence
+     </h2>
+     <span class="stage">
+      decor –
+     </span>
+     <span class="speaker">
+      Choeur des pasteurs.
+     </span>
+     <p class="main">
+      habitant
+      <del>
+       au dessus des demeures civilisées
+      </del>
+      <ins>
+       au dessus des villes
+      </ins>
+      –
+      <del>
+       sur
+      </del>
+      le plateau des
+      <br/>
+      montagnes – &amp; nous baignant dans l’azur [
+      <del>
+       illis.
+      </del>
+      ] d’un
+      <br/>
+      air immaculé,
+      <del>
+       comme des aigles
+      </del>
+      , rien n’altère nos corps
+      <br/>
+      robustes, – rien ne trou
+      <del>
+       t
+      </del>
+      /ble notre
+      <del>
+       pensée
+      </del>
+      <ins>
+       coeur
+      </ins>
+      –
+      <br/>
+      Aussi loin qu’il y a des herbes, nous poussons
+      <ins>
+       devant nous
+      </ins>
+      nos troupeaux
+      <br/>
+      &amp; quand nous revenons en arrière, la
+      <del>
+       Savane
+      </del>
+      <ins>
+       le gazon
+      </ins>
+      a refleuri.
+      <br/>
+      Du bord de nos tentes –
+      <del>
+       ou couchés sous les berges
+      </del>
+      <del>
+       feuilles
+      </del>
+      nous
+      <del>
+       voyons
+      </del>
+      <ins>
+       apercevons
+      </ins>
+      , sur la plaine dessechée par l’automne
+      <br/>
+      l’ombre des nuages courir.
+      <br/>
+      <del>
+       en pensee comme en *eux tout*
+      </del>
+      <ins>
+       nos pensées comme eux, arrivant, &amp; s’envont, perdues dans
+      </ins>
+      <ins>
+       libres
+      </ins>
+      l’immensité, tout à coup
+      <br/>
+      <del>
+       est dans *l’obscurité* [illis.] sang [illis.]
+      </del>
+      <br/>
+      comme la seve
+      <del>
+       dans les arbres
+      </del>
+      .
+      <del>
+       L’ami de la *terre* sur laquelle
+      </del>
+      <br/>
+      <del>
+       nous
+      </del>
+      <ins>
+       &amp;
+      </ins>
+      <del>
+       sommes
+      </del>
+      couchés à plat ventre,
+      <ins>
+       <del>
+        qui vit
+       </del>
+      </ins>
+      <ins>
+       sur la terre, nous sentons
+      </ins>
+      <del>
+       bat contre notre poitrine
+      </del>
+     </p>
+     <p class="note-left">
+      <del>
+       Quand nous passons
+      </del>
+      <ins>
+       en passant
+      </ins>
+      <br/>
+      <del>
+       pres
+      </del>
+      <ins>
+       dans
+      </ins>
+      <del>
+       d
+      </del>
+      /les *
+      <del>
+       haies
+      </del>
+      *
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      <ins>
+       bois
+      </ins>
+      nos
+      <br/>
+      gdes chevelures se
+      <br/>
+      <del>
+       mêlent
+      </del>
+      <ins>
+       *
+       <del>
+        mêlent
+       </del>
+       *
+      </ins>
+      aux [
+      <del>
+       illis.
+      </del>
+      ]
+      <ins>
+       buissons
+      </ins>
+      <br/>
+      notre sang circule
+      <br/>
+      <del>
+       h
+      </del>
+      /pacifiquement
+     </p>
+     <p class="main">
+      qque chose d’eternel palpiter contre
+      <del>
+       notre
+      </del>
+      <ins>
+       nos
+      </ins>
+      poitrine
+      <br/>
+      <del>
+       nos regards – pendant la nuit se portent tour à tour
+      </del>
+      <br/>
+      <del>
+       des étoiles du ciel
+      </del>
+      <br/>
+      Pendant la nuit,
+      <del>
+       nous sommes entourés
+      </del>
+      <ins>
+       contemplons les
+      </ins>
+      <br/>
+      <del>
+       d’
+      </del>
+      etoiles. – &amp; quand nos
+      <del>
+       regards [illis.]
+      </del>
+      <ins>
+       yeux à la fin
+      </ins>
+      <del>
+       se
+      </del>
+      *redesandant*
+      <br/>
+      <del>
+       sur la terre
+      </del>
+      , nous les retrouvons à coté de nous,
+      <br/>
+      <del>
+       au milieu de l’[illis.]
+      </del>
+      , dans nos bras, sur le visage de
+      <br/>
+      nos femmes.
+      <br/>
+      Le vagissement clair des chèvres
+      <del>
+       se mêle
+      </del>
+      <ins>
+       se [illis.]
+      </ins>
+      <br/>
+      <ins>
+       dans l’ombre aux br
+      </ins>
+      <ins>
+       doux
+      </ins>
+      <del>
+       aux
+      </del>
+      sanglots
+      <del>
+       doux
+      </del>
+      du nouveau né – &amp;
+      <del>
+       l’aboiement
+      </del>
+      <ins>
+       la voix
+      </ins>
+      <br/>
+      du chien coupe,
+      <del>
+       avec regularité
+      </del>
+      <ins>
+       par saccades
+      </ins>
+      le
+      <del>
+       gros
+      </del>
+      bruit du
+      <br/>
+      torrent qui tombe – [peu à peu elle s’apaise – &amp; tout
+      <br/>
+      s’endort.]
+      <br/>
+      à la première blancheur du matin tout le vent
+      <br/>
+      du ciel nous arrive à la face. La joie de re-sentir
+      <br/>
+      la vie eclate en nous comme la lumière
+      <br/>
+      du soleil,
+      <del>
+       qui
+      </del>
+      <ins>
+       <del>
+        contient
+       </del>
+      </ins>
+      apparait/
+      <ins>
+       ssant
+      </ins>
+      derrière les montagnes
+      <br/>
+      Les oiseaux chantent,
+      <del>
+       les fleurs s’entr’ouvrent
+      </del>
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage13" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0106.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText13" style="display:none; max-height:80vh">
+     <p class="folio">
+      89.
+     </p>
+     <h2 class="play-title">
+      VII. le Pays de l’innocence
+     </h2>
+     <span class="stage">
+      Le soleil se leve sur un gd paysage – montagnes dentelees à l’horizon
+      <br/>
+      Decor.
+     </span>
+     <h2 class="play-title">
+      I.
+     </h2>
+     <p class="note-left">
+      une
+      <del>
+       tente à gauche
+      </del>
+      <ins>
+       à droite
+      </ins>
+      au fond une tente
+      <br/>
+      un peu plus en avant
+      <br/>
+      un rocher. –
+      <del>
+       gds
+      </del>
+      arbres très hts.
+      <br/>
+      Nature âpre &amp; majestueuse.
+     </p>
+     <span class="speaker">
+      Choeur des Pasteurs
+     </span>
+     <span class="stage">
+      <del>
+       au
+      </del>
+      <ins>
+       le
+      </ins>
+      <ins>
+       (
+       <del>
+        au
+       </del>
+       soleil
+       <del>
+        levant
+       </del>
+       se leve)
+      </ins>
+     </span>
+     <p class="main">
+      Habitant
+      <del>
+       au dessus
+      </del>
+      <ins>
+       loin
+      </ins>
+      des villes
+      <del>
+       sur
+      </del>
+      <ins>
+       sur
+      </ins>
+      le plateau des montagnes – &amp; nous
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      <br/>
+      <del>
+       baignant
+      </del>
+      dans l’azur d’un air immaculé, rien n’altère nos
+      <br/>
+      corps robustes, rien ne trouble notre coeur.
+      <br/>
+      Aussi loin qu’il y a des herbes, nous poussons devant nous nos
+      <br/>
+      troupeaux – &amp; quand nous revenons en arrière, le gazon a refleuri
+      <br/>
+      [
+      <del>
+       &amp; du bord de nos tentes, nous apercevons
+      </del>
+      <ins>
+       <del>
+        au loin
+       </del>
+      </ins>
+      <del>
+       sur
+      </del>
+      la plaine,
+      <del>
+       desséchee
+      </del>
+      <br/>
+      <del>
+       par l’automne l’ombre des nuages courir
+      </del>
+      .
+      <br/>
+      Nos pensées comme
+      <del>
+       eux
+      </del>
+      ,
+      <ins>
+       les nuages
+      </ins>
+      arrivent &amp; s’en vont, perdues
+      <br/>
+      dans l’immensité, tout à coup. &amp; sans laisser
+      <ins>
+       *plus*
+       <del>
+        lorsqu'eux
+       </del>
+      </ins>
+      de souvenir
+      <ins>
+       <del>
+        non plus
+       </del>
+       de trace &amp; de
+      </ins>
+     </p>
+     <p class="note-left">
+      Nous avons les pieds
+      <br/>
+      durs comme des
+      <br/>
+      cailloux.
+      <br/>
+      les cheveux libres
+      <br/>
+      &amp; longs comme
+      <br/>
+      des lianes.
+     </p>
+     <p class="main">
+      <del>
+       En passant dans
+      </del>
+      <ins>
+       par
+      </ins>
+      <del>
+       les bois nos
+      </del>
+      gdes chevelures se mêlent aux
+      <br/>
+      <del>
+       buissons.]
+      </del>
+      notre sang circule, pacifiquement,
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ] seule la tranquillité de
+      </ins>
+      <del>
+       comme
+      </del>
+      <ins>
+       comme
+      </ins>
+      la seve
+      <br/>
+      d/les arbres –
+      <del>
+       &amp;
+      </del>
+      couchés à plat ventre sur la terre, nous sentons
+      <br/>
+      qque chose d’eternel palpiter contre nos poitrines
+      <br/>
+      <del>
+       Pendant
+      </del>
+      <ins>
+       <del>
+        Pendant
+       </del>
+      </ins>
+      <ins>
+       [illis.] de
+      </ins>
+      <ins>
+       pendant
+      </ins>
+      la nuit, nous contemplons les etoiles.
+      <del>
+       &amp;
+      </del>
+      <ins>
+       qui
+      </ins>
+      quand nos
+      <br/>
+      yeux
+      <del>
+       à la fin
+      </del>
+      s’abaissent, nous les retrouvons à coté de nous
+      <br/>
+      dans nos bras, sur le visage de nos femmes.
+      <br/>
+      <del>
+       Le vagissement clair des chèvres se confond dans l’ombre
+      </del>
+      <br/>
+      <del>
+       avec les doux sanglots du nouveau n*é* – &amp;
+      </del>
+      la voix du chien
+      <ins>
+       cependant les gds [illis.] ruminent dans la rosee &amp;
+      </ins>
+      <br/>
+      <del>
+       dans les tenèbres
+      </del>
+      coupe, par saccades, le bruit
+      <ins>
+       continu
+      </ins>
+      du torrent
+      <del>
+       qui tombe
+      </del>
+      <br/>
+      à la premiere blancheur du matin le vent
+      <del>
+       du ciel
+      </del>
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+       <del>
+        froid
+       </del>
+      </ins>
+      <ins>
+       froid
+      </ins>
+      nous
+      <ins>
+       [illis.]
+      </ins>
+      <br/>
+      arrive à la face. La joie de re-sentir la vie eclate en nous
+      <br/>
+      comme la lumière du soleil
+      <del>
+       apparaissant
+      </del>
+      *
+      <del>
+       derriere des
+      </del>
+      *
+      <ins>
+       au delà des
+      </ins>
+      monts.
+      <br/>
+      alors Les
+      <del>
+       oiseaux chantent
+      </del>
+      <ins>
+       les fleurs s’entr’ouvrent
+      </ins>
+      . L’infinité des choses remue dans une
+      <br/>
+      liberté sans limites
+      <br/>
+      C’est lui ! c’est lui ! il monte ! il nous rechauffe.
+      <br/>
+      Debout !
+      <del>
+       levons les bras ! sa gde lumiere Rose, toute entière,
+       <br/>
+       entre dans notre coeur
+      </del>
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage14" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0107.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText14" style="display:none; max-height:80vh">
+     <p class="folio">
+      90.
+     </p>
+     <span class="speaker">
+      Les Femmes
+     </span>
+     <p class="main">
+      Cousant avec des fils d’ecorce le cuir des tentes –&amp; remplissant
+      <ins>
+       *
+       <del>
+        pressant
+       </del>
+       *
+      </ins>
+      <br/>
+      le lait
+      <ins>
+       ecumeux les
+      </ins>
+      <del>
+       les gdes
+      </del>
+      calebasses
+      <del>
+       creuses
+      </del>
+      , nous
+      <ins>
+       <del>
+        suiv
+       </del>
+      </ins>
+      <del>
+       accompagnons nos
+      </del>
+      <ins>
+       soignons [
+       <del>
+        illis.
+       </del>
+       ] nos
+      </ins>
+      hommes
+      <br/>
+      <del>
+       hommes dans leur course &amp; leur repos.
+      </del>
+      <br/>
+      <ins>
+       nos epoux
+      </ins>
+      les pasteurs à longues barbes
+      <br/>
+      nous
+      <del>
+       marchons
+      </del>
+      <ins>
+       <del>
+        allons
+       </del>
+       allons
+      </ins>
+      <ins>
+       <del>
+        marchons
+       </del>
+       avec eux
+      </ins>
+      <del>
+       à leur coté
+      </del>
+      <ins>
+       aux [illis.]
+      </ins>
+      – pas à pas –
+      <del>
+       comme
+      </del>
+      <ins>
+       derrière
+      </ins>
+      les
+      <br/>
+      moutons qui broutent
+      <del>
+       en marchant
+      </del>
+      –
+      <ins>
+       en
+      </ins>
+      <del>
+       &amp; tirant par la main
+      </del>
+      <br/>
+      <ins>
+       qq
+      </ins>
+      <del>
+       un petit enfant*,* qui se retourne p. [illis.] regarder les [illis.]
+      </del>
+      <ins>
+       papillons
+      </ins>
+      <br/>
+      <del>
+       p
+      </del>
+      /Souvent deux papillons voltig
+      <del>
+       a
+      </del>
+      /ent
+      <ins>
+       ensemble
+      </ins>
+      au dessus d’une fleur, *
+      <del>
+       se
+      </del>
+      *
+      <br/>
+      <del>
+       poursuivent, sans cesse, en faisant des cercles
+      </del>
+      .
+      <del>
+       on a beau les chasser
+      </del>
+      <br/>
+      <del>
+       ils reviennent
+      </del>
+      . Mon coeur à moi &amp; celui
+      <del>
+       du [illis.] aime
+      </del>
+      <ins>
+       compagnon
+      </ins>
+      <br/>
+      ne quittent pas
+      <ins>
+       non plus
+      </ins>
+      la
+      <del>
+       te
+      </del>
+      /prairie, &amp;
+      <del>
+       tournent &amp;
+      </del>
+      <ins>
+       tournent
+      </ins>
+      <ins>
+       <del>
+        ils palpitent d’accord
+       </del>
+      </ins>
+      <del>
+       vibrent ensemble
+      </del>
+      <br/>
+      <ins>
+       ils tourbillonnent
+       <ins>
+        <del>
+         ensemble
+        </del>
+       </ins>
+       <ins>
+        d’accord
+       </ins>
+      </ins>
+      autour de la tente, – dans le cercle
+      <del>
+       *des besoins* [illis.] &amp;
+      </del>
+      d’une
+      <ins>
+       fatale
+      </ins>
+      <br/>
+      destinée commune.
+      <br/>
+      <del>
+       Au milieu
+      </del>
+      <ins>
+       Pendant
+      </ins>
+      la nuit
+      <del>
+       de
+      </del>
+      la vagissement *
+      <del>
+       clair
+      </del>
+      *
+      <ins>
+       clair
+      </ins>
+      les chevres
+      <br/>
+      se mêle
+      <ins>
+       confond
+      </ins>
+      aux doux sanglots du nouveau né –
+      <ins>
+       en
+      </ins>
+      <del>
+       &amp; à
+      </del>
+      <br/>
+      <ins>
+       &amp; d’une seule main en sommeillant
+      </ins>
+      <del>
+       à coté de lui
+      </del>
+      <ins>
+       sur
+      </ins>
+      nous
+      <ins>
+       je
+      </ins>
+      le
+      <del>
+       berçons
+      </del>
+      <ins>
+       <del>
+        remue
+       </del>
+      </ins>
+      <ins>
+       balançons
+      </ins>
+      dans son berceau
+      <br/>
+      <del>
+       fait
+      </del>
+      <ins>
+       fait d’un
+      </ins>
+      tronc d’arbre [
+      <del>
+       illis.
+      </del>
+      ] jusqu’au jour.
+      <br/>
+      alors les oiseaux
+      <del>
+       chante/ant secoua/ent leurs ailes [illis.]
+      </del>
+      <ins>
+       <del>
+        au soleil
+       </del>
+      </ins>
+      <br/>
+      &amp; la terre fume comme un manteau mouille
+      <br/>
+      c’est lui c’est lui ! il monte ! il nous rechauffe. Debout !
+      <br/>
+      <del>
+       Sa gde lumière rose tout entière entre dans notre coeur
+      </del>
+     </p>
+     <span class="stage">
+      ils se levent &amp;
+      <ins>
+       les Femmes
+      </ins>
+      prennent des paniers
+      <br/>
+      les hommes leurs gdes houlettes
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage15" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0108.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText15" style="display:none; max-height:80vh">
+     <p class="folio">
+      98.
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <del>
+       Au voyage
+      </del>
+      <ins>
+       à la campagne
+      </ins>
+      n’est
+      <del>
+       -ce pas
+      </del>
+      <ins>
+       -il pas
+      </ins>
+      vrai la ceremonie
+      <ins>
+       <del>
+        sans
+       </del>
+      </ins>
+      <ins>
+       *
+       <del>
+        parents
+       </del>
+       *
+      </ins>
+      <ins>
+       on se passe
+      </ins>
+      <del>
+       est hors [illis.]
+      </del>
+      – donc
+      <br/>
+      <ins>
+       Je
+       <ins>
+        vous
+       </ins>
+       souhaite le
+      </ins>
+      bonjour –
+      <ins>
+       cher monsieur
+      </ins>
+      bonjour –
+      <ins>
+       bonjour !
+      </ins>
+      <del>
+       bonjour mon bon
+      </del>
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (à part)
+     </span>
+     <p class="main">
+      quelle cette familiarité !
+      <ins>
+       C’
+      </ins>
+      est un indice
+      <ins>
+       un signe
+      </ins>
+      peut-être.
+      <ins>
+       il faut que je sache
+      </ins>
+      (ht) Oserais je demander
+      <br/>
+      <del>
+       à
+      </del>
+      <ins>
+       devant
+      </ins>
+      qui
+      <del>
+       *j’ai* l’honneur
+      </del>
+     </p>
+     <span class="speaker">
+      le groom
+     </span>
+     <span class="stage">
+      (avec aplomb)
+     </span>
+     <p class="main">
+      Nous sommes la veuve d’un major anglais
+      <del>
+       mort
+      </del>
+      <ins>
+       decedé
+      </ins>
+      dans les
+      <br/>
+      indes.
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      avec un soupir pretentieu
+     </span>
+     <p class="main">
+      *
+      <del>
+       &amp;
+      </del>
+      */Helas !
+     </p>
+     <span class="speaker">
+      le groom
+     </span>
+     <p class="main">
+      et nous allons à la recherche de sa cendre p. lui faire lever
+      <br/>
+      un monument
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      <del>
+       puisque
+      </del>
+      <ins>
+       puisque
+      </ins>
+      vous pleurez un mort
+      <del>
+       ?
+      </del>
+      Madame ?
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (legerement)
+     </span>
+     <p class="main">
+      il le parait.
+     </p>
+     <span class="speaker">
+      (Dominique
+     </span>
+     <span class="stage">
+      à part)
+     </span>
+     <p class="main">
+      [illis.] elle a l’air
+      <del>
+       deja très
+      </del>
+      <ins>
+       fort
+      </ins>
+      consolé
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      <del>
+       Daignez donc recevoir, (car
+      </del>
+      <ins>
+       comme
+      </ins>
+      [illis.]/J’ai connu moi-même, ces douleurs)
+      <br/>
+      daignez donc recevoir, [*
+      <del>
+       qu
+      </del>
+      *
+      <ins>
+       si
+      </ins>
+      inutile qu’elle puisse être]
+      <br/>
+      l’assurance
+      <del>
+       bien [illis.]
+      </del>
+      <ins>
+       <del>
+        je vous le jure
+       </del>
+       …
+      </ins>
+      de ma sympathie
+      <br/>
+      – – –
+      <br/>
+      Je vous le jure
+     </p>
+     <span class="speaker">
+      Jeanne.
+     </span>
+     <p class="main">
+      Mais certainement. Je l’accepte.
+      <del>
+       pourquoi pas
+      </del>
+      ?
+      <ins>
+       comment donc
+      </ins>
+      <br/>
+      plus on est de fous plus on rit.
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (à part)
+     </span>
+     <p class="main">
+      <del>
+       tant
+      </del>
+      <ins>
+       cette
+      </ins>
+      de gaite est
+      <ins>
+       bizarre ? m’eprouver sans doute
+      </ins>
+      <del>
+       [illis.] p. moi sans doute ?
+      </del>
+      &amp;
+      <br/>
+      *qui*
+      <ins>
+       elle
+      </ins>
+      cache au contraire
+      <del>
+       un coeur [illis.] *–* c’est
+      </del>
+      <ins>
+       des sentiments
+      </ins>
+      <ins>
+       profondeur [illis.] (ht)
+      </ins>
+      Ah
+      <ins>
+       c’est
+      </ins>
+      p. moi un bonheur
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      exquis
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      <del>
+       p. moi
+      </del>
+      que
+      <del>
+       de
+      </del>
+      <ins>
+       *d’
+       <del>
+        ela
+       </del>
+       *
+      </ins>
+      rencontrer [
+      <del>
+       illis.
+      </del>
+      ]
+      <ins>
+       la vôtre
+      </ins>
+      <br/>
+      <del>
+       dans l’absence [illis.] où [illis.]
+      </del>
+      <ins>
+       dans l’absence
+       <del>
+        [illis.]
+       </del>
+      </ins>
+      <br/>
+      de toute affection [
+      <del>
+       illis.
+      </del>
+      ] dans *
+      <del>
+       ce
+      </del>
+      */le vide
+      <ins>
+       affreux
+      </ins>
+      qui
+      <br/>
+      m’entoure ?
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage16" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0109.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText16" style="display:none; max-height:80vh">
+     <p class="folio">
+      99
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <ins>
+       Comment ?
+      </ins>
+      de la tristesse – du sentiment allons donc ! mais c’est vieux
+      <br/>
+      Je ne donne plus là dedans ha ha –
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      est-ce une raillerie ?
+      <ins>
+       cependant
+      </ins>
+      La tendresse de son regard dement la
+      <br/>
+      secheresse de ses paroles ] &amp; je me sens [illis.]
+      <br/>
+      attiré
+      <br/>
+      – Oh non ! Vous n’en êtes pas *revenue* – Vous savez bien
+      <br/>
+      que ce qu’il y a de meilleur
+      <ins>
+       <del>
+        sur la terre
+       </del>
+      </ins>
+      au monde ce sont les
+      <br/>
+      <ins>
+       illusions
+      </ins>
+      illusions
+      <ins>
+       chim*è*res
+      </ins>
+      dont les sots
+      <ins>
+       point d’orgue
+      </ins>
+      se raillent
+      <ins>
+       idem
+      </ins>
+      – par
+      <ins>
+       ce qu’elles sont trop
+      </ins>
+      <del>
+       l’impuissance où
+      </del>
+      <br/>
+      <del>
+       ils sont de les comprendre
+      </del>
+      .
+      <br/>
+     </p>
+     <p class="note-left">
+      Car au dessus de la vie
+      <br/>
+      n’est-ce pas, planant
+      <br/>
+      sur elle dans planant au dessus [illis.]
+      <br/>
+      les [illis.] &amp;
+      <br/>
+      l’embellis [illis.]
+      <br/>
+      d’un reflet d’or
+      <br/>
+      [illis.] que toutes
+      <br/>
+      les elevations
+     </p>
+     <p class="main">
+      [illis.] p. la bassesse de leur ame. ne
+      <ins>
+       vous
+      </ins>
+      sentez-vous pas
+      <br/>
+      qu’au dessus
+      <del>
+       de l
+      </del>
+      de la richesse … de tout… il y a
+      <br/>
+      …
+      <del>
+       l’amour
+      </del>
+      qque chose.
+      <ins>
+       c’est une aspiration [illis.]
+      </ins>
+      p. cela vous donnerez tout.
+      <br/>
+      Je comprends. je comprends
+     </p>
+     <p class="note-left">
+      Car plus somptueuse
+      <br/>
+      que la richesse, a plus
+      <br/>
+      [illis.]
+      <br/>
+      les plaisirs – [illis.]
+      <br/>
+      [illis.] quelles
+      <br/>
+      elevations de la
+      <br/>
+      gloire
+      <ins>
+       de la puissance
+      </ins>
+      &amp; du genie
+      <br/>
+      au dessus de la vie
+      <br/>
+      planant sur elle
+      <br/>
+      dans les cieux &amp;
+      <br/>
+      l’embellissant d’un
+      <br/>
+      reflet d’or [illis.]
+      <br/>
+      qque chose dont le desir
+     </p>
+     <p class="main">
+      - C’est cela / *o* c’est ceci. C’est cela –
+      <br/>
+     </p>
+     <p class="main">
+      – &amp; s’il se rencontre
+      <ins>
+       dans un être…
+      </ins>
+      . c’est une joie…
+      <br/>
+     </p>
+     <p class="main">
+      - Oh oui – oui
+      <br/>
+     </p>
+     <p class="main">
+      - prends garde à toi, Jeanne
+      <br/>
+     </p>
+     <p class="main">
+      - on voudrait vivre… [illis.]
+      <br/>
+     </p>
+     <p class="main">
+      - parle lui donc de ce qui l’interesse…
+     </p>
+     <span class="stage">
+      - reprise de Paul
+     </span>
+     <p class="main">
+      - vos capitaux. confortable
+     </p>
+     <span class="speaker">
+      <del>
+       -
+      </del>
+      /Paul
+     </span>
+     <p class="main">
+      ici. dans cette belle nature.
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Permettez si l’on taillait ces arbres …
+      <br/>
+      - &amp; un piano !
+     </p>
+     <span class="stage">
+      deception de Paul
+     </span>
+     <span class="stage">
+      Choeur des pasteurs.
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage17" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0111.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText17" style="display:none; max-height:80vh">
+     <p class="folio">
+      100.
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Mais c’est epouvantable, la musique de ces sauvages là.
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      *
+      <del>
+       moi
+      </del>
+      *.
+      <ins>
+       Ah
+      </ins>
+      <del>
+       elle me
+      </del>
+      j’y trouve
+      <ins>
+       moi
+      </ins>
+      comme
+      <del>
+       de gds
+      </del>
+      <ins>
+       un gd
+      </ins>
+      <ins>
+       large
+      </ins>
+      coups de vent
+      <br/>
+      <del>
+       large – &amp; [illis.]
+      </del>
+      <ins>
+       [illis.]
+      </ins>
+      –  &amp; qui m’apporte la
+      <del>
+       p*uis*
+      </del>
+      l’emanation
+      <br/>
+      d’une vie robuste, patriarchale &amp; libre
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <ins>
+       Mais c’est trop de bœufs
+      </ins>
+      <br/>
+      Ah ! c’est trop de boucherie ! laissez donc, j’ai
+      <del>
+       touts
+      </del>
+      <ins>
+       tout
+      </ins>
+      <br/>
+      un abattoir dans la tête.
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      decidement elle est stupide.
+     </p>
+     <span class="speaker">
+      Jeanne.
+     </span>
+     <p class="main">
+      Admirez
+      <del>
+       donc
+      </del>
+      ceci, plutot – tenez.
+     </p>
+     <span class="stage">
+      Elle chante
+     </span>
+     <span class="stage">
+      Romance
+     </span>
+     <p class="note-left">
+      1er couplet poetico-sentimental.
+     </p>
+     <p class="line">
+      Ce que j’aime c’est la cloche du soir –
+     </p>
+     <p class="line">
+      <del>
+       C’est la baronne au fond de son manoir
+      </del>
+     </p>
+     <p class="line">
+      <ins>
+       <del>
+        la
+       </del>
+      </ins>
+      <br/>
+      <del>
+       la bergere [illis.]
+      </del>
+      <ins>
+       la petite fleur sous l’herbe
+      </ins>
+      . le bon pauvre au galbe evangelique
+     </p>
+     <p class="line">
+      le bruit de la ferme &amp; ses gais travaux.
+      <ins>
+       (un peu de paysage
+       <del>
+        )
+       </del>
+       mediocre)
+      </ins>
+      les faneuses
+     </p>
+     <p class="line">
+      Mais
+      <del>
+       ce
+      </del>
+      /ce que j’adore c’est ma mère, ma bonne mère
+     </p>
+     <p class="note-left">
+      2e couplet plus folatre.
+     </p>
+     <p class="line">
+      j’aime la valse legere
+      <ins>
+       <del>
+        aussi les fleurs à ma fenêtre.
+       </del>
+      </ins>
+     </p>
+     <p class="line">
+      les fleurs à ma fenêtre
+     </p>
+     <p class="line">
+      les rubans les bombons
+     </p>
+     <p class="line">
+      le bois, l’opera – mon canari – mon petit poney
+     </p>
+     <p class="line">
+      <del>
+       conduire un [illis.]
+      </del>
+     </p>
+     <p class="line">
+      <del>
+       les bains de mer
+      </del>
+     </p>
+     <p class="line">
+      <del>
+       le tout bien que je ne sois pas coquette
+      </del>
+      .
+     </p>
+     <p class="line">
+      Mais ce que j’adore c’est ma mère, ma bonne mère
+     </p>
+     <p class="note-left">
+      3e couplet
+     </p>
+     <p class="line">
+      J’aime
+      <del>
+       un beau parc
+      </del>
+      <ins>
+       l’escarpolette sous les gds *maronniers*
+      </ins>
+     </p>
+     <p class="line">
+      <ins>
+       un beau [illis.]
+      </ins>
+      <del>
+       p
+      </del>
+      /Avec de
+      <del>
+       gdes
+      </del>
+      allées
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      pr la conversation
+     </p>
+     <p class="line">
+      &amp; des bosquets p. l’intimité
+     </p>
+     <p class="line">
+      des cygnes sur le lac – des enfants sur la pelouse.
+     </p>
+     <p class="line">
+      qque chose de calme
+      <del>
+       &amp;
+      </del>
+      de plat &amp; de fleuri comme mon coeur
+     </p>
+     <p class="line">
+      le long des caisses d’orangers
+      <del>
+       oh c’est *bien* que
+      </del>
+      <ins>
+       assise dans le kiosque au bord de la route
+      </ins>
+      <ins>
+       je le verrais venir
+      </ins>
+     </p>
+     <p class="line">
+      <del>
+       Je voudrais être aussi
+      </del>
+      celui que j’adore
+      <ins>
+       j’idolâtre
+      </ins>
+      <br/>
+     </p>
+     <p class="line">
+      le jeune militaire !
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage18" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0112.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText18" style="display:none; max-height:80vh">
+     <p class="folio">
+      99
+     </p>
+     <span class="stage">
+      (on
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      pousse
+      <ins>
+       vivement
+      </ins>
+      un piano qui se trouve parmi
+      <del>
+       d
+      </del>
+      /ses bagages) [
+      <del>
+       illis.
+      </del>
+      ]
+     </span>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      stupefait
+     </span>
+     <p class="main">
+      <ins>
+       misericorde
+      </ins>
+      jusqu’ici !
+     </p>
+     <span class="speaker">
+      Jeanne.
+     </span>
+     <p class="main">
+      Ah ! il faut que vous m’ecoutiez ! vous l’avez voulu, tant pis
+      <br/>
+      <del>
+       p. vous
+      </del>
+      ! Vous allez voir comme c’est pratique – &amp; [
+      <del>
+       illis.
+      </del>
+      ]
+      <br/>
+      <del>
+       d’ailleurs ce spectacle grandiose m’inspire
+      </del>
+      .
+      <ins>
+       &amp; puis je me sens exaltée
+       <del>
+        inspirée
+       </del>
+       par la vue de ce
+      </ins>
+      <br/>
+      spectacle grandiose
+     </p>
+     <span class="stage">
+      à peine a-t-elle fait les premieres mesures du
+      <br/>
+      prelude que la voix des Pasteurs s’eleve
+     </span>
+     <span class="speaker">
+      les Pasteurs
+     </span>
+     <p class="main">
+      Il est temps de descendre dans les plaines – Poussez ô frères
+      <br/>
+      vos troupeaux
+     </p>
+     <p class="note-left">
+      Jeanne
+      <br/>
+      Qu’est-ce donc ? ah l’horreur
+      <br/>
+      Paul
+      <br/>
+      ecoutez – ecoutez !
+      <br/>
+      Les Pasteurs
+      <br/>
+      <del>
+       Dans l
+      </del>
+      /Les chemins
+      <br/>
+      <ins>
+       [illis.]
+      </ins>
+      trop etroits p. eux
+      <br/>
+      ils se
+      <del>
+       serrent
+      </del>
+      <ins>
+       pressent
+      </ins>
+      aux
+      <br/>
+      flancs, leurs cornes
+      <br/>
+      s’entrechoquent &amp;
+     </p>
+     <p class="main">
+      – Le
+      <del>
+       bruit
+      </del>
+      <ins>
+       <del>
+        vagissement
+       </del>
+       *
+       <del>
+        gds
+       </del>
+       *
+      </ins>
+      <ins>
+       leurs
+      </ins>
+      <ins>
+       battement
+      </ins>
+      de
+      <del>
+       leur
+      </del>
+      cent mille pieds
+      <del>
+       large
+      </del>
+      <ins>
+       fourchus
+      </ins>
+      <del>
+       resonnent
+      </del>
+      <br/>
+      <del>
+       entre les gorges, dans les chemins trop etroits p. eux –
+      </del>
+      <br/>
+      ressemble au pas d’une armee,
+      <ins>
+       qui s’avance pendant
+      </ins>
+      <del>
+       survenant
+      </del>
+      la nuit
+      <del>
+       dans
+      </del>
+      <br/>
+      <del>
+       un pays qui dort
+      </del>
+      .
+      <br/>
+      ils vont, ensuite, se repandre
+      <del>
+       plus à l’aise, comme un lac
+      </del>
+      <ins>
+       tout à l’aise
+      </ins>
+      <br/>
+      <del>
+       debord*é*
+      </del>
+      !
+      <br/>
+      verra les buffles
+      <ins>
+       <del>
+        cornés
+       </del>
+      </ins>
+      de place de place –
+      <ins>
+       <del>
+        dans les herbes
+       </del>
+       – &amp; l’on
+      </ins>
+      comme des
+      <br/>
+      rochers/s noirs dans un ocean vert.
+      <br/>
+      Les avez-vous comptés ? prends garde ô pasteur
+      <br/>
+      d’en perdre un seul. monts sur la
+      <del>
+       route
+      </del>
+      <ins>
+       roche
+      </ins>
+      – allonge
+      <br/>
+      ta vue. c’est jusque là bas qu’il les faut
+      <br/>
+      conduire !
+      <br/>
+      Là bas, p. qu’ils boivent à l’heure de midi !
+      <br/>
+      ils secouent leurs oreilles sous les moucherons qui
+      <br/>
+      bourdonnenent. ] &amp;
+      <del>
+       etales
+      </del>
+      <ins>
+       enfouis
+      </ins>
+      dans la vase au bord de
+      <br/>
+      la fontaine, les taureaux avec leur salive d’argent
+      <br/>
+      ont l’air pensifs comme un conseil de vieillards
+      <br/>
+      à barbe blanche !
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage19" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0082.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText19" style="display:none; max-height:80vh">
+     <p class="folio">
+      11
+      <del>
+       1
+      </del>
+      /3.
+     </p>
+     <h2 class="play-title">
+      <span class="delSpan">
+      </span>
+      II.
+     </h2>
+     <span class="stage">
+      La scène reste completement vide.
+      <br/>
+      &amp; D’abord on entend
+      <ins>
+       dans
+      </ins>
+      toutes les maisons un bruit de gros baiser – puis
+      <br/>
+      un bruit de chaises
+      <ins>
+       <del>
+        qu’on p
+       </del>
+      </ins>
+      – [
+      <del>
+       illis
+      </del>
+      .] &amp; presque aussitot un
+      <del>
+       cliquetis
+      </del>
+      bruit
+      <br/>
+      de cueillères sur des assiettes – &amp;
+      <del>
+       de toutes
+      </del>
+      qq temps après *du*
+      <br/>
+      [illis.] de toutes les maisons, des
+      <del>
+       v
+      </del>
+      /Voix s’elevent qui disent
+      <span class="delSpan">
+      </span>
+     </span>
+     <p class="main">
+      <del>
+       Ah ! ça fait bien !
+      </del>
+     </p>
+     <span class="stage">
+      (un
+      <ins>
+       petit
+      </ins>
+      silence
+      <del>
+       un
+      </del>
+      <ins>
+       <del>
+        puis
+       </del>
+      </ins>
+      <ins>
+       –
+       <del>
+        &amp;
+       </del>
+      </ins>
+      cliquetis de couteaux &amp; de fourchettes.)
+     </span>
+     <span class="speaker">
+      Les mêmes voix
+     </span>
+     <p class="main">
+      Voilà ce qu’on ne trouve pas au restaurant !
+     </p>
+     <span class="stage">
+      (le bruit des fourchettes &amp; des couteaux
+      <del>
+       dure plus longtemps
+      </del>
+      <ins>
+       continue
+      </ins>
+      . on entend
+      <br/>
+      deboucher des bouteilles
+      <del>
+       de vin &amp;
+      </del>
+      )
+      <ins>
+       <del>
+        enfin
+       </del>
+      </ins>
+      <ins>
+       puis
+      </ins>
+     </span>
+     <span class="speaker">
+      les mêmes voix
+     </span>
+     <p class="main">
+      Nous sommes entre la poire &amp; le fromage.
+     </p>
+     <span class="stage">
+      (alors qques petits rires de satisfactions)
+     </span>
+     <span class="speaker">
+      les voix d’hommes, seulement.
+     </span>
+     <p class="main">
+      [
+      <del>
+       illis
+      </del>
+      .] D/donne nous un verre de liqueur,
+      <del>
+       hein ?
+      </del>
+      hein ?
+     </p>
+     <span class="speaker">
+      les vois des femmes
+     </span>
+     <p class="main">
+      Mais tu f/vas te faire mal ?
+     </p>
+     <span class="speaker">
+      les voix d’hommes.
+     </span>
+     <p class="main">
+      C’est p. mon estomac ! Une fois n’est pas coutume !
+     </p>
+     <span class="stage">
+      (
+      <del>
+       puis
+      </del>
+      <ins>
+       ensuite
+      </ins>
+      un fort
+      <del>
+       bruit
+      </del>
+      <ins>
+       remuement
+      </ins>
+      de chaises &amp;)
+     </span>
+     <span class="speaker">
+      Tous les bourgeois de toute la ville
+     </span>
+     <span class="stage">
+      (apparaissant à
+      <del>
+       leur
+      </del>
+      <ins>
+       chaque
+      </ins>
+      fenêtre, etendent la
+      <br/>
+      main
+      <ins>
+       en
+      </ins>
+      dehors &amp;
+      <del>
+       dehors
+      </del>
+      disent
+     </span>
+     <p class="main">
+      Il fait chaud !
+     </p>
+     <span class="speaker">
+      une femme
+     </span>
+     <span class="stage">
+      arrive à chaque fenetre,
+     </span>
+     <p class="main">
+      oui ! mais le fond de l’air est froid.
+     </p>
+     <span class="speaker">
+      tous les bourgeois
+     </span>
+     <p class="main">
+      c’est vrai ! –
+     </p>
+     <span class="stage">
+      (ils se detournent un peu &amp; tapent sur leur
+      <br/>
+      baromètre accroché en dehors
+      <ins>
+       de la fenetre)
+      </ins>
+      de devant chacune
+     </span>
+     <p class="main">
+      ça va-t-il se maintenir ?
+     </p>
+     <span class="stage">
+      (après un peu de reflexion)
+     </span>
+     <p class="main">
+      oui – oui.
+      <br/>
+      On peut prendre
+      <br/>
+      le frais.
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage20" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0083.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText20" style="display:none; max-height:80vh">
+     <p class="folio">
+      11
+      <del>
+       2
+      </del>
+      /4
+     </p>
+     <span class="stage">
+      ils se retirent des fenetres
+      <del>
+       en disant
+      </del>
+      <ins>
+       &amp; on les entend
+      </ins>
+      dans l’interieur
+     </span>
+     <p class="main">
+      Allons faire un petit tour –
+     </p>
+     <span class="stage">
+      alors paraissent sur la scène des groupes de *
+      <del>
+       deux
+      </del>
+      * trois personnes
+      <br/>
+      chacun, le mari la femme &amp; l’enfant. – L’enfant est alternativement
+      <br/>
+      un petit garçon. Habillé en turco &amp; une petite fille habillée
+      <br/>
+      en Suissesse.
+      <br/>
+      tous les groupes se promenent lentement, partant du fond
+      <br/>
+      ou des cotés &amp; faisant le tour entier de la scène.
+     </span>
+     <span class="stage">
+      1
+      <sup>
+       er
+      </sup>
+      groupe
+     </span>
+     <span class="speaker">
+      la femme –
+     </span>
+     <p class="main">
+      Il n’y a plus moyen d’avoir de domestiques.
+     </p>
+     <span class="speaker">
+      le mari –
+     </span>
+     <p class="main">
+      ils se croients des princes ! à present !
+     </p>
+     <span class="stage">
+      2
+      <sup>
+       e
+      </sup>
+      groupes.
+     </span>
+     <span class="speaker">
+      le mari
+     </span>
+     <span class="stage">
+      <ins>
+       indigné
+      </ins>
+      <ins>
+       [
+       <del>
+        illis.
+       </del>
+       ]
+      </ins>
+      –
+     </span>
+     <p class="main">
+      <ins>
+       Eh bien
+      </ins>
+      <ins>
+       <del>
+        tu auras [illis.] aussi
+       </del>
+      </ins>
+      C’est [
+      <del>
+       illis
+      </del>
+      .] par economie que je l’ai
+      <ins>
+       <del>
+        vais
+       </del>
+      </ins>
+      acheté, ce calefacteur
+     </p>
+     <span class="speaker">
+      la femme
+     </span>
+     <p class="main">
+      <ins>
+       <del>
+        c’est
+       </del>
+      </ins>
+      <ins>
+       calme.
+      </ins>
+      – *
+      <del>
+       Ma
+      </del>
+      * D’accord. Mais je ne me fie pas, moi, à toutes ces
+      <br/>
+      inventions ! Il faut toujours en revenir au
+      <del>
+       r
+      </del>
+      A
+     </p>
+     <span class="stage">
+      <del>
+       4
+      </del>
+      /3
+      <sup>
+       e
+      </sup>
+      groupe.
+     </span>
+     <span class="speaker">
+      la femme –
+     </span>
+     <p class="main">
+      Les carottes deviennent maintenant d’un dur !
+      <del>
+       c’est du
+      </del>
+      <ins>
+       <del>
+        on dirait
+       </del>
+      </ins>
+      <br/>
+      <del>
+       vrai
+       <ins>
+        du
+       </ins>
+       bois
+      </del>
+      . –
+      <del>
+       &amp; chères aussi ça
+      </del>
+      !
+     </p>
+     <span class="speaker">
+      le mari.
+     </span>
+     <p class="main">
+      c’est ce que Me Forchambot me disait encore
+      <del>
+       avant-hier
+      </del>
+      <ins>
+       hier au soir
+      </ins>
+      <br/>
+      à l’enfant – veux-tu bien ne pas
+      <del>
+       tes
+      </del>
+      <ins>
+       mettre tes
+      </ins>
+      doigts dans ton nez, toi.
+     </p>
+     <span class="stage">
+      B
+      <del>
+       3
+      </del>
+      /4
+      <sup>
+       e
+      </sup>
+      groupe
+     </span>
+     <span class="speaker">
+      <del>
+       la femme
+      </del>
+      <ins>
+       le mari
+      </ins>
+      .
+     </span>
+     <p class="main">
+      Puisque les autres
+      <ins>
+       la
+      </ins>
+      vendent. à ce prix là, je ne vois pas
+      <br/>
+      p.quoi nous ne
+      <del>
+       pourrions pas
+      </del>
+      <ins>
+       <del>
+        pourrions
+       </del>
+      </ins>
+      <ins>
+       <del>
+        pourrions pas. Avec nos
+       </del>
+      </ins>
+     </p>
+     <span class="speaker">
+      <del>
+       l’enfant.
+      </del>
+     </span>
+     <p class="main">
+      <del>
+       Maman j’ai *encore* ?
+      </del>
+     </p>
+     <span class="speaker">
+      la femme.
+     </span>
+     <p class="main">
+      <del>
+       tout à l’heure
+      </del>
+      .
+      <ins>
+       certainement –
+       <del>
+        &amp; plus cher encore
+       </del>
+      </ins>
+      <ins>
+       certainement !
+      </ins>
+     </p>
+     <span class="stage">
+      5
+      <sup>
+       e
+      </sup>
+      groupe.
+     </span>
+     <span class="speaker">
+      le mari
+     </span>
+     <span class="stage">
+      <ins>
+       *journant*
+      </ins>
+     </span>
+     <p class="main">
+      ah
+      <ins>
+       n’importe
+      </ins>
+      elle est [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       jolie
+      </ins>
+      <del>
+       n’importe, elle est jolie
+      </del>
+      <ins>
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      <ins>
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      <ins>
+       extremement agaçante
+      </ins>
+     </p>
+     <span class="speaker">
+      la femme.
+     </span>
+     <span class="stage">
+      <ins>
+       outrée
+      </ins>
+     </span>
+     <p class="main">
+      on devrait les *foutres* en place publique, ces femmes là !
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage21" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0084.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText21" style="display:none; max-height:80vh">
+     <p class="folio">
+      116.
+     </p>
+     <span class="stage">
+      mais bientot un des nourrissons se met à crier très fort.
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      ah ! le pauvre enfant ! qu’a-t-il donc ?
+     </p>
+     <span class="speaker">
+      La nourrice
+     </span>
+     <p class="main">
+      <del>
+       ce n’est
+      </del>
+      rien,
+      <del>
+       mademoiselle faites pas attention
+      </del>
+      <ins>
+       mamselle
+      </ins>
+      <ins>
+       <del>
+        n*e*
+       </del>
+      </ins>
+      <ins>
+       n’y prenez
+       <del>
+        garde
+       </del>
+      </ins>
+     </p>
+     <span class="stage">
+      le nourrisson redouble &amp; tous les autres s’en mêlent.
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Mais ils souffrent.
+      <del>
+       [illis.]
+       <ins>
+        chers
+       </ins>
+       petits
+      </del>
+      .
+      <ins>
+       voyons !
+      </ins>
+      <ins>
+       [illis.]
+      </ins>
+     </p>
+     <span class="speaker">
+      le roi des gnomes
+     </span>
+     <p class="main">
+      approchez
+      <del>
+       donc
+      </del>
+      , nourrices
+      <ins>
+       <del>
+        voyons
+       </del>
+      </ins>
+      <br/>
+      <del>
+       voyons
+      </del>
+     </p>
+     <span class="stage">
+      (une nourrice
+      <del>
+       (
+      </del>
+      s’avance)
+      <del>
+       – Jeanne se penche sur
+      </del>
+     </span>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (se penche sur le nourrisson)
+      <del>
+       &amp; [illis.] son bonnet
+      </del>
+     </span>
+     <p class="main">
+      Il est malade sans doute ?
+     </p>
+     <span class="stage">
+      (elle
+      <del>
+       leve
+      </del>
+      <ins>
+       soulève
+      </ins>
+      <ins>
+       <del>
+        le
+       </del>
+      </ins>
+      son
+      <del>
+       bonnet
+      </del>
+      <ins>
+       beguin
+      </ins>
+      . &amp; pousse un cri
+      <ins>
+       d’horreur [illis.].
+      </ins>
+     </span>
+     <p class="main">
+      du sang ! la tête ecrasee !
+     </p>
+     <span class="speaker">
+      la nourrice
+     </span>
+     <p class="main">
+      Eh ! nan, Mamselle, c’est son bandeau qui le gêne un peu. Je vais
+      <br/>
+      vous expliquer.
+      <del>
+       on tourne cette mecanique la, &amp; ça *les*
+      </del>
+     </p>
+     <span class="stage">
+      (
+      <ins>
+       alors
+      </ins>
+      elle lui
+      <del>
+       montre
+      </del>
+      <ins>
+       fait voir
+      </ins>
+      autour de la tete de l’enfant une forte
+      <del>
+       bandeau
+      </del>
+      <ins>
+       <del>
+        ruban
+       </del>
+      </ins>
+      <ins>
+       bande
+      </ins>
+      <br/>
+      de papier
+      <del>
+       noue
+      </del>
+      <del>
+       attachée
+      </del>
+      <ins>
+       empressée
+      </ins>
+      <ins>
+       retenue sur la tempe par une vis de bois)
+      </ins>
+     </span>
+     <p class="main">
+      on tourne cette mecanique là p. leur faire des têtes
+      <br/>
+      <del>
+       comme
+      </del>
+      <ins>
+       pareilles à
+      </ins>
+      celles de leurs papas, –
+      <del>
+       &amp; vu que ça les gêne
+      </del>
+      <br/>
+      <del>
+       ils crient
+      </del>
+      .
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      <del>
+       Mais qu’elle
+      </del>
+      quelle necessité ?
+     </p>
+     <span class="speaker">
+      la nourrice.
+     </span>
+     <p class="main">
+      Ah ! c’est l’image – &amp; puis ça les eduque.
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      <del>
+       En effet
+      </del>
+      . regarde.
+      <ins>
+       plutôt !
+      </ins>
+     </p>
+     <span class="stage">
+      (il deploie aux yeux de Jeanne un de ces
+      <br/>
+      rubans sur lequel est ecrit.
+      <span class="underline">
+       Manuel pour
+      </span>
+      –
+      <br/>
+      <span class="underline">
+       preparation au
+      </span>
+      …
+      <span class="underline">
+       Preceptes de
+      </span>
+      )
+     </span>
+     <p class="main">
+      par
+      <ins>
+       la
+      </ins>
+      force d’un presseur continu, tout cela leur entre dans
+      <br/>
+      la cervelle &amp; ils n’ont pas dix ans qu’ils sont
+      <br/>
+      raisonnables &amp; savent calculer.
+      <br/>
+      <del>
+       l’arithmatique
+      </del>
+      . Aussi quelles têtes !
+      <br/>
+      mieux encore que
+      <br/>
+      <del>
+       comme
+      </del>
+      leurs pères
+      <br/>
+      contemplez
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage22" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0085.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText22" style="display:none; max-height:80vh">
+     <p class="folio">
+      117.
+     </p>
+     <span class="stage">
+      (il [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       ote
+      </ins>
+      le bonnet du nourrisson
+      <ins>
+       qui a un crane prodigieusement pointu
+      </ins>
+      &amp; le montre
+      <ins>
+       levant
+      </ins>
+      au bout de ses
+      <br/>
+      bras
+      <del>
+       dans l’air
+      </del>
+      <ins>
+       en public
+      </ins>
+      ) ;
+     </span>
+     <p class="main">
+      deja un citoyen !
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <p class="main">
+      Mais c’est une torture !
+     </p>
+     <span class="speaker">
+      le Roi des gnomes
+     </span>
+     <p class="main">
+      Bah –
+      <del>
+       pour leur bien d’[illis.] &amp; puis
+      </del>
+      on ne les ecoute pas ?/!
+      <br/>
+      en sont-ils plus malades ? Vois dans quel air de santé,
+      <br/>
+      quels
+      <del>
+       gaillards
+      </del>
+      <ins>
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      ! – &amp; je parie que toi-même plus tard
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (rêveuse, &amp; lentement)
+     </span>
+     <p class="main">
+      <del>
+       C’est vrai
+      </del>
+      !/?
+      <ins>
+       <del>
+        peut-[illis
+       </del>
+       .]
+      </ins>
+      tu as
+      <del>
+       raison
+      </del>
+      <ins>
+       <del>
+        peut-etre
+       </del>
+       raison, peut être ?
+      </ins>
+      <del>
+       V
+      </del>
+      /mais dis-moi.
+      <del>
+       c’est bien ici que
+      </del>
+      <br/>
+      <del>
+       n’est-ce pas, qu’il va venir
+      </del>
+      ?
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      <del>
+       [illis.]
+       <ins>
+        certainement
+       </ins>
+       asseois toi *&amp;* attends le ! (ils se [illis.])
+      </del>
+     </p>
+     <span class="speaker">
+      <del>
+       Jeanne
+      </del>
+     </span>
+     <span class="stage">
+      <del>
+       – soupirant d’aise
+      </del>
+     </span>
+     <p class="main">
+      <del>
+       Ah – &amp; ce sera Bientot ?
+      </del>
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      <del>
+       Oui
+      </del>
+      /Un peu de patience ! il arrive
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      (regardant la danse
+      <ins>
+       autour du pot au feu
+      </ins>
+      )
+      <ins>
+       (soupirant d’aise.)
+      </ins>
+     </span>
+     <p class="main">
+      Ah ! Ils sont jolis ces enfants. – on a du plaisir ) les
+      <br/>
+      voir. – Heureuses mères.
+     </p>
+     <span class="speaker">
+      une dame
+     </span>
+     <span class="stage">
+      (à coté d’elle sur une chaise)
+     </span>
+     <p class="main">
+      Vous êtes bien
+      <del>
+       polie
+      </del>
+      <ins>
+       honnête
+      </ins>
+      , mademoiselle. Il est de fait que le
+      <br/>
+      mien. surtout
+     </p>
+     <span class="speaker">
+      une
+      <ins>
+       autre
+      </ins>
+      dame
+     </span>
+     <span class="stage">
+      (lui coupant la parole)
+     </span>
+     <p class="main">
+      Puisque vous aimez ces chers
+      <ins>
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      petits anges, en voilà un,
+      <br/>
+      tenez, qui
+      <del>
+       sait
+      </del>
+      <ins>
+       sait
+      </ins>
+      <del>
+       déjà
+      </del>
+      [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       <del>
+        illis
+       </del>
+      </ins>
+      <del>
+       epeler
+      </del>
+      <ins>
+       illis. reconnaitre ses lettres
+      </ins>
+     </p>
+     <span class="speaker">
+      une autre
+     </span>
+     <p class="main">
+      envoyez un becot à la jolie demoiselle – voyons –
+      <ins>
+       &amp; au bon monsieur
+      </ins>
+      <ins>
+       aussi
+      </ins>
+     </p>
+     <p class="note-left">
+      une autre
+      <br/>
+      – qui de deux
+      <br/>
+      prend trois combien
+      <br/>
+      reste-t-il ?
+     </p>
+     <span class="speaker">
+      une autre
+     </span>
+     <p class="main">
+      recitez
+      <del>
+       une fable
+      </del>
+      .
+     </p>
+     <span class="stage">
+      tous les enfants envoies des baisers à Jeanne
+      <br/>
+      et commencent à reciter
+      <ins>
+       balbutier
+      </ins>
+      très vite – quand
+      <br/>
+      il s’elève dans la coulisse un gd
+      <br/>
+      murmure,
+      <ins>
+       un baste bourd[illis] serait
+       <del>
+        &amp;
+       </del>
+       comme
+       <del>
+        le
+       </del>
+       serait
+      </ins>
+      l’[illis]
+      <br/>
+      contenue d’une foule lointaine
+      <br/>
+      &amp; Paul &amp; Dominique paraissent
+      <br/>
+      terreur de tous les enfants
+      <br/>
+      qui s’enfuient
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage23" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0086.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText23" style="display:none; max-height:80vh">
+     <p class="folio">
+      190
+      <del>
+       190
+      </del>
+      /*1*9
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      ce n’est pas que j’y tienne demesurement. mais cependant
+      <br/>
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      <del>
+       dou
+      </del>
+      (avec douceur)
+     </span>
+     <p class="main">
+      Oh faites !
+      <del>
+       faites
+      </del>
+      ! pas d’exageration
+     </p>
+     <span class="speaker">
+      tous les dames
+     </span>
+     <p class="main">
+      oui oui. pas d’excentricité ! rangez-vous.
+     </p>
+     <span class="stage">
+      <del>
+       il
+      </del>
+      une chaise se trouve derrière lui. on l’y asseoit
+      <ins>
+       pousse
+      </ins>
+      <br/>
+      il s’e/y laisse tomber d’un air resigné
+      <br/>
+      &amp; le coiffeur lui noue la serviette autour du
+      <br/>
+      cou.
+      <del>
+       &amp; *repasse* son rasoir
+      </del>
+      – Jeanne ne le
+      <br/>
+      quitte pas des yeux. ils se contemplent.
+     </span>
+     <span class="speaker">
+      1
+      <sup>
+       er
+      </sup>
+      bourgeois
+     </span>
+     <p class="main">
+      Pour
+      <ins>
+       vous
+      </ins>
+      epargner toute peine, on vous remettra, même, au [illis.]
+      <br/>
+      de l’an. une
+      <ins>
+       longue
+      </ins>
+      liste
+      <del>
+       imprimée
+      </del>
+      de tout ce
+      <ins>
+       que vous êtes contraint
+      </ins>
+      <del>
+       qu’il peut
+      </del>
+      dire
+      <ins>
+       faire
+      </ins>
+      &amp;
+      <br/>
+      penser dans le courant de l’année
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (au coiffeur) qui lui passe le rasoir sur la face)
+     </span>
+     <p class="main">
+      <del>
+       que voulez-vous
+      </del>
+      ?
+      <ins>
+       <del>
+        qu’est-ce don
+       </del>
+       ?
+      </ins>
+      <ins>
+       arrêtez !
+      </ins>
+     </p>
+     <span class="speaker">
+      le coiffeur
+     </span>
+     <p class="main">
+      mais je taille
+      <del>
+       à même
+      </del>
+      <ins>
+       en plein
+      </ins>
+      , monsieur p. vous faire un
+      <br/>
+      collier.
+     </p>
+     <span class="stage">
+      Jeanne tombe à ses genoux
+     </span>
+     <span class="speaker">
+      tous s’ecrient
+     </span>
+     <p class="main">
+      oui. le collier ! le collier !
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (se leve furieux)
+     </span>
+     <p class="main">
+      Laissez-moi donc, imbeciles !
+      <del>
+       Pensez vous
+      </del>
+      <ins>
+       croyez vous
+      </ins>
+      que je vais
+      <br/>
+      [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       s’*assagiter* à
+      </ins>
+      toutes vos inepties… bonsoir.
+     </p>
+     <span class="stage">
+      il croit prendre son chapeau sur une chaise
+      <br/>
+      près de lui – &amp; dans son egarement
+      <del>
+       prend
+      </del>
+      <ins>
+       *
+       <del>
+        sais
+       </del>
+       *
+      </ins>
+      <ins>
+       prend
+      </ins>
+      <br/>
+      un
+      <del>
+       ch
+      </del>
+      trombon qu’on y a mis à la
+      <br/>
+      place. &amp; s’en coiffe d’un air majestueux
+     </span>
+     <span class="speaker">
+      Dominique.
+     </span>
+     <span class="stage">
+      riant
+     </span>
+     <p class="main">
+      Vous avez une bonne tête, decidement, avec cette machine là
+      <br/>
+      sur vos epaules ?
+     </p>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage24" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0089.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText24" style="display:none; max-height:80vh">
+     <p class="folio">
+      <del>
+       113
+      </del>
+      . 112.
+     </p>
+     <span class="stage">
+      <span class="delSpan">
+      </span>
+      6
+      <sup>
+       e
+      </sup>
+      groupe.
+     </span>
+     <span class="speaker">
+      la femme –
+     </span>
+     <p class="main">
+      est-ce que c’est vrai ? elle a renvoyé Eleonora ?
+     </p>
+     <span class="speaker">
+      le mari –
+     </span>
+     <p class="main">
+      on le dit.
+     </p>
+     <span class="speaker">
+      l’enfant
+     </span>
+     <span class="stage">
+      <ins>
+       pleurant
+      </ins>
+      –
+     </span>
+     <p class="main">
+      maman j’ai faim
+     </p>
+     <span class="speaker">
+      la mère –
+     </span>
+     <p class="main">
+      *bon*. c’est p. avoir
+      <ins>
+       *
+       <del>
+        p. avoir
+       </del>
+       *
+      </ins>
+      *envie* de la crème
+     </p>
+     <span class="speaker">
+      l’enfant –
+     </span>
+     <p class="main">
+      maman, j’ai mal au cœur
+     </p>
+     <span class="speaker">
+      la mère, –
+     </span>
+     <p class="main">
+      <ins>
+       Bon !
+      </ins>
+      <del>
+       allons
+      </del>
+      il va avoir encore une indigestion maintenant
+      <br/>
+      porte le !
+     </p>
+     <span class="stage">
+      7
+      <sup>
+       e
+      </sup>
+      groupe
+     </span>
+     <span class="speaker">
+      la femme –
+     </span>
+     <p class="main">
+      mais *–* non
+      <ins>
+       mon ami
+      </ins>
+      <ins>
+       allons allons donc !
+      </ins>
+      , on t’en fait [illis.]. 6
+      <ins>
+       1/4
+      </ins>
+      livres de viande
+      <br/>
+      c’est bien assez !
+     </p>
+     <span class="stage">
+      tous les bourgeois se retrouvent devant leurs portes
+      <br/>
+      respectives ils prennent des chaises &amp; s’asseoient
+      <br/>
+      en soupirant.
+     </span>
+     <span class="speaker">
+      les Bourgeois
+     </span>
+     <p class="main">
+      Si nous prenions un peu le frais ? ah !
+      <span class="delSpan">
+      </span>
+     </p>
+     <p class="note-left">
+      tous les Bourgeois
+      <br/>
+      reparaissent sur
+      <br/>
+      la scène, &amp; s’installent
+      <br/>
+      au levant de leurs portes sur des
+      <br/>
+      chaises, chaque menage
+      <br/>
+      flanqué d’un
+      <br/>
+      petit garçon habillé
+      <br/>
+      en turcot, &amp; d’une petite fille habillée en suissesse
+     </p>
+     <p class="note-left">
+      tous les Bourgeois
+      <br/>
+      On est bien ici ! – ah !
+      <br/>
+      <span class="stage">
+       (les femmes prennent
+       <br/>
+       leur tricot &amp; les
+       <br/>
+       hommes leur
+       <br/>
+       journal.)
+      </span>
+     </p>
+     <h2 class="play-title">
+      III.
+     </h2>
+     <span class="stage">
+      Les bourgeois &amp; bourgeoises (assis devant leur porte)
+      <br/>
+      Jeanne,
+      <ins>
+       <del>
+        la petite bourgeoise
+       </del>
+      </ins>
+      , le roi des gnomes (
+      <del>
+       en monsieur tres bien.
+       <ins>
+        illis.
+       </ins>
+      </del>
+      <br/>
+      <del>
+       Jeanne a autour
+      </del>
+      Ils arrivent tous les deux par
+      <br/>
+      le fond, le roi des gnomes donnant le bras à Jeanne.
+      <br/>
+      Elle a autour
+      <ins>
+       au
+      </ins>
+      du cou un b
+      <del>
+       a
+      </del>
+      /oa, sur la tete un
+      <del>
+       maigre
+      </del>
+      chapeau
+      <br/>
+      de merinos noir, autour du corps un robe etriquee – (aux mains des
+      <br/>
+      gants de fil
+      <ins>
+       <del>
+        aux mains
+       </del>
+       &amp;
+      </ins>
+      – à son bras un
+      <del>
+       gros
+      </del>
+      <ins>
+       fort
+      </ins>
+      cabas
+      <ins>
+       elegant
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      <ins>
+       [illis.]
+      </ins>
+      d’où
+      <del>
+       sortent
+      </del>
+      <ins>
+       [illis.]
+      </ins>
+      <br/>
+      des
+      <ins>
+       la brique de
+      </ins>
+      soques
+      <del>
+       articulés
+      </del>
+      <br/>
+      Le roi des gnomes porte
+      <del>
+       par dessus
+      </del>
+      <ins>
+       <del>
+        un
+       </del>
+      </ins>
+      <ins>
+       &amp; par dessus
+      </ins>
+      sa redingotte à
+      <ins>
+       un tromblon ,
+       <del>
+        sur
+       </del>
+       au [illis.]
+      </ins>
+      <ins>
+       chapeau encore plus gd que
+      </ins>
+      <br/>
+      la proprietaire un pardessus blanchâtre ; il a des lunettes à
+      <br/>
+      quatre verres bleues,
+      <del>
+       du
+      </del>
+      <ins>
+       beaucoup de
+      </ins>
+      coton dans les oreilles,
+      <ins>
+       des gants de tricot
+      </ins>
+      des caoutchoux
+      <br/>
+      autour de
+      <del>
+       ses
+      </del>
+      bottes, à la main droite
+      <ins>
+       illis &amp;
+      </ins>
+      un parapluie (
+      <del>
+       illis
+      </del>
+      )
+      <br/>
+      dont le pommeau est terminée par une tabatière – &amp;
+      <br/>
+      à son bras gauche (celui sur lequel s’appuie Jeanne)
+      <br/>
+      un rond p. s’asseoir,
+      <del>
+       un rond
+      </del>
+      en basane verte
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage25" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0091v.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText25" style="display:none; max-height:80vh">
+     <p class="folio">
+      194.
+     </p>
+     <span class="delSpan">
+     </span>
+     <span class="stage">
+      ressemble à deux gros plumets. La mêche de son bonnet coton
+      <br/>
+      flamboie. il disparait avec Jeanne
+     </span>
+     <h2 class="play-title">
+      VIII
+     </h2>
+     <span class="stage">
+      Aussitot, le pot au feu dont les
+      <del>
+       ansons sont
+      </del>
+      <ins>
+       anses
+      </ins>
+      <ins>
+       <del>
+        illis
+       </del>
+       .
+      </ins>
+      transforment en
+      <ins>
+       deux
+      </ins>
+      ailes
+      <br/>
+      monte dans les airs – &amp;
+      <del>
+       une fois en
+      </del>
+      <ins>
+       arrivé en haut
+      </ins>
+      il se retourne
+      <del>
+       completement
+      </del>
+      <ins>
+       entièrement
+      </ins>
+      <ins>
+       <del>
+        completement
+       </del>
+      </ins>
+      <br/>
+      <ins>
+       Tandis
+      </ins>
+      <ins>
+       que
+      </ins>
+      [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       <del>
+        Pendant que
+       </del>
+      </ins>
+      les flancs du pot au feu [
+      <del>
+       illis
+      </del>
+      .]
+      <ins>
+       vont
+      </ins>
+      s’elargissant
+      <del>
+       d’une
+      </del>
+      <br/>
+      <del>
+       façon [illis.]
+      </del>
+      <ins>
+       toujours
+      </ins>
+      , de manière à couvrir la cité endormie
+      <br/>
+      des legumes lumineux, carottes, navets, poireaux s’echappent
+      <br/>
+      de sa cavité &amp; restent suspendus à la voute noire, comme
+      <br/>
+      des constellations.
+      <br/>
+      Dès que l’obscurité est complète, on entend
+      <del>
+       sortir
+      </del>
+      <ins>
+       dans
+      </ins>
+      de
+      <br/>
+      toutes les maisons un ronflement general.
+      <br/>
+      Mais il se fait un bruit sec, comme d’un barreau
+      <br/>
+      qu’on brise – puis il sort de la prison deux ombres d’hommes
+      <br/>
+      frôlant les murs, &amp; marchant sur la pointe des pieds.
+      <br/>
+      Paul apparait d’abord.
+      <del>
+       puis
+      </del>
+      <ins>
+       Ensuite
+      </ins>
+      Dominique avec le trombou
+      <br/>
+      &amp; la redingotte à la proprietaire, – &amp; portant
+      <del>
+       ses bottes
+      </del>
+      sous
+      <br/>
+      ses bras
+      <ins>
+       ses deux bottes
+      </ins>
+      p. ne point faire de bruit. [
+      <del>
+       illis.
+      </del>
+      ]
+      <br/>
+      Il contemple
+      <ins>
+       un instant
+      </ins>
+      avec effroi les constellations legumes.
+      <br/>
+      <del>
+       Puis
+      </del>
+      le ronflement general repart –
+      <br/>
+      La toile tombe lentement
+     </span>
+     <span class="delSpan">
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage26" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0113.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText26" style="display:none; max-height:80vh">
+     <p class="folio">
+      124.
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <p class="main">
+      <del>
+       Ah Vous triomphez, miserables. tant m
+      </del>
+      <ins>
+       <del>
+        illis. c’est bien
+       </del>
+      </ins>
+      <ins>
+       <del>
+        insultez moi
+       </del>
+       battez moi ! *oui*
+      </ins>
+      <ins>
+       outrages
+      </ins>
+      j’aime mieux vos outrages
+      <ins>
+       illis.
+      </ins>
+      <br/>
+      que vos applaudissements
+      <ins>
+       <del>
+        illis
+       </del>
+      </ins>
+      &amp; vos supplices que vos bienfaits
+      <br/>
+      <del>
+       Du fond de ma prison je cracherai sur vous
+      </del>
+      <br/>
+      avec vos coeurs d’esclaves &amp; vos mines de cornichons
+      <br/>
+      vos
+      <del>
+       habits grotesques
+      </del>
+      <ins>
+       pitoyables costumes
+      </ins>
+      <del>
+       &amp;
+      </del>
+      vos
+      <del>
+       architectures
+      </del>
+      <ins>
+       hideuses
+       <del>
+        illis
+       </del>
+      </ins>
+      <ins>
+       <del>
+        vos abjectes
+       </del>
+      </ins>
+      <ins>
+       illis
+      </ins>
+      <br/>
+      vos occipations abjectes &amp; vos ferocités d’anthropages
+      <br/>
+      Bourgeois, je vous haïs – &amp; du fond de m
+      <del>
+       on
+      </del>
+      /a
+      <del>
+       ca
+      </del>
+      /prison
+      <br/>
+      je cracherai encore sur votre stupidité &amp; votre
+      <br/>
+      bête de pot au feu !
+     </p>
+     <span class="speaker">
+      la Foule !
+     </span>
+     <p class="main">
+      <del>
+       il
+      </del>
+      <ins>
+       c’est du
+      </ins>
+      delire !
+     </p>
+     <span class="speaker">
+      Paul
+     </span>
+     <span class="stage">
+      (levant au ciel ses mains enchainées)
+     </span>
+     <p class="main">
+      Ah ! que n’ai-je p. vous broyer tous la foudre
+      <br/>
+      du ciel ! ou au moins qq puissance humaine, terrible
+      <br/>
+      &amp; exterminatrice !
+     </p>
+     <span class="speaker">
+      la Foule
+     </span>
+     <p class="main">
+      il devient dangereux ! un baillon ! un baillon !
+     </p>
+     <span class="stage">
+      (on le baillonne)
+     </span>
+     <span class="speaker">
+      un bourgeois
+     </span>
+     <p class="main">
+      et
+      <del>
+       le
+      </del>
+      <ins>
+       au
+      </ins>
+      domestique aussi.
+     </p>
+     <p class="note-left">
+      les autres
+      <br/>
+      oui oui –
+     </p>
+     <span class="speaker">
+      Dominique
+     </span>
+     <span class="stage">
+      (qui a la redingotte
+      <ins>
+       &amp; se debat.
+      </ins>
+      )
+     </span>
+     <p class="main">
+      Mais j’ai la reg/dingotte moi. – je ne demande
+      <br/>
+      pas mieux.
+     </p>
+     <span class="speaker">
+      bourgeois
+     </span>
+     <p class="main">
+      ça n’y fait rien. en vertu de la solidarité
+     </p>
+     <span class="speaker">
+      Dominique
+     </span>
+     <p class="main">
+      je boirais le bouillon.
+     </p>
+     <span class="speaker">
+      bourgeois
+     </span>
+     <p class="main">
+      silence.
+     </p>
+     <span class="speaker">
+      Dominique
+     </span>
+     <p class="main">
+      j’en ai même besoin
+     </p>
+     <span class="speaker">
+      bourgeois
+     </span>
+     <p class="main">
+      insolent !
+     </p>
+     <span class="stage">
+      (on le baillonne &amp; on les enferme tous les deux
+      <br/>
+      <ins>
+       illis
+      </ins>
+      dans la prison qui est à droite
+      <br/>
+      en face de l’auberge. – on les voit baillonnés à travers la grille
+     </span>
+    </div>
+    <div class="col-12 col-lg-6 myImage card overflow-auto" id="myImage27" style="display:none; max-width:100%; max-height:80vh; height:auto;">
+     <img src="media/Xms_g_267_1_0114.jpg"/>
+    </div>
+    <div class="col-12 col-lg-6 myText card overflow-auto" id="myText27" style="display:none; max-height:80vh">
+     <p class="note-left">
+      je puis
+      <ins>
+       <del>
+        peux
+       </del>
+      </ins>
+      [
+      <del>
+       illis
+      </del>
+      ]
+      <ins>
+       t’accorder
+      </ins>
+      <br/>
+      <del>
+       tout le
+      </del>
+      [illis.]
+      <br/>
+      *le* [illis.]. Mais
+      <br/>
+      ce que tu me demandes. Mais
+      <br/>
+      il m’est impossible
+      <br/>
+      d’agir sur tes
+      <br/>
+      sentiments comme sur les siens :
+      <br/>
+      *chois* mieux
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      Mais je ne t’ai pas trompé. à ta première requisition je t’ais
+      <br/>
+      accordé toutes les elegances du monde
+      <del>
+       avec
+      </del>
+      <ins>
+       &amp;
+      </ins>
+      les niaiseries
+      <br/>
+      qu’elle comporte. à la seconde la candeur
+      <ins>
+       simplicité
+      </ins>
+      <ins>
+       l’innocence
+      </ins>
+      bourgeoises avec
+      <br/>
+      son cortege de [illis.] &amp; de babalités. de quoi te plains-tu
+      <br/>
+      que te faut-il.
+     </p>
+     <span class="speaker">
+      Jeanne
+     </span>
+     <span class="stage">
+      après un long silence
+     </span>
+     <p class="main">
+      Eh bien ! je vais
+      <del>
+       t
+      </del>
+      dire ! Ah ! je l’ai deviné – enfin – quand
+      <br/>
+      au milieu de la populace qui l’enchainait le souhait
+      <ins>
+       reve
+      </ins>
+      <br/>
+      de son coeur a jailli dans une exclamation d’orgueil
+      <br/>
+      ce que je veux, ecoute c’est un pouvoir tellement fort &amp;
+      <br/>
+      beau qu’il l’eblouisse. Je demande un palais de *porphore*
+      <br/>
+      avec des escaliers d’emeraude – &amp; que p. venir
+      <br/>
+      jusqu’à moi, s’asseoir à mes cotés sur mon trone
+      <br/>
+      d’or, je lui fasse [illis.] par ma [illis.] &amp; p.
+      <br/>
+      mon bon plaisir
+      <del>
+       toutes
+      </del>
+      les fêtes de mes peuples esclaves
+      <br/>
+      prosternés dans la poussière
+     </p>
+     <span class="speaker">
+      le roi
+     </span>
+     <p class="main">
+      Bien bien ! mais pas si ht ma
+      <del>
+       mignonne
+      </del>
+      <ins>
+       princesse
+      </ins>
+      de peur de
+      <br/>
+      reveiller ces honnêtes populations !
+     </p>
+     <span class="stage">
+      il tire de sa poche un bonnet de coton, demesuré
+      <br/>
+      *
+      <del>
+       retir
+      </del>
+      * &amp; se l’enfonce sur la tete, en même
+      <br/>
+      qu’il relève ses lunettes
+      <del>
+       bleues
+      </del>
+      <ins>
+       bleus
+      </ins>
+      . son visage
+      <br/>
+      <ins>
+       effroy
+      </ins>
+      [illis.] apparait
+      <del>
+       ses
+      </del>
+      <ins>
+       avec des
+      </ins>
+      yeux
+      <del>
+       sont
+      </del>
+      cernés jusqu’aux
+      <br/>
+      oreilles, tandis que son collier
+      <ins>
+       de
+      </ins>
+      barbe
+      <ins>
+       rouge
+      </ins>
+      , s’elargissent
+      <br/>
+      sur les coté comme deux
+      <ins>
+       ressemble à
+      </ins>
+      gros plumets
+      <br/>
+      La mèche du bonnet de
+      <ins>
+       son
+      </ins>
+      coton flamboie
+      <br/>
+      Il disparait avec Jeanne.
+     </span>
+    </div>
+   </div>
+  </div>
+  <script src="js/script_g267.js">
+  </script>
+ </body>
+</html>
