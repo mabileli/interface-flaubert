@@ -39,11 +39,11 @@ $(document).ready(function(){
 	
 	// Modifier l'URL du bouton previous
 	var myPreviousSection = parseInt(myCurrentSection) - 1;
-	var urlPrevious = "../NAF15810.html?id=" + myPreviousSection;
+	var urlPrevious = "interface-flaubert/NAF15810.html?id=" + myPreviousSection;
 	$("#previous").attr("href", urlPrevious);
 		
 	// Modifier l'URL du bouton next
 	var myNextSection = parseInt(myCurrentSection) + 1;
-	var urlNext = "../NAF15810.html?id=" + myNextSection;
+	var urlNext = "interface-flaubert/NAF15810.html?id=" + myNextSection;
 	$("#next").attr("href", urlNext);
 });
