@@ -39,11 +39,11 @@ $(document).ready(function(){
 	
 	// Modifier l'URL du bouton previous
 	var myPreviousSection = parseInt(myCurrentSection) - 1;
-	var urlPrevious = "interface-flaubert/g267.html?id=" + myPreviousSection;
+	var urlPrevious = "g267.html?id=" + myPreviousSection;
 	$("#previous").attr("href", urlPrevious);
 		
 	// Modifier l'URL du bouton next
 	var myNextSection = parseInt(myCurrentSection) + 1;
-	var urlNext = "interface-flaubert/g267.html?id=" + myNextSection;
+	var urlNext = "g267.html?id=" + myNextSection;
 	$("#next").attr("href", urlNext);
 });

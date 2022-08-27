@@ -153,22 +153,23 @@ def makeInterface(sourceXml, sourceHtml, targetHtml, tempFile):
 	
 	
 	# JavaScript #
-		
+	
 	with open(targetHtml, "r", encoding="utf-8") as file:
 		soup = BeautifulSoup(file, "html.parser")
 		myScript = soup.find("script", attrs = {"src" : "js/script.js"})
 		myScript.name = "script"
-		myScript.attrs = {"src" : "js/script_g267.js"}
+		myScript.attrs = {"src" : "js/script_NAF15810.js"}
 			
 	with open(targetHtml, "wb") as fichier:
 		fichier.write(soup.prettify("utf-8"))
 		print("Done", "Change Script", targetHtml)
+	
 		
 def main():
 
-	sourceXml = os.path.abspath("../corpus/flaubert_g267.xml")
+	sourceXml = os.path.abspath("../corpus/flaubert_NAF15810.xml")
 	sourceHtml = os.path.abspath("../src/lorem-ipsum.html")
-	targetHtml = os.path.abspath("../g267.html")
+	targetHtml = os.path.abspath("../NAF15810.html")
 	tempFile = os.path.abspath("../src/tempFile.xml")
 	makeInterface(
 		sourceXml=sourceXml,
