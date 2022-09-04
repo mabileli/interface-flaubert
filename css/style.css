@@ -98,6 +98,22 @@ blockquote p {
     font-size: 3.75mm;
 }
 
+/* Tableau */
+table, th, td{
+	border: 1px solid var(--body-font-color);
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+thead{
+	text-align: center;
+}
+
+tbody{
+	text-decoration: none;
+}
+
 
 	/***************************/
 	/*** Barre de navigation ***/
