@@ -25,7 +25,7 @@ La troisième étape est la création du fichier HTML final. À partir du fichie
 ## Navigation : JavaScript
 La navigation à travers les div du fichier html, c'est-à-dire les folios du manuscrit, se fait par la modification un paramètre de l’URL courant à partir de la numérotation établie avec Python des classes `myText` et `myImage`. Il est alors possible d’afficher la section courante comprenant le fac-similé et sa transcription, à partir d’un paramètre comprenant l’identifiant `id` et sa numérotation. Nous obtenons ce type d’URL : `g340.html?id=1`. Une fois que cela est établi, le JavaScript vient modifier l’URL des boutons de navigation `previous` et `next`, en ajoutant ou soustrayant la valeur `1` au numéro du folio actuel, ce qui permet alors d’obtenir le passage d’un folio à l’autre.
   
-## Libraries utilisées
+## Librairies utilisées
   
 |  Librairies   | Versions |
 |---------------|----------|
