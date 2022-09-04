@@ -108,10 +108,12 @@ table, th, td{
 
 thead{
 	text-align: center;
+	color: var(--body-font-color);
 }
 
 tbody{
 	text-decoration: none;
+	color: var(--body-font-color);
 }
 
 
